@@ -1,0 +1,18 @@
+[
+    {
+        "0": {
+            "0": [
+                {
+                    "arrivalTime": 0.0,
+                    "deadline": 50.0,
+                    "finishTime": 7.0,
+                    "firstActivation": 0.0,
+                    "n_exec": 0,
+                    "n_execInitial": 1,
+                    "responseTime": 7.0,
+                    "server": 1
+                }
+            ]
+        }
+    }
+]

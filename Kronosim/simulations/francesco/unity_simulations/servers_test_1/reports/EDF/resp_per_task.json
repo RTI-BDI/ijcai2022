@@ -1,0 +1,108 @@
+[
+    {
+        "13": {
+            "0": [
+                {
+                    "arrivalTime": 0.0,
+                    "deadline": 12.0,
+                    "finishTime": 4.0,
+                    "firstActivation": 0.0,
+                    "n_exec": 9,
+                    "n_execInitial": 10,
+                    "responseTime": 4.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 12.0,
+                    "deadline": 24.0,
+                    "finishTime": 16.0,
+                    "firstActivation": 12.0,
+                    "n_exec": 8,
+                    "n_execInitial": 10,
+                    "responseTime": 4.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 24.0,
+                    "deadline": 36.0,
+                    "finishTime": 28.0,
+                    "firstActivation": 24.0,
+                    "n_exec": 7,
+                    "n_execInitial": 10,
+                    "responseTime": 4.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 36.0,
+                    "deadline": 48.0,
+                    "finishTime": 40.0,
+                    "firstActivation": 36.0,
+                    "n_exec": 6,
+                    "n_execInitial": 10,
+                    "responseTime": 4.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 48.0,
+                    "deadline": 60.0,
+                    "finishTime": 52.0,
+                    "firstActivation": 48.0,
+                    "n_exec": 5,
+                    "n_execInitial": 10,
+                    "responseTime": 4.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 60.0,
+                    "deadline": 72.0,
+                    "finishTime": 64.0,
+                    "firstActivation": 60.0,
+                    "n_exec": 4,
+                    "n_execInitial": 10,
+                    "responseTime": 4.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 72.0,
+                    "deadline": 84.0,
+                    "finishTime": 76.0,
+                    "firstActivation": 72.0,
+                    "n_exec": 3,
+                    "n_execInitial": 10,
+                    "responseTime": 4.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 84.0,
+                    "deadline": 96.0,
+                    "finishTime": 88.0,
+                    "firstActivation": 84.0,
+                    "n_exec": 2,
+                    "n_execInitial": 10,
+                    "responseTime": 4.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 96.0,
+                    "deadline": 108.0,
+                    "finishTime": 100.0,
+                    "firstActivation": 96.0,
+                    "n_exec": 1,
+                    "n_execInitial": 10,
+                    "responseTime": 4.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 108.0,
+                    "deadline": 120.0,
+                    "finishTime": 112.0,
+                    "firstActivation": 108.0,
+                    "n_exec": 0,
+                    "n_execInitial": 10,
+                    "responseTime": 4.0,
+                    "server": -1
+                }
+            ]
+        }
+    }
+]

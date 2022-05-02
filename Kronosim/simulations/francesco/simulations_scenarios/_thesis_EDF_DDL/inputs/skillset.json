@@ -1,0 +1,31 @@
+{
+    "0": [
+        {
+            "goal_name": "skill_ready_to_takeoff"
+        },
+        {
+            "goal_name": "skill_in_Rome"
+        },
+        {
+            "goal_name": "skill_in_Paris"
+        },
+        {
+            "goal_name": "skill_on_the_ground"
+        },
+        {
+            "goal_name": "skill_on_right_trajectory"
+        },
+        {
+            "goal_name": "skill_destination_set"
+        },
+        {
+            "goal_name": "skill_boarding_passengers"
+        },
+        {
+            "goal_name": "skill_boarding_luggage"
+        },
+        {
+            "goal_name": "skill_fuel_level"
+        }
+    ]
+}

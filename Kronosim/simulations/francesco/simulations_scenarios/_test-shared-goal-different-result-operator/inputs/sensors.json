@@ -1,0 +1,10 @@
+{
+    "0": [
+        {
+            "belief_name": "isRoomAtRightTemperature",
+            "mode": "SET",
+            "time": 5.0,
+            "value": false
+        }
+    ]
+}

@@ -1,0 +1,648 @@
+[
+    {
+        "Simulation_crash": false
+    },
+    {
+        "Forced_simulation_end": false
+    },
+    {
+        "Average_lateness": 0,
+        "Deadlinemiss_generated": null,
+        "Scheduling_type": "EDF",
+        "Tot_completed_tasks": 7.0,
+        "Tot_miss_generated": 0
+    },
+    {
+        "AVG_response_time": 15.714285714285712,
+        "Num_of_executed_tasks": 7,
+        "Response_time": [
+            {
+                "absolute_deadline": 8.0,
+                "arrivalTime": 5.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 8.0,
+                "firstActivation": 5.0,
+                "lastActivation": 5.0,
+                "n_exec": 0,
+                "n_execInitial": 1,
+                "relative_deadline": 3.0,
+                "responseTime": 3.0,
+                "server": 4,
+                "taskId": 0,
+                "taskOriginalPlanId": 5,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 11.001,
+                "arrivalTime": 8.001,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 1.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 9.001,
+                "firstActivation": 8.001,
+                "lastActivation": 8.001,
+                "n_exec": 0,
+                "n_execInitial": 1,
+                "relative_deadline": 3.0,
+                "responseTime": 1.0,
+                "server": 0,
+                "taskId": 0,
+                "taskOriginalPlanId": 1,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 16.002,
+                "arrivalTime": 11.001999999999999,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 5.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 16.002,
+                "firstActivation": 11.001999999999999,
+                "lastActivation": 11.001999999999999,
+                "n_exec": 0,
+                "n_execInitial": 1,
+                "relative_deadline": 5.0,
+                "responseTime": 5.0,
+                "server": 9,
+                "taskId": 0,
+                "taskOriginalPlanId": 10,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 110.003,
+                "arrivalTime": 16.003,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 94.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 110.003,
+                "firstActivation": 16.003,
+                "lastActivation": 16.003,
+                "n_exec": 0,
+                "n_execInitial": 1,
+                "relative_deadline": 94.0,
+                "responseTime": 94.0,
+                "server": 10,
+                "taskId": 0,
+                "taskOriginalPlanId": 11,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 111.004,
+                "arrivalTime": 110.004,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 1.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 111.00399999999999,
+                "firstActivation": 110.004,
+                "lastActivation": 110.004,
+                "n_exec": 0,
+                "n_execInitial": 1,
+                "relative_deadline": 1.0,
+                "responseTime": 0.9999999999999858,
+                "server": 14,
+                "taskId": 0,
+                "taskOriginalPlanId": 16,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 116.005,
+                "arrivalTime": 111.005,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 5.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 116.005,
+                "firstActivation": 111.005,
+                "lastActivation": 111.005,
+                "n_exec": 0,
+                "n_execInitial": 1,
+                "relative_deadline": 5.0,
+                "responseTime": 5.0,
+                "server": 8,
+                "taskId": 0,
+                "taskOriginalPlanId": 9,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 117.006,
+                "arrivalTime": 116.006,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 1.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 117.006,
+                "firstActivation": 116.006,
+                "lastActivation": 116.006,
+                "n_exec": 0,
+                "n_execInitial": 1,
+                "relative_deadline": 1.0,
+                "responseTime": 1.0,
+                "server": 12,
+                "taskId": 0,
+                "taskOriginalPlanId": 14,
+                "taskPlanId": 0
+            }
+        ]
+    },
+    {
+        "Avg_active_goals_rc": 1.3529411764705883,
+        "Avg_active_intentions_rc": 1.3529411764705883,
+        "Reasoningcycle_stats": "Reasoning cycles stats",
+        "Stats_rc": [
+            {
+                "Active_goals": 0,
+                "Active_intentions": 0,
+                "Iteration": 1,
+                "Time": "0.000000"
+            },
+            {
+                "Active_goals": 0,
+                "Active_intentions": 0,
+                "Iteration": 2,
+                "Time": "0.000000"
+            },
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 3,
+                "Time": "5.000000"
+            },
+            {
+                "Active_goals": 4,
+                "Active_intentions": 4,
+                "Iteration": 4,
+                "Time": "5.000000"
+            },
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 5,
+                "Time": "8.000000"
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 6,
+                "Time": "8.001000"
+            },
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 7,
+                "Time": "11.001000"
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 8,
+                "Time": "11.002000"
+            },
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 9,
+                "Time": "16.002000"
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 10,
+                "Time": "16.003000"
+            },
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 11,
+                "Time": "110.003000"
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 12,
+                "Time": "110.004000"
+            },
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 13,
+                "Time": "111.004000"
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 14,
+                "Time": "111.005000"
+            },
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 15,
+                "Time": "116.005000"
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 16,
+                "Time": "116.006000"
+            },
+            {
+                "Active_goals": 0,
+                "Active_intentions": 0,
+                "Iteration": 17,
+                "Time": "117.006000"
+            }
+        ]
+    },
+    {
+        "Avg_active_goals_phiI": 1.8666666666666667,
+        "Avg_active_intentions_phiI": 1.8666666666666667,
+        "PhiI_stats": "PhiI stats",
+        "Stats_phiI": [
+            {
+                "Active_goals": 4,
+                "Active_intentions": 4,
+                "Iteration": 1,
+                "Time": "5.000000"
+            },
+            {
+                "Active_goals": 4,
+                "Active_intentions": 4,
+                "Iteration": 2,
+                "Time": "5.000000"
+            },
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 3,
+                "Time": "8.000000"
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 4,
+                "Time": "8.001000"
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 5,
+                "Time": "9.001000"
+            },
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 6,
+                "Time": "11.001000"
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 7,
+                "Time": "11.002000"
+            },
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 8,
+                "Time": "16.002000"
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 9,
+                "Time": "16.003000"
+            },
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 10,
+                "Time": "110.003000"
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 11,
+                "Time": "110.004000"
+            },
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 12,
+                "Time": "111.004000"
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 13,
+                "Time": "111.005000"
+            },
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 14,
+                "Time": "116.005000"
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 15,
+                "Time": "116.006000"
+            }
+        ]
+    },
+    {
+        "Goals_activation": [
+            {
+                "Activation_time": 5.0,
+                "Annidation_level": "0",
+                "Belief_name": "store_one_wood_one_stone",
+                "Completion_time": 117.006,
+                "Deadline": -1.0,
+                "Due_to": "Intention completed!",
+                "Goal_id": 0,
+                "Origina_plan_id": 0,
+                "Plan_id": 0,
+                "Plan_pref_index": 0
+            },
+            {
+                "Activation_time": 5.0,
+                "Annidation_level": "internal goal: 3",
+                "Belief_name": "move_right_c1_lv0",
+                "Completion_time": 8.0,
+                "Deadline": 250.0,
+                "Due_to": "Intention completed!",
+                "Goal_id": 1,
+                "Origina_plan_id": 21,
+                "Plan_id": 0,
+                "Plan_pref_index": 0
+            },
+            {
+                "Activation_time": 5.0,
+                "Annidation_level": "internal goal: 2",
+                "Belief_name": "move_right_c1_lv1",
+                "Completion_time": 8.0,
+                "Deadline": 250.0,
+                "Due_to": "Intention completed!",
+                "Goal_id": 8,
+                "Origina_plan_id": 22,
+                "Plan_id": 0,
+                "Plan_pref_index": 0
+            },
+            {
+                "Activation_time": 5.0,
+                "Annidation_level": "internal goal: 1",
+                "Belief_name": "move_right_c1",
+                "Completion_time": 8.0,
+                "Deadline": 250.0,
+                "Due_to": "Intention completed!",
+                "Goal_id": 9,
+                "Origina_plan_id": 5,
+                "Plan_id": 0,
+                "Plan_pref_index": 0
+            },
+            {
+                "Activation_time": 8.001,
+                "Annidation_level": "internal goal: 1",
+                "Belief_name": "move_up_c1",
+                "Completion_time": 11.001,
+                "Deadline": 250.0,
+                "Due_to": "Intention completed!",
+                "Goal_id": 2,
+                "Origina_plan_id": 1,
+                "Plan_id": 0,
+                "Plan_pref_index": 0
+            },
+            {
+                "Activation_time": 11.001999999999999,
+                "Annidation_level": "internal goal: 1",
+                "Belief_name": "collect_stone",
+                "Completion_time": 16.002,
+                "Deadline": 250.0,
+                "Due_to": "Intention completed!",
+                "Goal_id": 3,
+                "Origina_plan_id": 10,
+                "Plan_id": 0,
+                "Plan_pref_index": 0
+            },
+            {
+                "Activation_time": 16.003,
+                "Annidation_level": "internal goal: 1",
+                "Belief_name": "recharge_c1",
+                "Completion_time": 110.003,
+                "Deadline": 250.0,
+                "Due_to": "Intention completed!",
+                "Goal_id": 4,
+                "Origina_plan_id": 11,
+                "Plan_id": 0,
+                "Plan_pref_index": 0
+            },
+            {
+                "Activation_time": 110.004,
+                "Annidation_level": "internal goal: 1",
+                "Belief_name": "store_stone_c1",
+                "Completion_time": 111.00399999999999,
+                "Deadline": 250.0,
+                "Due_to": "Intention completed!",
+                "Goal_id": 5,
+                "Origina_plan_id": 16,
+                "Plan_id": 0,
+                "Plan_pref_index": 0
+            },
+            {
+                "Activation_time": 111.005,
+                "Annidation_level": "internal goal: 1",
+                "Belief_name": "collect_wood",
+                "Completion_time": 116.005,
+                "Deadline": 250.0,
+                "Due_to": "Intention completed!",
+                "Goal_id": 6,
+                "Origina_plan_id": 9,
+                "Plan_id": 0,
+                "Plan_pref_index": 0
+            },
+            {
+                "Activation_time": 116.006,
+                "Annidation_level": "internal goal: 1",
+                "Belief_name": "store_wood_c1",
+                "Completion_time": 117.006,
+                "Deadline": 250.0,
+                "Due_to": "Intention completed!",
+                "Goal_id": 7,
+                "Origina_plan_id": 14,
+                "Plan_id": 0,
+                "Plan_pref_index": 0
+            }
+        ],
+        "Intentions_activation": [
+            {
+                "Activation_time": 5.0,
+                "Completion_time": 117.006,
+                "Due_to": "intention_has_been_completed",
+                "Goal_id": 0,
+                "Goal_name": "store_one_wood_one_stone",
+                "Intention_id": 0,
+                "Original_plan_id": 0
+            },
+            {
+                "Activation_time": 5.0,
+                "Completion_time": 8.0,
+                "Due_to": "intention_has_been_completed",
+                "Goal_id": 1,
+                "Goal_name": "move_right_c1_lv0",
+                "Intention_id": 1,
+                "Original_plan_id": 21
+            },
+            {
+                "Activation_time": 5.0,
+                "Completion_time": 8.0,
+                "Due_to": "intention_has_been_completed",
+                "Goal_id": 8,
+                "Goal_name": "move_right_c1_lv1",
+                "Intention_id": 2,
+                "Original_plan_id": 22
+            },
+            {
+                "Activation_time": 5.0,
+                "Completion_time": 8.0,
+                "Due_to": "intention_has_been_completed",
+                "Goal_id": 9,
+                "Goal_name": "move_right_c1",
+                "Intention_id": 3,
+                "Original_plan_id": 5
+            },
+            {
+                "Activation_time": 8.001,
+                "Completion_time": 11.001,
+                "Due_to": "intention_has_been_completed",
+                "Goal_id": 2,
+                "Goal_name": "move_up_c1",
+                "Intention_id": 1,
+                "Original_plan_id": 1
+            },
+            {
+                "Activation_time": 11.001999999999999,
+                "Completion_time": 16.002,
+                "Due_to": "intention_has_been_completed",
+                "Goal_id": 3,
+                "Goal_name": "collect_stone",
+                "Intention_id": 1,
+                "Original_plan_id": 10
+            },
+            {
+                "Activation_time": 16.003,
+                "Completion_time": 110.003,
+                "Due_to": "intention_has_been_completed",
+                "Goal_id": 4,
+                "Goal_name": "recharge_c1",
+                "Intention_id": 1,
+                "Original_plan_id": 11
+            },
+            {
+                "Activation_time": 110.004,
+                "Completion_time": 111.00399999999999,
+                "Due_to": "intention_has_been_completed",
+                "Goal_id": 5,
+                "Goal_name": "store_stone_c1",
+                "Intention_id": 1,
+                "Original_plan_id": 16
+            },
+            {
+                "Activation_time": 111.005,
+                "Completion_time": 116.005,
+                "Due_to": "intention_has_been_completed",
+                "Goal_id": 6,
+                "Goal_name": "collect_wood",
+                "Intention_id": 1,
+                "Original_plan_id": 9
+            },
+            {
+                "Activation_time": 116.006,
+                "Completion_time": 117.006,
+                "Due_to": "intention_has_been_completed",
+                "Goal_id": 7,
+                "Goal_name": "store_wood_c1",
+                "Intention_id": 1,
+                "Original_plan_id": 14
+            }
+        ],
+        "Ready_vector": 0,
+        "Release_vector": 0,
+        "Simulation_limit_reached": false,
+        "Still_active_events": "Still active",
+        "Still_active_intentions": 0
+    },
+    {
+        "Achieved_goals": [
+            {
+                "Goal_name": "move_right_c1",
+                "Intention": 3,
+                "Reason": "intention_has_been_completed",
+                "Time": "8.000000"
+            },
+            {
+                "Goal_name": "move_right_c1_lv1",
+                "Intention": 2,
+                "Reason": "intention_has_been_completed",
+                "Time": "8.000000"
+            },
+            {
+                "Goal_name": "move_right_c1_lv0",
+                "Intention": 1,
+                "Reason": "intention_has_been_completed",
+                "Time": "8.000000"
+            },
+            {
+                "Goal_name": "move_up_c1",
+                "Intention": 1,
+                "Reason": "intention_has_been_completed",
+                "Time": "11.001000"
+            },
+            {
+                "Goal_name": "collect_stone",
+                "Intention": 1,
+                "Reason": "intention_has_been_completed",
+                "Time": "16.002000"
+            },
+            {
+                "Goal_name": "recharge_c1",
+                "Intention": 1,
+                "Reason": "intention_has_been_completed",
+                "Time": "110.003000"
+            },
+            {
+                "Goal_name": "store_stone_c1",
+                "Intention": 1,
+                "Reason": "intention_has_been_completed",
+                "Time": "111.004000"
+            },
+            {
+                "Goal_name": "collect_wood",
+                "Intention": 1,
+                "Reason": "intention_has_been_completed",
+                "Time": "116.005000"
+            },
+            {
+                "Goal_name": "store_wood_c1",
+                "Intention": 1,
+                "Reason": "intention_has_been_completed",
+                "Time": "117.006000"
+            },
+            {
+                "Goal_name": "store_one_wood_one_stone",
+                "Intention": 0,
+                "Reason": "intention_has_been_completed",
+                "Time": "117.006000"
+            }
+        ],
+        "Tot_achievedGoals": 10
+    },
+    {
+        "Tasks": [],
+        "Tot_exec": 0,
+        "Unexpected_executions": "Unexpected executions"
+    },
+    {
+        "Generated_errors": null,
+        "Num_of_generated_errors": 0
+    }
+]

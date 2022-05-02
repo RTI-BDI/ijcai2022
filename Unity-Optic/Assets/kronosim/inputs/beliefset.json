@@ -1,0 +1,116 @@
+{
+  "0": [
+    {
+      "name": "free_c1",
+      "value": true
+    },
+    {
+      "name": "battery-amount_c1",
+      "value": 70
+    },
+    {
+      "name": "wood-amount_c1",
+      "value": 0
+    },
+    {
+      "name": "stone-amount_c1",
+      "value": 0
+    },
+    {
+      "name": "posX_c1",
+      "value": 3
+    },
+    {
+      "name": "posX_w1",
+      "value": 3
+    },
+    {
+      "name": "posX_w2",
+      "value": 9
+    },
+    {
+      "name": "posX_s1",
+      "value": 3
+    },
+    {
+      "name": "posX_s2",
+      "value": 9
+    },
+    {
+      "name": "posX_st",
+      "value": 6
+    },
+    {
+      "name": "posX_rs1",
+      "value": 5
+    },
+    {
+      "name": "posX_rs2",
+      "value": 1
+    },
+    {
+      "name": "posX_rs3",
+      "value": 11
+    },
+    {
+      "name": "posY_c1",
+      "value": 2
+    },
+    {
+      "name": "posY_w1",
+      "value": 3
+    },
+    {
+      "name": "posY_w2",
+      "value": 9
+    },
+    {
+      "name": "posY_s1",
+      "value": 9
+    },
+    {
+      "name": "posY_s2",
+      "value": 3
+    },
+    {
+      "name": "posY_st",
+      "value": 6
+    },
+    {
+      "name": "posY_rs1",
+      "value": 5
+    },
+    {
+      "name": "posY_rs2",
+      "value": 1
+    },
+    {
+      "name": "posY_rs3",
+      "value": 11
+    },
+    {
+      "name": "wood-stored_st",
+      "value": 0
+    },
+    {
+      "name": "stone-stored_st",
+      "value": 0
+    },
+    {
+      "name": "chest-stored_st",
+      "value": 0
+    },
+    {
+      "name": "battery-capacity",
+      "value": 100
+    },
+    {
+      "name": "sample-capacity",
+      "value": 10
+    },
+    {
+      "name": "grid-size",
+      "value": 12
+    }
+  ]
+}

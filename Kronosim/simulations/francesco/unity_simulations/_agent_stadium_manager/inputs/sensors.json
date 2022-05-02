@@ -1,0 +1,46 @@
+{
+    "0": [
+        {
+            "belief_name": "gate_metal_detectors_on",
+            "mode": "SET",
+            "time": 250.0,
+            "value": true
+        },
+        {
+            "belief_name": "gate_face_recognitions_on",
+            "mode": "SET",
+            "time": 250.0,
+            "value": true
+        },
+        {
+            "belief_name": "pre_game_activities",
+            "mode": "SET",
+            "time": 250.0,
+            "value": true
+        },
+        {
+            "belief_name": "is_game_completed",
+            "mode": "SET",
+            "time": 400.0,
+            "value": true
+        },
+        {
+            "belief_name": "closing_activities",
+            "mode": "SET",
+            "time": 500.0,
+            "value": false
+        },
+        {
+            "belief_name": "analize_surveilance_camera",
+            "mode": "SET",
+            "time": 500.0,
+            "value": true
+        },
+        {
+            "belief_name": "fire_hazard_on",
+            "mode": "SET",
+            "time": 350.0,
+            "value": true
+        }
+    ]
+}

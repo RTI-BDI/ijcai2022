@@ -1,0 +1,22 @@
+{
+    "0": [
+        {
+            "belief_name": "isOvenOn",
+            "mode": "SET",
+            "time": 20.0,
+            "value": false
+        },
+        {
+            "belief_name": "internal_belief",
+            "mode": "SET",
+            "time": 20.0,
+            "value": 10
+        },
+        {
+            "belief_name": "internal_belief2",
+            "mode": "SET",
+            "time": 20.0,
+            "value": 95
+        }
+    ]
+}

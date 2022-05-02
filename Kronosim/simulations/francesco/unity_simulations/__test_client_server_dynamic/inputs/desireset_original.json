@@ -1,0 +1,91 @@
+{
+    "0": [
+        {
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "one"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "deadline": -1.0,
+            "goal_name": "skill_one",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "one"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": -1.0,
+            "goal_name": "skill_two",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "two"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": -1.0,
+            "goal_name": "skill_three",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "three"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

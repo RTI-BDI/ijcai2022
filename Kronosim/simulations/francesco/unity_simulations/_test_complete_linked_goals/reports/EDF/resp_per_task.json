@@ -1,0 +1,28 @@
+[
+    {
+        "3": {
+            "0": [
+                {
+                    "arrivalTime": 0.0,
+                    "deadline": 10.0,
+                    "finishTime": 1.0,
+                    "firstActivation": 0.0,
+                    "n_exec": 1,
+                    "n_execInitial": 2,
+                    "responseTime": 1.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 10.0,
+                    "deadline": 20.0,
+                    "finishTime": 11.0,
+                    "firstActivation": 10.0,
+                    "n_exec": 0,
+                    "n_execInitial": 2,
+                    "responseTime": 1.0,
+                    "server": -1
+                }
+            ]
+        }
+    }
+]

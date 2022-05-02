@@ -1,0 +1,52 @@
+{
+    "0": [
+        {
+            "cont_conditions": [],
+            "deadline": 200.0,
+            "goal_name": "skill_isOvenOn",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "isOvenOn"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "schema2"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    [
+                    "/",
+                    [
+                        "*",
+                        0.4,
+                        [
+                            "READ_BELIEF",
+                            "number2"
+                        ]
+                    ],
+                    [
+                        "+",
+                        100,
+                        0.3
+                    ]
+                    ]
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

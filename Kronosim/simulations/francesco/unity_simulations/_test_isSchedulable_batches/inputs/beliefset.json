@@ -1,0 +1,112 @@
+{
+    "0": [
+        {
+            "name": "activate_store_one_wood_one_stone",
+            "value": false
+        },
+        {
+            "name": "battery_amount_c1",
+            "value": 20
+        },
+        {
+            "name": "battery_amount_p1",
+            "value": 20
+        },
+        {
+            "name": "wood_amount_c1",
+            "value": 0
+        },
+        {
+            "name": "stone_amount_c1",
+            "value": 0
+        },
+        {
+            "name": "wood_amount_p1",
+            "value": 0
+        },
+        {
+            "name": "stone_amount_p1",
+            "value": 0
+        },
+        {
+            "name": "chest_amount_p1",
+            "value": 0
+        },
+        {
+            "name": "posX_c1",
+            "value": 0
+        },
+        {
+            "name": "posY_c1",
+            "value": 0
+        },
+        {
+            "name": "posX_p1",
+            "value": 1
+        },
+        {
+            "name": "posY_p1",
+            "value": 2
+        },
+        {
+            "name": "free_p1",
+            "value": true
+        },
+        {
+            "name": "free_c1",
+            "value": true
+        },
+        {
+            "name": "wood_stored_s1",
+            "value": 0
+        },
+        {
+            "name": "stone_stored_s1",
+            "value": 0
+        },
+        {
+            "name": "chest_stored_s1",
+            "value": 0
+        },
+        {
+            "name": "posX_w1",
+            "value": 1
+        },
+        {
+            "name": "posY_w1",
+            "value": 1
+        },
+        {
+            "name": "posX_st1",
+            "value": 1
+        },
+        {
+            "name": "posY_st1",
+            "value": 1
+        },
+        {
+            "name": "posX_s1",
+            "value": 1
+        },
+        {
+            "name": "posY_s1",
+            "value": 1
+        },
+        {
+            "name": "posX_rs1",
+            "value": 1
+        },
+        {
+            "name": "posY_rs1",
+            "value": 1
+        },
+        {
+            "name": "battery_capacity",
+            "value": 100
+        },
+        {
+            "name": "sample_capacity",
+            "value": 100
+        }
+    ]
+}

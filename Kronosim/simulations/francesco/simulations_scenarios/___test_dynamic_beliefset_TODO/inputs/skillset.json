@@ -1,0 +1,76 @@
+{
+    "0": [
+        {
+            "belief_id": 0,
+            "belief_name": "batteryLevel",
+            "id": 0,
+            "value": 100
+        },
+        {
+            "belief_id": 0,
+            "belief_name": "batteryLevel",
+            "id": 1,
+            "value": 200
+        },
+        {
+            "belief_id": 16,
+            "belief_name": "belief_constant",
+            "id": 2,
+            "value": false
+        },
+        {
+            "belief_id": 3,
+            "belief_name": "isOvenOn",
+            "id": 3,
+            "value": true
+        },
+        {
+            "belief_id": 2,
+            "belief_name": "needsWeatherForecast",
+            "id": 4,
+            "value": true
+        },
+        {
+            "belief_id": 6,
+            "belief_name": "isRoomAtRightTemperature",
+            "id": 5,
+            "value": true
+        },
+        {
+            "belief_id": 1,
+            "belief_name": "isMusicOn",
+            "id": 6,
+            "value": true
+        },
+        {
+            "belief_id": 5,
+            "belief_name": "isLightOn",
+            "id": 7,
+            "value": true
+        },
+        {
+            "belief_id": 4,
+            "belief_name": "isTvOn",
+            "id": 8,
+            "value": true
+        },
+        {
+            "belief_id": 10,
+            "belief_name": "isGardenIrrigationOn",
+            "id": 9,
+            "value": true
+        },
+        {
+            "belief_id": 0,
+            "belief_name": "batteryLevel",
+            "id": 10,
+            "value": 95
+        },
+        {
+            "belief_id": 9,
+            "belief_name": "isFronDoorLocked",
+            "id": 11,
+            "value": true
+        }
+    ]
+}

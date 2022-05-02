@@ -1,0 +1,59 @@
+{
+    "0": [
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 2,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQ"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isOvenOn"
+                    ],
+                    false
+                ]
+            ],
+            "effects_at_begin": [
+                ["DEFINE_CONSTANT", "batteryCapacity", [ "READ_BELIEF", "batteryLevel" ] ],
+                ["DEFINE_CONSTANT", "batteryCapacity100", 100 ],
+                ["DEFINE_CONSTANT", "boolean1", true ],
+                ["DEFINE_CONSTANT", "boolean2", ["NOT", ["OR", false, true, true, false]] ],
+                ["DEFINE_VARIABLE", "combo_var",
+                    [ 
+                        "AND",
+                        [ ">", 5, 3 ],
+                        [ ">=",
+                            [ "*", 
+                                [ "+", 7, 3 ],
+                                2
+                            ], 
+                            20
+                        ]
+                    ]
+                ]
+            ],
+            "effects_at_end": [],
+            "goal_name": "skill_6",
+            "post_conditions": [ ],
+            "preconditions": [  ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

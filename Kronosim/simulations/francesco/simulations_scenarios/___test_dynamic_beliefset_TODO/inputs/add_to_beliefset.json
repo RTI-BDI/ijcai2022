@@ -1,0 +1,63 @@
+{
+    "0": [
+        [
+            {
+                "id": 0,
+                "name": "batteryLevel",
+                "value": false
+            }, 
+            {
+                "id": 0,
+                "name": "batteryLevel",
+                "value": 125
+            },
+            {
+                "id": 100,
+                "name": "new_belief_1",
+                "value": 100
+            },
+            {
+                "id": 101,
+                "name": "new_belief_2",
+                "value": false
+            },
+            {
+                "id": 102,
+                "name": "new_belief_3",
+                "value": 0
+            },
+            {
+                "id": 103,
+                "name": "new_belief_4",
+                "value": true
+            },
+            {
+                "id": 104,
+                "name": "new_belief_4",
+                "value": 5
+            }     
+        ],
+        [
+            {
+                "id": 102,
+                "name": "new_belief_3",
+                "value": 200
+            },
+            {
+                "id": 1,
+                "name": "new_belief_4",
+                "value": false
+            },
+            {
+                "id": 104,
+                "name": "new_belief_5",
+                "value": 35
+            },
+            {
+                "id": 100,
+                "name": "new_belief_2",
+                "value": 65
+            }
+        ]
+    ]
+}

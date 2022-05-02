@@ -1,0 +1,44 @@
+{
+    "0": [
+        {
+            "name": "batteryLevel",
+            "value": 100
+        },
+        {
+            "name": "isMusicOn",
+            "value": true
+        },
+        {
+            "name": "needsWeatherForecast",
+            "value": false
+        },
+        {
+            "name": "isOvenOn",
+            "value": true
+        },
+        {
+            "name": "isTvOn",
+            "value": true
+        },
+        {
+            "name": "isFronDoorLocked",
+            "value": true
+        },
+        {
+            "name": "isLightOn",
+            "value": true
+        },
+        {
+            "name": "schema1",
+            "value": true
+        },
+        {
+            "name": "schema2",
+            "value": true
+        },
+        {
+            "name": "isRoomAtRightTemperature",
+            "value": false
+        }
+    ]
+}

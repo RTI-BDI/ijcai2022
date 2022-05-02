@@ -1,0 +1,46 @@
+{
+  "0": [
+    {
+      "goal_name": "plan_execution"
+    },
+    {
+      "goal_name": "move-up_c1"
+    },
+    {
+      "goal_name": "move-down_c1"
+    },
+    {
+      "goal_name": "move-right_c1"
+    },
+    {
+      "goal_name": "move-left_c1"
+    },
+    {
+      "goal_name": "collect-wood_c1_w1"
+    },
+    {
+      "goal_name": "collect-wood_c1_w2"
+    },
+    {
+      "goal_name": "collect-stone_c1_s1"
+    },
+    {
+      "goal_name": "collect-stone_c1_s2"
+    },
+    {
+      "goal_name": "recharge_c1_rs1"
+    },
+    {
+      "goal_name": "recharge_c1_rs2"
+    },
+    {
+      "goal_name": "recharge_c1_rs3"
+    },
+    {
+      "goal_name": "store-wood_c1_st"
+    },
+    {
+      "goal_name": "store-stone_c1_st"
+    }
+  ]
+}

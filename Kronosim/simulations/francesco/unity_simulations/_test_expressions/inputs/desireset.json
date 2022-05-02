@@ -1,0 +1,159 @@
+{
+    "0": [
+        {
+            "cont_conditions": [],
+            "deadline": -1,
+            "goal_name": "skill_1",
+            "preconditions": [ true ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.1
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": -1,
+            "goal_name": "skill_2",
+            "preconditions": [ [ ">", ["READ_BELIEF", "belief_2"], -1 ] ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.2
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": -1,
+            "goal_name": "skill_3",
+            "preconditions": [ ["AND", [ ">", ["READ_BELIEF", "belief_3"], -1] ] ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.3
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": -1,
+            "goal_name": "skill_4",
+            "preconditions": [ "AND", [ ">", ["READ_BELIEF", "belief_4"], -1] ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.4
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": -1,
+            "goal_name": "skill_5",
+            "preconditions": [ ">", ["READ_BELIEF", "belief_4"], -1 ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+
+        {
+            "cont_conditions": [],
+            "deadline": -1,
+            "goal_name": "skill_6",
+            "preconditions": [ ["==", 5, 4] ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [ ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": -1,
+            "goal_name": "skill_7",
+            "preconditions": [ true ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.2
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": -1,
+            "goal_name": "skill_8",
+            "preconditions": [ true ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    "+", 0.1, 0.3
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": -1,
+            "goal_name": "skill_9",
+            "preconditions": [ true ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    [ "+", 0.1, 0.3 ]
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": -1,
+            "goal_name": "skill_10",
+            "preconditions": [ true ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    ["READ_BELIEF", "belief_1"]
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": -1,
+            "goal_name": "skill_11",
+            "preconditions": [ true ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    ["+", ["READ_BELIEF", "belief_1"]]
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": -1,
+            "goal_name": "skill_12",
+            "preconditions": [ true ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    ["+", ["READ_BELIEF", "belief_1"], 0.1]
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

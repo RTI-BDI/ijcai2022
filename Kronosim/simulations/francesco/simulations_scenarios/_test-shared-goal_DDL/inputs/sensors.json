@@ -1,0 +1,22 @@
+{
+    "0": [
+        {
+            "belief_name": "isRoomAtRightTemperature",
+            "mode": "SET",
+            "time": 8.0,
+            "value": false
+        },
+        {
+            "belief_name": "batteryLevel",
+            "mode": "SET",
+            "time": 3.0,
+            "value": 50
+        },
+        {
+            "belief_name": "isOvenOn",
+            "mode": "SET",
+            "time": 3.0,
+            "value": false
+        }
+    ]
+}

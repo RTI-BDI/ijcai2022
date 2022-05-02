@@ -1,0 +1,239 @@
+{
+    "0": [
+        {
+            "body": [
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 100.0,
+                        "goal_name": "skill_ig_belief_1",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [ ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "main_belief",
+                    true
+                ]
+            ],
+            "goal_name": "skill_main_belief",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_belief"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_belief"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 100.0,
+                        "goal_name": "skill_ig_belief_2",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [ ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "ig_belief_1",
+                    true
+                ]
+            ],
+            "goal_name": "skill_ig_belief_1",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "ig_belief_1"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "ig_belief_1"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 100.0,
+                        "goal_name": "skill_ig_belief_3",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [ ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "ig_belief_2",
+                    true
+                ]
+            ],
+            "goal_name": "skill_ig_belief_2",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "ig_belief_2"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "ig_belief_2"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1,
+                        "n_exec": 2,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [ ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "ig_belief_3",
+                    true
+                ]
+            ],
+            "goal_name": "skill_ig_belief_3",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "ig_belief_3"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "ig_belief_3"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

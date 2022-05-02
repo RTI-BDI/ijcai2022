@@ -1,0 +1,10 @@
+{
+    "0": [
+        {
+            "belief_name": "empty_name",
+            "mode": "SET",
+            "time": -1.0,
+            "value": true
+        }
+    ]
+}

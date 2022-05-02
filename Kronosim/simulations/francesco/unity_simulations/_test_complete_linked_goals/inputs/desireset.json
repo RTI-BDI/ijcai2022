@@ -1,0 +1,29 @@
+{
+    "0": [
+        {
+            "cont_conditions": [],
+            "deadline": 800.0,
+            "goal_name": "skill_main_belief",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_belief"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

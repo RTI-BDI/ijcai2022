@@ -1,0 +1,31 @@
+{
+    "0": [
+        {
+            "goal_name": "skill_isOvenOn"
+        },
+        {
+            "goal_name": "skill_isRoomAtRightTemperature"
+        },
+        {
+            "goal_name": "skill_isFronDoorLocked"
+        },
+        {
+            "goal_name": "skill_needsWeatherForecast"
+        },
+        {
+            "goal_name": "skill_batteryLevel"
+        },
+        {
+            "goal_name": "skill_isMusicOn"
+        },
+        {
+            "goal_name": "skill_isLightOn"
+        },
+        {
+            "goal_name": "skill_isGardenIrrigationOn"
+        },
+        {
+            "goal_name": "skill_batteryLevel"
+        }
+    ]
+}

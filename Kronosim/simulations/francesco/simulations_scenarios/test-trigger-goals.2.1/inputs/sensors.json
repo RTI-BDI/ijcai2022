@@ -1,0 +1,10 @@
+{
+    "0": [
+        {
+            "belief_name": "schema2",
+            "mode": "SET",
+            "time": 30.0,
+            "value": true
+        }
+    ]
+}

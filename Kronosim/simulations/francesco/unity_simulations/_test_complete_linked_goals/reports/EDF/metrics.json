@@ -1,0 +1,265 @@
+[
+    {
+        "Simulation_crash": false
+    },
+    {
+        "Forced_simulation_end": false
+    },
+    {
+        "Average_lateness": 0,
+        "Deadlinemiss_generated": null,
+        "Scheduling_type": "EDF",
+        "Tot_completed_tasks": 2.0,
+        "Tot_miss_generated": 0
+    },
+    {
+        "AVG_response_time": 1.0,
+        "Num_of_executed_tasks": 2,
+        "Response_time": [
+            {
+                "absolute_deadline": 10.0,
+                "arrivalTime": 0.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 1.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 1.0,
+                "firstActivation": 0.0,
+                "lastActivation": 0.0,
+                "n_exec": 1,
+                "n_execInitial": 2,
+                "relative_deadline": 10.0,
+                "responseTime": 1.0,
+                "server": -1,
+                "taskId": 0,
+                "taskOriginalPlanId": 3,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 30.0,
+                "arrivalTime": 10.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 1.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 11.0,
+                "firstActivation": 10.0,
+                "lastActivation": 10.0,
+                "n_exec": 0,
+                "n_execInitial": 2,
+                "relative_deadline": 20.0,
+                "responseTime": 1.0,
+                "server": -1,
+                "taskId": 0,
+                "taskOriginalPlanId": 3,
+                "taskPlanId": 0
+            }
+        ]
+    },
+    {
+        "Avg_active_goals_rc": 0.5,
+        "Avg_active_intentions_rc": 0.5,
+        "Reasoningcycle_stats": "Reasoning cycles stats",
+        "Stats_rc": [
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 1,
+                "Time": 0.0
+            },
+            {
+                "Active_goals": 0,
+                "Active_intentions": 0,
+                "Iteration": 2,
+                "Time": 20.0
+            }
+        ]
+    },
+    {
+        "Avg_active_goals_phiI": 4.0,
+        "Avg_active_intentions_phiI": 4.0,
+        "PhiI_stats": "PhiI stats",
+        "Stats_phiI": [
+            {
+                "Active_goals": 4,
+                "Active_intentions": 4,
+                "Iteration": 1,
+                "Time": 0.0
+            },
+            {
+                "Active_goals": 4,
+                "Active_intentions": 4,
+                "Iteration": 2,
+                "Time": 11.0
+            }
+        ]
+    },
+    {
+        "Goals_activation": [
+            {
+                "Activation_time": 0.0,
+                "Annidation_level": "0",
+                "Belief_name": "skill_main_belief",
+                "Completion_time": 20.0,
+                "Deadline": 800.0,
+                "Due_to": "No valid conditions for internal goal!",
+                "Goal_id": 0,
+                "Origina_plan_id": 0,
+                "Plan_id": 0,
+                "Plan_pref_index": 0
+            },
+            {
+                "Activation_time": 0.0,
+                "Annidation_level": "internal goal: 3",
+                "Belief_name": "skill_ig_belief_1",
+                "Completion_time": 20.0,
+                "Deadline": 100.0,
+                "Due_to": "Intention completed!",
+                "Goal_id": 1,
+                "Origina_plan_id": 1,
+                "Plan_id": 0,
+                "Plan_pref_index": 0
+            },
+            {
+                "Activation_time": 0.0,
+                "Annidation_level": "internal goal: 2",
+                "Belief_name": "skill_ig_belief_2",
+                "Completion_time": 20.0,
+                "Deadline": 100.0,
+                "Due_to": "Intention completed!",
+                "Goal_id": 2,
+                "Origina_plan_id": 2,
+                "Plan_id": 0,
+                "Plan_pref_index": 0
+            },
+            {
+                "Activation_time": 0.0,
+                "Annidation_level": "internal goal: 1",
+                "Belief_name": "skill_ig_belief_3",
+                "Completion_time": 20.0,
+                "Deadline": 100.0,
+                "Due_to": "Intention completed!",
+                "Goal_id": 3,
+                "Origina_plan_id": 3,
+                "Plan_id": 0,
+                "Plan_pref_index": 0
+            },
+            {
+                "Activation_time": 20.0,
+                "Annidation_level": "not set",
+                "Belief_name": "skill_main_belief",
+                "Completion_time": -1.0,
+                "Deadline": 800.0,
+                "Due_to": "undefined",
+                "Goal_id": 0,
+                "Origina_plan_id": -1,
+                "Plan_id": -1,
+                "Plan_pref_index": 0
+            }
+        ],
+        "Intentions_activation": [
+            {
+                "Activation_time": 0.0,
+                "Completion_time": 20.0,
+                "Due_to": "No valid conditions for internal goal!",
+                "Goal_id": 0,
+                "Goal_name": "skill_main_belief",
+                "Intention_id": 0,
+                "Original_plan_id": 0
+            },
+            {
+                "Activation_time": 0.0,
+                "Completion_time": 20.0,
+                "Due_to": "intention_has_been_completed",
+                "Goal_id": 1,
+                "Goal_name": "skill_ig_belief_1",
+                "Intention_id": 1,
+                "Original_plan_id": 1
+            },
+            {
+                "Activation_time": 0.0,
+                "Completion_time": 20.0,
+                "Due_to": "intention_has_been_completed",
+                "Goal_id": 2,
+                "Goal_name": "skill_ig_belief_2",
+                "Intention_id": 2,
+                "Original_plan_id": 2
+            },
+            {
+                "Activation_time": 0.0,
+                "Completion_time": 20.0,
+                "Due_to": "intention_has_been_completed",
+                "Goal_id": 3,
+                "Goal_name": "skill_ig_belief_3",
+                "Intention_id": 3,
+                "Original_plan_id": 3
+            }
+        ],
+        "Ready_vector": 0,
+        "Release_vector": 0,
+        "Simulation_limit_reached": false,
+        "Still_active_events": "Still active",
+        "Still_active_intentions": 0,
+        "Still_active_intentions_waiting_completion": 0
+    },
+    {
+        "Achieved_goals": [
+            {
+                "Goal_name": "skill_ig_belief_3",
+                "Intention": 3,
+                "Reason": "intention_has_been_completed",
+                "Time": 20.0
+            },
+            {
+                "Goal_name": "skill_ig_belief_2",
+                "Intention": 2,
+                "Reason": "intention_has_been_completed",
+                "Time": 20.0
+            },
+            {
+                "Goal_name": "skill_ig_belief_1",
+                "Intention": 1,
+                "Reason": "intention_has_been_completed",
+                "Time": 20.0
+            }
+        ],
+        "Tot_achievedGoals": 3
+    },
+    {
+        "Tasks": [],
+        "Tot_exec": 0,
+        "Unexpected_executions": "Unexpected executions"
+    },
+    {
+        "Generated_errors": null,
+        "Num_of_generated_errors": 0
+    },
+    {
+        "Generated_warnings": [
+            {
+                "Cause": "[WARNING] t: 0.000000 Sensor:[empty_name] has activation time:[-1.000000] in the past! -> ignored it!",
+                "Function": "read_sensors_from_json",
+                "Time": 0.0
+            },
+            {
+                "Cause": " X Intention:[0], goal:[skill_main_belief] plan:[0] original plan:[0] HAS TO BE REMOVED do to false conditions. Remove entire intention:[0] X",
+                "Function": "checkAndManageIntentionFalseConditions",
+                "Time": 20.0
+            },
+            {
+                "Cause": "[WARNING] Plan:[0], goal:[skill_main_belief] is NOT valid, no plans for the internal goals!",
+                "Function": "ag_reasoning_cycle",
+                "Time": 20.0
+            },
+            {
+                "Cause": "[WARNING] There are no feasible plans for Goal:[0], name:[skill_main_belief] -> removed.",
+                "Function": "ag_reasoning_cycle",
+                "Time": 20.0
+            },
+            {
+                "Cause": "[WARNING] There are no Plans that satisfy the active goal(s).",
+                "Function": "ag_reasoning_cycle",
+                "Time": 20.0
+            }
+        ],
+        "Num_of_generated_warnings": 5
+    }
+]

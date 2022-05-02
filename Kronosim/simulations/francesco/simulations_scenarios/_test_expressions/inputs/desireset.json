@@ -1,0 +1,33 @@
+{
+    "0": [
+        {
+            "cont_conditions": [],
+            "deadline": 500.0,
+            "goal_name": "skill_belief_constant",
+            "preconditions": [
+                [
+                    "<",
+                    [
+                        "READ_BELIEF",
+                        "belief_constant"
+                    ],
+                    110
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    [
+                        "*",
+                        [
+                            "READ_BELIEF",
+                            "batteryLevel"
+                        ],
+                        0.05
+                    ]
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

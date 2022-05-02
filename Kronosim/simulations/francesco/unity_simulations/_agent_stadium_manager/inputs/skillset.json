@@ -1,0 +1,106 @@
+{
+    "0": [
+        {
+            "goal_name": "skill_opening_activities"
+        },
+        {
+            "goal_name": "skill_pre_game_activities"
+        },
+        {
+            "goal_name": "skill_analize_surveilance_camera"
+        },
+        {
+            "goal_name": "skill_start_game_activities"
+        },
+        {
+            "goal_name": "skill_end_game_activities"
+        },
+        {
+            "goal_name": "skill_closing_activities"
+        },
+        {
+            "goal_name": "skill_fire_hazard_off"
+        },
+        {
+            "goal_name": "skill_terrorism_hazard_off"
+        },
+        {
+            "goal_name": "skill_lights_checked"
+        },
+        {
+            "goal_name": "skill_surveilance_cameras_checked"
+        },
+        {
+            "goal_name": "skill_emergency_lights_checked"
+        },
+        {
+            "goal_name": "skill_emergency_sound_checked"
+        },
+        {
+            "goal_name": "skill_metal_detector_checked"
+        },
+        {
+            "goal_name": "skill_face_recognitions_checked"
+        },
+        {
+            "goal_name": "skill_entertaining_systems_checked"
+        },
+        {
+            "goal_name": "skill_main_light_on"
+        },
+        {
+            "goal_name": "skill_surveilance_cameras_on"
+        },
+        {
+            "goal_name": "skill_gate_metal_detectors_on"
+        },
+        {
+            "goal_name": "skill_gate_face_recognitions_on"
+        },
+        {
+            "goal_name": "skill_main_gate_open"
+        },
+        {
+            "goal_name": "skill_video_system_on"
+        },
+        {
+            "goal_name": "skill_audio_system_on"
+        },
+        {
+            "goal_name": "skill_video_system_off"
+        },
+        {
+            "goal_name": "skill_audio_system_off"
+        },
+        {
+            "goal_name": "skill_main_light_off"
+        },
+        {
+            "goal_name": "skill_surveilance_cameras_off"
+        },
+        {
+            "goal_name": "skill_gate_metal_detectors_off"
+        },
+        {
+            "goal_name": "skill_gate_face_recognitions_off"
+        },
+        {
+            "goal_name": "skill_main_gate_close"
+        },
+        {
+            "goal_name": "skill_emergency_lights_on"
+        },
+        {
+            "goal_name": "skill_call_fire_figthers"
+        },
+        {
+            "goal_name": "skill_activate_sprinkles"
+        },
+        {
+            "goal_name": "skill_emergency_sound_on"
+        },
+        {
+            "goal_name": "skill_emergency_exists_open"
+        }
+    ]
+}

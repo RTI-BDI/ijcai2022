@@ -1,0 +1,6 @@
+[
+    "t: 11 A NEW Belief:[four X], value:[true] has been added to the knowledge-base of the agent!",
+    "t: 20 A NEW Belief:[five X], value:[true] has been added to the knowledge-base of the agent!",
+    "t: 30 Belief:[four X] value has been updated from:[true] to:[true]",
+    "Deadline miss: 0"
+]

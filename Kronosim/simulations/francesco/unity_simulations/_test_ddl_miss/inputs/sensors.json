@@ -1,0 +1,22 @@
+{
+    "0": [
+        {
+            "belief_name": "need_main_desire",
+            "mode": "SET",
+            "time": -1.0,
+            "value": false
+        },
+        {
+            "belief_name": "need_main_desire",
+            "mode": "SET",
+            "time": -1.0,
+            "value": false
+        },
+        {
+            "belief_name": "need_main_desire",
+            "mode": "SET",
+            "time": 10.0,
+            "value": true
+        }
+    ]
+}

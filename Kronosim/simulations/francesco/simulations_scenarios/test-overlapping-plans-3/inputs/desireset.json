@@ -1,0 +1,196 @@
+{
+    "0": [
+        {
+            "cont_conditions": [],
+            "deadline": 500.0,
+            "goal_name": "skill_isMusicOn",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "isMusicOn"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "schema1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.2
+                ],
+                "reference_table": [
+                    {
+                        "belief_name": "batteryLevel",
+                        "op": "GREATER_EQUAL",
+                        "priority": 0.8,
+                        "threshold": 75
+                    },
+                    {
+                        "belief_name": "batteryLevel",
+                        "op": "LESS",
+                        "priority": 0.6,
+                        "threshold": 75
+                    },
+                    {
+                        "belief_name": "batteryLevel",
+                        "op": "LESS_EQUAL",
+                        "priority": 0.3,
+                        "threshold": 35
+                    }
+                ]
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": 500.0,
+            "goal_name": "skill_needsWeatherForecast",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "needsWeatherForecast"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "schema1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.7
+                ],
+                "reference_table": [
+                    {
+                        "belief_name": "batteryLevel",
+                        "op": "GREATER_EQUAL",
+                        "priority": 0.8,
+                        "threshold": 75
+                    },
+                    {
+                        "belief_name": "batteryLevel",
+                        "op": "LESS",
+                        "priority": 0.6,
+                        "threshold": 75
+                    },
+                    {
+                        "belief_name": "batteryLevel",
+                        "op": "LESS_EQUAL",
+                        "priority": 0.3,
+                        "threshold": 35
+                    }
+                ]
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": 500.0,
+            "goal_name": "skill_isOvenOn",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "isOvenOn"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "schema2"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": 100.0,
+            "goal_name": "skill_isLightOn",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "isLightOn"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "schema2"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": 50.0,
+            "goal_name": "skill_isRoomAtRightTemperature",
+            "preconditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isRoomAtRightTemperature"
+                    ],
+                    false
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "0": [
+        {
+            "belief_name": "batteryLevel",
+            "id": 0,
+            "mode": "INCREASE",
+            "time": 0.0,
+            "value": 5
+        },
+        {
+            "belief_name": "batteryLevel",
+            "id": 1,
+            "mode": "DECREASE",
+            "time": 0.0,
+            "value": 5
+        },
+        {
+            "belief_name": "isLightOn",
+            "id": 2,
+            "mode": "CHANGE",
+            "time": 0.0,
+            "value": 555
+        },
+        {
+            "belief_name": "UPDATE_BELIEFSET",
+            "id": 2,
+            "mode": "UPDATE_BELIEFSET",
+            "time": 5.0,
+            "value": false
+        },
+        {
+            "belief_name": "UPDATE_BELIEFSET",
+            "id": 3,
+            "mode": "UPDATE_BELIEFSET",
+            "time": 10.0,
+            "value": false
+        },
+        {
+            "belief_name": "UPDATE_BELIEFSET",
+            "id": 4,
+            "mode": "UPDATE_BELIEFSET",
+            "time": 20.0,
+            "value": false
+        }
+    ]
+}

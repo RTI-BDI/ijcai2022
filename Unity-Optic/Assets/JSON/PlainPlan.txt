@@ -1,0 +1,60 @@
+Number of literals: 1
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%] [110%] [120%] [130%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%] [110%] [120%] [130%]
+(posx w1) has finite bounds: [3.000,3.000]
+(posy w1) has finite bounds: [3.000,3.000]
+(posx w2) has finite bounds: [9.000,9.000]
+(posy w2) has finite bounds: [9.000,9.000]
+(posx s1) has finite bounds: [3.000,3.000]
+(posy s1) has finite bounds: [9.000,9.000]
+(posx s2) has finite bounds: [9.000,9.000]
+(posy s2) has finite bounds: [3.000,3.000]
+(posx st) has finite bounds: [6.000,6.000]
+(posy st) has finite bounds: [6.000,6.000]
+(wood-stored st) has a finite lower bound: [0.000,inf]
+(stone-stored st) has a finite lower bound: [0.000,inf]
+(chest-stored st) has finite bounds: [0.000,0.000]
+(posx rs1) has finite bounds: [5.000,5.000]
+(posy rs1) has finite bounds: [5.000,5.000]
+(posx rs2) has finite bounds: [1.000,1.000]
+(posy rs2) has finite bounds: [1.000,1.000]
+(posx rs3) has finite bounds: [11.000,11.000]
+(posy rs3) has finite bounds: [11.000,11.000]
+Recognised a monotonic-change-induced limit on -1.000*var15(wood-stored st)
+- Must be >= -1.000
+Recognised a monotonic-change-induced limit on -1.000*var16(stone-stored st)
+- Must be >= -1.000
+Numeric effect ((battery-amount c1) += 100.000 + -1*(battery-amount c1)) makes effects on 2 be order-dependent
+None of the ground temporal actions in this problem have been recognised as compression-safe
+Initial heuristic = 27.000, admissible cost estimate 0.000
+b (25.000 | 120.000)b (24.000 | 600.004)b (23.000 | 720.005)b (21.000 | 840.006)b (20.000 | 960.007)b (18.000 | 1080.007)b (16.000 | 1320.010)b (14.000 | 1620.013)b (12.000 | 2460.020)b (10.000 | 2580.021)b (8.000 | 2700.022)b (6.000 | 2820.023)b (4.000 | 2940.024)b (2.000 | 3060.025)(G);;;; Solution Found
+; States evaluated: 284
+; Cost: 3120.026
+; Time 0.18
+0.000: (move-right c1)  [120.000]
+120.001: (move-left c1)  [120.000]
+240.002: (move-up c1)  [120.000]
+360.003: (collect-wood c1 w1)  [120.000]
+480.004: (move-right c1)  [120.000]
+600.005: (move-up c1)  [120.000]
+720.006: (move-right c1)  [120.000]
+840.007: (move-up c1)  [120.000]
+960.008: (move-left c1)  [120.000]
+1080.009: (move-up c1)  [120.000]
+1200.010: (move-right c1)  [120.000]
+1320.011: (move-right c1)  [120.000]
+1440.012: (store-wood c1 st)  [60.000]
+1500.013: (move-left c1)  [120.000]
+1620.014: (move-left c1)  [120.000]
+1740.015: (move-left c1)  [120.000]
+1860.016: (move-up c1)  [120.000]
+1980.017: (move-up c1)  [120.000]
+2100.018: (move-up c1)  [120.000]
+2220.019: (collect-stone c1 s1)  [120.000]
+2340.020: (move-right c1)  [120.000]
+2460.021: (move-right c1)  [120.000]
+2580.022: (move-down c1)  [120.000]
+2700.023: (move-down c1)  [120.000]
+2820.024: (move-right c1)  [120.000]
+2940.025: (move-down c1)  [120.000]
+3060.026: (store-stone c1 st)  [60.000]

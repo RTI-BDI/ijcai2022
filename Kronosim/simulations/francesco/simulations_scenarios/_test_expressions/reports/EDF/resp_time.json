@@ -1,0 +1,22 @@
+[
+    [
+        {
+            "absolute_deadline": 50.0,
+            "arrivalTime": 0.0,
+            "arrivalTimeInitial": 0.0,
+            "compTime": 7.0,
+            "deadline": 50.0,
+            "execution": "SEQUENTIAL",
+            "finishTime": 7.0,
+            "firstActivation": 0.0,
+            "lastActivation": 5.0,
+            "n_exec": 0,
+            "n_execInitial": 1,
+            "responseTime": 7.0,
+            "server": 1,
+            "taskId": 0,
+            "taskOriginalPlanId": 0,
+            "taskPlanId": 0
+        }
+    ]
+]

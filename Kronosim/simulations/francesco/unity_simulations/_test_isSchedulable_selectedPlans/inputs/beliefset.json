@@ -1,0 +1,49 @@
+{
+    "0": [
+        {
+            "name": "desire_one",
+            "value": false
+        },
+        {
+            "name": "desire_two",
+            "value": true
+        },
+        {
+            "name": "desire_three",
+            "value": true
+        },
+        {
+            "name": "desire_two_three",
+            "value": false
+        },
+
+        {
+            "name": "ig1_A",
+            "value": false
+        },
+        {
+            "name": "ig1_B",
+            "value": false
+        },
+        {
+            "name": "ig1_C",
+            "value": false
+        },
+        {
+            "name": "ig1_D",
+            "value": false
+        },
+        {
+            "name": "ig2_A",
+            "value": false
+        },
+        {
+            "name": "ig2_B",
+            "value": false
+        },
+        {
+            "name": "ig2_C",
+            "value": false
+        }
+    ]
+}

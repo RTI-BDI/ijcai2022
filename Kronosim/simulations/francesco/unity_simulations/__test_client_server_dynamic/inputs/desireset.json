@@ -1,0 +1,41 @@
+{
+    "0": [
+        {
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "four"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "deadline": -1.0,
+            "goal_name": "skill_four",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "four"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

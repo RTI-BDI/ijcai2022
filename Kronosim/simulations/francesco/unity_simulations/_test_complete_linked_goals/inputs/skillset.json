@@ -1,0 +1,19 @@
+{
+    "0": [
+        {
+            "goal_name": "skill_main_belief"
+        },
+        {
+            "goal_name": "skill_ig_belief_1"
+        },
+        {
+            "goal_name": "skill_ig_belief_2"
+        },
+        {
+            "goal_name": "skill_ig_belief_3"
+        },
+        {
+            "goal_name": "skill_ig_belief_4"
+        }
+    ]
+}

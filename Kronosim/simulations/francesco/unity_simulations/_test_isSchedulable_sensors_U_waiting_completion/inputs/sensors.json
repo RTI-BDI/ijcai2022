@@ -1,0 +1,22 @@
+{
+    "0": [
+        {
+            "belief_name": "activate_store_one_wood_one_stone",
+            "mode": "SET",
+            "time": 0.0,
+            "value": false
+        },
+        {
+            "belief_name": "activate_store_one_wood_one_stone",
+            "mode": "SET",
+            "time": 5.0,
+            "value": true
+        },
+        {
+            "belief_name": "activate_produce_one_wood_one_stone",
+            "mode": "SET",
+            "time": 12.0,
+            "value": true
+        }
+    ]
+}

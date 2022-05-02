@@ -1,0 +1,61 @@
+{
+    "0": [
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 10.0,
+                        "n_exec": 1,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 3.0,
+                        "n_exec": 10,
+                        "period": 6.0,
+                        "relativeDeadline": 6.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "need_main_desire",
+                    false
+                ]
+            ],
+            "goal_name": "main_desire",
+            "post_conditions": [],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "need_main_desire"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+[
+    "time: 0, Plan:[0]",
+    "[Main plan] New Batch: 1",
+    "    Checkign tasks OVERLAP: 0.000000 < 94.000000 && 14.000000 > 0.000000 --> Task:[0], OriginalPlan:[2] = true",
+    "    Checkign tasks OVERLAP: 0.000000 < 94.000000 && 22.000000 > 0.000000 --> Task:[0], OriginalPlan:[3] = true",
+    "    Checkign tasks OVERLAP: 22.000000 < 94.000000 && 42.000000 > 0.000000 --> Task:[1], OriginalPlan:[3] = true",
+    "    Checkign tasks OVERLAP: 42.000000 < 94.000000 && 72.000000 > 0.000000 --> Task:[2], OriginalPlan:[3] = true",
+    "    Checkign tasks OVERLAP: 72.000000 < 94.000000 && 82.000000 > 0.000000 --> Task:[1], OriginalPlan:[2] = true",
+    "    Checkign tasks OVERLAP: 82.000000 < 94.000000 && 94.000000 > 0.000000 --> Task:[2], OriginalPlan:[2] = true",
+    "    Checkign tasks OVERLAP: 0.000000 < 94.000000 && 28.000000 > 0.000000 --> Task:[0], OriginalPlan:[1] = true",
+    "    Checkign tasks OVERLAP: 0.000000 < 94.000000 && 30.000000 > 0.000000 --> Task:[0], OriginalPlan:[4] = true",
+    "    Checkign tasks OVERLAP: 0.000000 < 94.000000 && 20.000000 > 0.000000 --> Task:[1], OriginalPlan:[4] = true",
+    "[WARNING] - U > 1? TRUE: plan:[0], name:[skill_isOvenOn] -> 1.081818"
+]

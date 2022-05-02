@@ -1,0 +1,42 @@
+{
+    "0": [
+        {
+            "belief": {
+                "id": 0,
+                "name": "batteryLevel",
+                "value": 100
+            },
+            "computedDynamically": true,
+            "deadline": 500.0,
+            "formula": [ 
+                [ "*", 
+                    ["READ_BELIEF", "batteryLevel"],
+                    0.05
+                ]
+            ],
+            "id": 0,
+            "op": "EQUAL",
+            "preconditions": [ ],
+            "reference_table": []
+        },
+        {
+            "belief": {
+                "id": 0,
+                "name": "batteryLevel",
+                "value": 200
+            },
+            "computedDynamically": true,
+            "deadline": 500.0,
+            "formula": [ 
+                [ "*", 
+                    ["READ_BELIEF", "batteryLevel"],
+                    0.05
+                ]
+            ],
+            "id": 1,
+            "op": "GREATER_EQUAL",
+            "preconditions": [ ],
+            "reference_table": []
+        }
+    ]
+}

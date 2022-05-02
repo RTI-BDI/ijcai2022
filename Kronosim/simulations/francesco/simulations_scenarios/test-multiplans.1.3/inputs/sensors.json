@@ -1,0 +1,10 @@
+{
+    "0": [
+        {
+            "belief_name": "plan_prec",
+            "mode": "SET",
+            "time": 40.0,
+            "value": false
+        }
+    ]
+}

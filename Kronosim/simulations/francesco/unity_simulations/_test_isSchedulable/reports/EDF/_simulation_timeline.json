@@ -1,0 +1,12 @@
+[
+    "t: 0.000000 Belief:[activate_store_one_wood_one_stone] value has been updated to:[false]",
+    "t: 5.000000 Belief:[activate_store_one_wood_one_stone] value has been updated to:[true]",
+    "t: 8.000000, SERVER:[4] COMPLETED tskId:[0], plan:[0], original_id:[5], deadline:[8.000000], lateness:[0.000000], ddl_miss:[NO]",
+    "t: 9.001000, SERVER:[0] COMPLETED tskId:[0], plan:[0], original_id:[1], deadline:[11.001000], lateness:[-2.000000], ddl_miss:[NO]",
+    "t: 16.002000, SERVER:[9] COMPLETED tskId:[0], plan:[0], original_id:[10], deadline:[16.002000], lateness:[0.000000], ddl_miss:[NO]",
+    "t: 110.003000, SERVER:[10] COMPLETED tskId:[0], plan:[0], original_id:[11], deadline:[110.003000], lateness:[0.000000], ddl_miss:[NO]",
+    "t: 111.004000, SERVER:[14] COMPLETED tskId:[0], plan:[0], original_id:[16], deadline:[111.004000], lateness:[-0.000000], ddl_miss:[NO]",
+    "t: 116.005000, SERVER:[8] COMPLETED tskId:[0], plan:[0], original_id:[9], deadline:[116.005000], lateness:[0.000000], ddl_miss:[NO]",
+    "t: 117.006000, SERVER:[12] COMPLETED tskId:[0], plan:[0], original_id:[14], deadline:[117.006000], lateness:[0.000000], ddl_miss:[NO]",
+    "Deadline miss: 0"
+]

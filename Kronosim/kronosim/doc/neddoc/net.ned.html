@@ -1,0 +1,113 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="if (top.frames['componentsframe'] == undefined) { s = window.location.toString(); window.location = 'index.html?p=' + s.substring(s.lastIndexOf('/')+1); }">
+<h2 class="comptitle">NED File <i>net.ned</i></h2>
+<table class="typestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+<tr>
+   <td>
+<a href="agent.html">agent</a>
+   </td>
+   <td>
+<i>simple&nbsp;module</i>
+   </td>
+   <td>
+
+<p>TODO documentation</p>
+
+   </td>
+</tr>
+<tr>
+   <td>
+<a href="net_0.html">net_0</a>
+   </td>
+   <td>
+<i>network</i>
+   </td>
+   <td>
+
+<p>TODO documentation</p>
+
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+// 
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Lesser General Public License for more details.
+// 
+// You should have received a copy of the GNU Lesser General Public License
+// along with this program.  If not, see http://www.gnu.org/licenses/.
+// 
+</span><span style="color: #000000; ">
+
+</span><span style="color: #808080; font-style: italic; ">//
+// TODO documentation
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">agent</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=block/user&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #000080; font-weight: bold; ">volatile</span><span style="color: #000000; "> </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">sched_type</span><span style="color: #000000; ">; 				</span><span style="color: #808080; font-style: italic; ">//scheduler type to use (0 = FCFS, 1 = RR)
+//    volatile double delayTime @unit(s);   // delay before sending back message
+</span><span style="color: #000000; ">
+    </span><span style="color: #808080; font-style: italic; ">//statistic-related
+</span><span style="color: #000000; ">    </span><span style="color: #808080; font-style: italic; ">//deadline miss count
+</span><span style="color: #000000; ">    </span><span style="color: #000000; font-weight: bold; ">@signal</span><span style="color: #000000; ">[</span><span style="color: #000000; ">ddl_miss</span><span style="color: #000000; ">](</span><span style="color: #000000; ">type</span><span style="color: #000000; ">=</span><span style="color: #008000; ">&quot;long&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #000000; font-weight: bold; ">@statistic</span><span style="color: #000000; ">[</span><span style="color: #000000; ">ddl_miss_count</span><span style="color: #000000; ">](</span><span style="color: #000000; ">title</span><span style="color: #000000; ">=</span><span style="color: #008000; ">&quot;deadline miss&quot;</span><span style="color: #000000; ">; </span><span style="color: #000000; ">source</span><span style="color: #000000; ">=</span><span style="color: #008000; ">&quot;ddl_miss&quot;</span><span style="color: #000000; ">; </span><span style="color: #000000; ">record</span><span style="color: #000000; ">=</span><span style="color: #000000; ">vector</span><span style="color: #000000; ">,</span><span style="color: #000000; ">stats</span><span style="color: #000000; ">; </span><span style="color: #000000; ">interpolationmode</span><span style="color: #000000; ">=</span><span style="color: #000000; ">none</span><span style="color: #000000; ">);   
+}
+
+</span><span style="color: #808080; font-style: italic; ">//
+// TODO documentation
+//
+</span><span style="color: #800000; font-weight: bold; ">network</span><span style="color: #000000; "> </span><span style="color: #000000; ">net_0</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #808080; font-style: italic; ">//        int aAddress;
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">//        int n @prompt(&quot;Number of clients&quot;) = default(6);
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">//        int k = 0;
+</span><span style="color: #000000; ">        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;bgb=331,135&quot;</span><span style="color: #000000; ">);
+</span><span style="color: #808080; font-style: italic; ">//        @display(&quot;bgb=611,287&quot;);
+</span><span style="color: #000000; ">
+    </span><span style="color: #800000; font-weight: bold; ">types</span><span style="color: #000000; ">:
+        </span><span style="color: #800000; font-weight: bold; ">channel</span><span style="color: #000000; "> </span><span style="color: #000000; ">Channel</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">ned</span><span style="color: #000000; ">.</span><span style="color: #000000; ">DelayChannel</span><span style="color: #000000; ">
+        {
+            </span><span style="color: #000000; ">delay</span><span style="color: #000000; "> = </span><span style="color: #008000; ">100</span><span style="color: #000000; ">ms</span><span style="color: #000000; ">;
+        }
+    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+</span><span style="color: #808080; font-style: italic; ">//        DF: agent {
+//            //  @display(&quot;p=41,40&quot;);
+//            @display(&quot;i=,gold&quot;);
+//        }
+</span><span style="color: #000000; ">
+        </span><span style="color: #000000; ">ag</span><span style="color: #000000; ">: </span><span style="color: #000000; ">agent</span><span style="color: #000000; ">;
+    </span><span style="color: #800000; font-weight: bold; ">connections</span><span style="color: #000000; ">:
+
+</span><span style="color: #808080; font-style: italic; ">//      	for i=0..n-1 {
+//            ag[i].gate++ &lt;--&gt; Channel &lt;--&gt; DF.gate++;
+//        }
+</span><span style="color: #000000; ">
+</span><span style="color: #808080; font-style: italic; ">//		for i=0..n-2, for k=i+1..n-1{
+//            ag[i].gate++ &lt;--&gt; Channel &lt;--&gt; ag[k].gate++;
+//        }
+</span><span style="color: #000000; ">
+
+}
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

@@ -1,0 +1,375 @@
+t=2370
+-----ag_reasoning_cycle-----
+INFO:List of Intentions[tot = 2]:
+INFO: Intention index:[60], from goal:[2], goal:(skill_isOvenOn), plan:[2], original_plan:[2], num. of actions: 4, startTime: 2359.000000, firstActivation: 2359.000000, lastExecution: 2359.000000, batch_startTime: 2359.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[0], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 7.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2359.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO: - Task:[1], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 4.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Task:[2], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 6.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Task:[3], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 6.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[PARALLEL] isBeenActivated:[false]
+INFO: Intention index:[59], from goal:[0], goal:(skill_isMusicOn), plan:[7], original_plan:[7], num. of actions: 2, startTime: 2270.000000, firstActivation: 2270.000000, lastExecution: 2270.000000, batch_startTime: 2270.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[0], plan:[7], original_plan:[7], N_exec left: 1 of 5, compTime: 3.000000, DDL: 30.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2270.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO: - Task:[1], plan:[7], original_plan:[7], N_exec left: 2 of 2, compTime: 4.000000, DDL: 15.000000, arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO:-----------------------------
+INFO:Release queue[tot = 1]:
+INFO:- Task:[0], plan:[7], original_plan:[7], deadline:[30.000000], arrivalTime:[2390.000000], releaseTime:[2360.000000], N_exec left:[1 of 5], tskCres:[3.000000], tskStatus:[ACTIVE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------
+INFO:Ready queue[tot = 1]:
+INFO:- SERVER[1]: curr_budget:[4.000000], curr_ddl:[2394.000000], queue.size:[1], deadline:[2394.000000], startTime:[2359.000000], arrivalTime:[2359.000000], tskCres:[0.000000], tskStatus:[EXEC], tskExecType:[SEQUENTIAL], isBeenAct:[true], task:[0], plan:[2], original_plan:[2]
+INFO: -- task:[0], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2359.000000], releaseTime:[2359.000000], N_exec left:[0 of 1], tskCres:[6.000000], tskStatus:[EXEC], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------
+
+t=2370
+INFO:----phiI----
+INFO:PhiI Result ------------------------------------
+INFO:
+INFO:List of Intentions[tot = 3]:
+INFO: Intention index:[60], from goal:[2], goal:(skill_isOvenOn), plan:[2], original_plan:[2], num. of actions: 4, startTime: 2359.000000, firstActivation: 2359.000000, lastExecution: 2359.000000, batch_startTime: 2359.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[0], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 7.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2359.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO: - Task:[1], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 4.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Task:[2], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 6.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Task:[3], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 6.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[PARALLEL] isBeenActivated:[false]
+INFO: Intention index:[61], from goal:[4], goal:(skill_isLightOn), plan:[3], original_plan:[3], num. of actions: 1, startTime: 2370.000000, firstActivation: 2370.000000, lastExecution: 2370.000000, batch_startTime: 2370.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[0], plan:[3], original_plan:[3], N_exec left: 20 of 20, compTime: 3.000000, DDL: 5.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2370.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO: Intention index:[59], from goal:[0], goal:(skill_isMusicOn), plan:[7], original_plan:[7], num. of actions: 2, startTime: 2270.000000, firstActivation: 2270.000000, lastExecution: 2270.000000, batch_startTime: 2270.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[0], plan:[7], original_plan:[7], N_exec left: 1 of 5, compTime: 3.000000, DDL: 30.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2270.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO: - Task:[1], plan:[7], original_plan:[7], N_exec left: 2 of 2, compTime: 4.000000, DDL: 15.000000, arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO:-----------------------------
+INFO:-----------------------------
+INFO:Release queue[tot = 2]:
+INFO:- Task:[0], plan:[7], original_plan:[7], deadline:[30.000000], arrivalTime:[2390.000000], releaseTime:[2360.000000], N_exec left:[1 of 5], tskCres:[3.000000], tskStatus:[ACTIVE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- Task:[0], plan:[3], original_plan:[3], deadline:[5.000000], arrivalTime:[2370.000000], releaseTime:[-1.000000], N_exec left:[20 of 20], tskCres:[3.000000], tskStatus:[ACTIVE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------
+INFO:Ready queue[tot = 1]:
+INFO:- SERVER[1]: curr_budget:[4.000000], curr_ddl:[2394.000000], queue.size:[1], deadline:[2394.000000], startTime:[2359.000000], arrivalTime:[2359.000000], tskCres:[0.000000], tskStatus:[EXEC], tskExecType:[SEQUENTIAL], isBeenAct:[true], task:[0], plan:[2], original_plan:[2]
+INFO: -- task:[0], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2359.000000], releaseTime:[2359.000000], N_exec left:[0 of 1], tskCres:[6.000000], tskStatus:[EXEC], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:PhiI Ended -------------------------------------
+
+t=2370
+INFO:----schedule_taskset_rt----
+INFO:Release queue[tot = 2]:
+INFO:- Task:[0], plan:[3], original_plan:[3], deadline:[5.000000], arrivalTime:[2375.000000], releaseTime:[2370.000000], N_exec left:[19 of 20], tskCres:[3.000000], tskStatus:[ACTIVE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- Task:[0], plan:[7], original_plan:[7], deadline:[30.000000], arrivalTime:[2390.000000], releaseTime:[2360.000000], N_exec left:[1 of 5], tskCres:[3.000000], tskStatus:[ACTIVE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------
+INFO:Ready queue[tot = 2]:
+INFO:- Task:[0], plan:[3], original_plan:[3], deadline:[2375.000000], arrivalTime:[2370.000000], releaseTime:[2370.000000], N_exec left:[19 of 20], tskCres:[3.000000], tskStatus:[EXEC], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- SERVER[1]: curr_budget:[3.000000], curr_ddl:[2394.000000], queue.size:[1], deadline:[2394.000000], startTime:[2359.000000], arrivalTime:[2359.000000], tskCres:[0.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true], task:[0], plan:[2], original_plan:[2]
+INFO: -- task:[0], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2359.000000], releaseTime:[2359.000000], N_exec left:[0 of 1], tskCres:[5.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------
+
+[............] // NON ci sono reasoning cycle in questo intervallo
+
+t=2379
+INFO:t: 2379, checking COMPLETION for msg_task_id[0], msg_plan_id[2], msg_original_plan_id[2] tskDm 0
+INFO:APERIODIC: SERVER IS NOT NULL: fabs(1.000000 - 1.000000) < 0.000100 => true
+XXX >>>>>>>>>>>>>>>>: -- RESET SERVER:[1], from:[2394.000000] TO CURR_DDL:[2429.000000] -- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+INFO:t: 2379, SERVER:[1] EXPIRED tskId:[0] plan:[2] original_plan:[2] tskDm: ag[0] tskEx: ag[0] tskRt: 2359.000000
+INFO:-----------------------------
+
+t=2379
+INFO:----schedule_taskset_rt----
+INFO:Release queue[tot = 2]:
+INFO:- Task:[0], plan:[3], original_plan:[3], deadline:[5.000000], arrivalTime:[2380.000000], releaseTime:[2375.000000], N_exec left:[18 of 20], tskCres:[3.000000], tskStatus:[ACTIVE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- Task:[0], plan:[7], original_plan:[7], deadline:[30.000000], arrivalTime:[2390.000000], releaseTime:[2360.000000], N_exec left:[1 of 5], tskCres:[3.000000], tskStatus:[ACTIVE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------
+INFO:Ready queue[tot = 1]:
+INFO:- SERVER[1]: curr_budget:[5.000000], curr_ddl:[2429.000000], queue.size:[1], deadline:[2429.000000], startTime:[2359.000000], arrivalTime:[2379.000000], tskCres:[0.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true], task:[0], plan:[2], original_plan:[2]
+INFO: -- task:[0], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2359.000000], releaseTime:[2359.000000], N_exec left:[0 of 1], tskCres:[2.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------
+
+[............] // NON ci sono reasoning cycle in questo intervallo
+
+t=2390
+INFO:Release queue[tot = 1]:
+INFO:- Task:[0], plan:[3], original_plan:[3], deadline:[5.000000], arrivalTime:[2390.000000], releaseTime:[2385.000000], N_exec left:[16 of 20], tskCres:[3.000000], tskStatus:[ACTIVE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------
+INFO:Ready queue[tot = 2]:
+INFO:- SERVER[1]: curr_budget:[4.000000], curr_ddl:[2419.000000], queue.size:[1], deadline:[2419.000000], startTime:[2384.000000], arrivalTime:[2384.000000], tskCres:[0.000000], tskStatus:[EXEC], tskExecType:[SEQUENTIAL], isBeenAct:[true], task:[1], plan:[2], original_plan:[2]
+INFO: -- task:[1], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2384.000000], releaseTime:[2384.000000], N_exec left:[0 of 1], tskCres:[3.000000], tskStatus:[EXEC], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- Task:[0], plan:[7], original_plan:[7], deadline:[2420.000000], arrivalTime:[2390.000000], releaseTime:[2390.000000], N_exec left:[0 of 5], tskCres:[3.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------
+
+DA QUI + XXX si attiva una reazione a catena che culmina a:
+INFO:t: 2425, ARRIVED tskId:[0], plan:[3], original plan:[3], NExec left: 9, tskRt: 2425.000000
+a t: 2425 (see [*])
+
+[............] // NON ci sono reasoning cycle in questo intervallo
+
+t=2400
+INFO:List of Intentions[tot = 3]:
+INFO: Intention index:[60], from goal:[2], goal:(skill_isOvenOn), plan:[2], original_plan:[2], num. of actions: 2, startTime: 2394.000000, firstActivation: 2359.000000, lastExecution: 2394.000000, batch_startTime: 2394.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[2], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 6.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2394.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO: - Task:[3], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 6.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2394.000000, Execution_type:[PARALLEL] isBeenActivated:[true]
+INFO: Intention index:[61], from goal:[4], goal:(skill_isLightOn), plan:[3], original_plan:[3], num. of actions: 1, startTime: 2370.000000, firstActivation: 2370.000000, lastExecution: 2370.000000, batch_startTime: 2370.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[0], plan:[3], original_plan:[3], N_exec left: 14 of 20, compTime: 3.000000, DDL: 5.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2370.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO: Intention index:[59], from goal:[0], goal:(skill_isMusicOn), plan:[7], original_plan:[7], num. of actions: 1, startTime: 2400.000000, firstActivation: 2270.000000, lastExecution: 2400.000000, batch_startTime: 2400.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[1], plan:[7], original_plan:[7], N_exec left: 2 of 2, compTime: 4.000000, DDL: 15.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2400.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO:-----------------------------
+INFO:-----------------------------
+INFO:Release queue[tot = 2]:
+****:- Task:[0], plan:[3], original_plan:[3], deadline:[5.000000], arrivalTime:[2405.000000], releaseTime:[2400.000000], N_exec left:[13 of 20], tskCres:[3.000000], tskStatus:[IDLE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- Task:[1], plan:[7], original_plan:[7], deadline:[15.000000], arrivalTime:[2400.000000], releaseTime:[-1.000000], N_exec left:[2 of 2], tskCres:[4.000000], tskStatus:[ACTIVE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------
+INFO:Ready queue[tot = 2]:
+****:- Task:[0], plan:[3], original_plan:[3], deadline:[2405.000000], arrivalTime:[2400.000000], releaseTime:[2400.000000], N_exec left:[13 of 20], tskCres:[3.000000], tskStatus:[EXEC], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- SERVER[1]: curr_budget:[5.000000], curr_ddl:[2429.000000], queue.size:[2], deadline:[2429.000000], startTime:[2394.000000], arrivalTime:[2394.000000], tskCres:[0.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true], task:[2], plan:[2], original_plan:[2]
+INFO: -- task:[2], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2394.000000], releaseTime:[2394.000000], N_exec left:[0 of 1], tskCres:[6.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO: -- task:[3], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2394.000000], releaseTime:[2394.000000], N_exec left:[0 of 1], tskCres:[6.000000], tskStatus:[READY], tskExecType:[PARALLEL], isBeenAct:[true]
+INFO:PhiI Ended -------------------------------------
+
+t: 2403, COMPLETED tskId:[0], plan:[3], original_id:[3], N_exec left:[13 of 20], tskRt: 2400.000000, status:[COMPLETED]
+INFO: > Lateness:[-2.000000] = 2403 - 2405.000000 -> was_server: FALSE
+
+t: 2405 PREEMPTION task:[0], plan:[3], original_plan:[3] status:[EXEC] compTimeRes:[3.000000] tskDDL:[2410.000000] SERVER: -1
+INFO: PREEMPTS tskId:[1], plan:[7], original_plan:[7] status:[READY] compTimeRes(original):[4.000000] tskDDL:[2415.000000] SERVER: -1
+INFO:t: 2405, PREEMPTED tskId:[1], plan:[7], original_plan:[7], updated status:[READY], releaseTime:[2400.000000], compTimeRes(updated):[2.000000], ddl: 2415.000000, lastAct: 2403.000000
+
+INFO:t: 2405, ACTIVATED tskId:[0], plan:[3], original_plan:[3] tskRt:[2405.000000], C_Res: 3.000000 status:[EXEC]
+
+INFO:t: 2408, COMPLETED tskId:[0], plan:[3], original_id:[3], N_exec left:[12 of 20], tskRt: 2405.000000, status:[COMPLETED]
+INFO: > Lateness:[-2.000000] = 2408 - 2410.000000 -> was_server: FALSE
+
+INFO:t: 2408, ACTIVATED tskId:[1], plan:[7], original_plan:[7] tskRt:[2400.000000], C_Res: 2.000000 status:[EXEC]
+
+INFO:t: 2410, COMPLETED tskId:[1], plan:[7], original_id:[7], N_exec left:[1 of 2], tskRt: 2400.000000, status:[COMPLETED]
+INFO: > Lateness:[-5.000000] = 2410 - 2415.000000 -> was_server: FALSE
+
+INFO:t: 2410, ACTIVATED tskId:[0], plan:[3], original_plan:[3] tskRt:[2410.000000], C_Res: 3.000000 status:[EXEC]
+
+INFO:t: 2413, COMPLETED tskId:[0], plan:[3], original_id:[3], N_exec left:[11 of 20], tskRt: 2410.000000, status:[COMPLETED]
+INFO: > Lateness:[-2.000000] = 2413 - 2415.000000 -> was_server: FALSE
+
+INFO:t: 2413, SERVER:[1] ACTIVATED tskId:[2], plan:[2], original_plan:[2] tskRt: 2394.000000 currDdl: 2429.000000 budget server:[5.000000], C_Res: 6.000000 status:[EXEC] head task status:[EXEC]
+
+INFO:t: 2415 PREEMPTION task:[0], plan:[3], original_plan:[3] status:[EXEC] compTimeRes:[3.000000] tskDDL:[2420.000000] SERVER: -1
+INFO: PREEMPTS tskId:[2], plan:[2], original_plan:[2] status:[READY] compTimeRes(original):[6.000000] tskDDL:[35.000000] SERVER: 1
+INFO:t: 2415, SERVER:[1] PREEMPTED tskId:[2], plan:[2], original_plan:[2], updated status:[READY], releaseTime:[2394.000000], compTimeRes(updated):[4.000000], ddl: 35.000000, budget: 3.000000, lastAct: 2413.000000
+
+INFO:t: 2415, ACTIVATED tskId:[0], plan:[3], original_plan:[3] tskRt:[2415.000000], C_Res: 3.000000 status:[EXEC]
+
+INFO:t: 2418, COMPLETED tskId:[0], plan:[3], original_id:[3], N_exec left:[10 of 20], tskRt: 2415.000000, status:[COMPLETED]
+INFO: > Lateness:[-2.000000] = 2418 - 2420.000000 -> was_server: FALSE
+
+INFO:t: 2418, SERVER:[1] ACTIVATED tskId:[2], plan:[2], original_plan:[2] tskRt: 2394.000000 currDdl: 2429.000000 budget server:[3.000000], C_Res: 4.000000 status:[EXEC] head task status:[EXEC]
+
+INFO:t: 2420 PREEMPTION task:[0], plan:[3], original_plan:[3] status:[EXEC] compTimeRes:[3.000000] tskDDL:[2425.000000] SERVER: -1
+INFO: PREEMPTS tskId:[2], plan:[2], original_plan:[2] status:[READY] compTimeRes(original):[4.000000] tskDDL:[35.000000] SERVER: 1
+INFO:t: 2420, SERVER:[1] PREEMPTED tskId:[2], plan:[2], original_plan:[2], updated status:[READY], releaseTime:[2394.000000], compTimeRes(updated):[2.000000], ddl: 35.000000, budget: 1.000000, lastAct: 2418.000000
+
+INFO:t: 2423, SERVER:[1] ACTIVATED tskId:[2], plan:[2], original_plan:[2] tskRt: 2394.000000 currDdl: 2429.000000 budget server:[1.000000], C_Res: 2.000000 status:[EXEC] head task status:[EXEC]
+
+t: 2423, COMPLETED tskId:[0], plan:[3], original_id:[3], N_exec left:[9 of 20], tskRt: 2420.000000, status:[COMPLETED]
+INFO: > Lateness:[-2.000000] = 2423 - 2425.000000 -> was_server: FALSE
+INFO: > RESP_TIME:[3.000000] = 2423 - 2420.000000
+INFO:----DEBUG: inhere----
+INFO:-----------------------------
+INFO:Release queue[tot = 1]:
+INFO:- Task:[0], plan:[3], original_plan:[3], deadline:[5.000000], arrivalTime:[2425.000000], releaseTime:[2420.000000], N_exec left:[9 of 20], tskCres:[3.000000], tskStatus:[ACTIVE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------
+INFO:Ready queue[tot = 2]:
+INFO:- SERVER[1]: curr_budget:[1.000000], curr_ddl:[2429.000000], queue.size:[2], deadline:[2429.000000], startTime:[2394.000000], arrivalTime:[2394.000000], tskCres:[0.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true], task:[2], plan:[2], original_plan:[2]
+INFO: -- task:[2], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2394.000000], releaseTime:[2394.000000], N_exec left:[0 of 1], tskCres:[2.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO: -- task:[3], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2394.000000], releaseTime:[2394.000000], N_exec left:[0 of 1], tskCres:[6.000000], tskStatus:[READY], tskExecType:[PARALLEL], isBeenAct:[true]
+INFO:- Task:[1], plan:[7], original_plan:[7], deadline:[2430.000000], arrivalTime:[2415.000000], releaseTime:[2415.000000], N_exec left:[0 of 2], tskCres:[4.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------
+
+INFO:t: 2423, SERVER:[1] ACTIVATED tskId:[2], plan:[2], original_plan:[2] tskRt: 2394.000000 currDdl: 2429.000000 budget server:[1.000000], C_Res: 2.000000 status:[EXEC] head task status:[EXEC]
+
+t: 2424, SERVER:[1] EXPIRED tskId:[2] plan:[2] original_plan:[2] tskDm: ag[0] tskEx: ag[0] tskRt: 2394.000000
+ -- RESET SERVER:[1], from:[2429.000000] TO CURR_DDL:[2464.000000] --
+INFO:Release queue[tot = 1]:
+INFO:- Task:[0], plan:[3], original_plan:[3], deadline:[5.000000], arrivalTime:[2425.000000], releaseTime:[2420.000000], N_exec left:[9 of 20], tskCres:[3.000000], tskStatus:[ACTIVE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------
+INFO:Ready queue[tot = 2]:
+INFO:- Task:[1], plan:[7], original_plan:[7], deadline:[2430.000000], arrivalTime:[2415.000000], releaseTime:[2415.000000], N_exec left:[0 of 2], tskCres:[4.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- SERVER[1]: curr_budget:[5.000000], curr_ddl:[2464.000000], queue.size:[2], deadline:[2464.000000], startTime:[2394.000000], arrivalTime:[2424.000000], tskCres:[0.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true], task:[2], plan:[2], original_plan:[2]
+INFO: -- task:[2], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2394.000000], releaseTime:[2394.000000], N_exec left:[0 of 1], tskCres:[1.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO: -- task:[3], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2394.000000], releaseTime:[2394.000000], N_exec left:[0 of 1], tskCres:[6.000000], tskStatus:[READY], tskExecType:[PARALLEL], isBeenAct:[true]
+INFO:-----------------------------
+
+***************************************************************************************************************
+INFO:t: 2425
+(see [*]) a questo punto 0,3,3 viene messo in coda dopo 1,7,7 perché hanno la stessa ddl assoluta
+Il problema è che 0,3,3 ha U > 1,7,7 e ha solo t: 2 <- (ddl: 5 - compTime: 3) per essere eseguita correttamente!
+Quando a t: 2430 viene eseguito il reasoning cycle, P7 viene riinizializzato
+Quindi l'esecuzione di 1,7,7 è stata "inutile"
+Il problema è 1,7,7 esegue da 2425 fino a 2428 (quando completa)
+Questo occupa 2428 - 2425 = 3 istanze di tempo
+Essendo 0,3,3 attivo da 2425, significa che ha ancora: 
+5 - (2428 - 2425) = 5 - 3 = 2 istanze di tempo a disposizione per eseguire compTimeRes = 3
+Questo porta quindi ad un MISS
+***************************************************************************************************************
+
+
+INFO:t: 2425, ARRIVED tskId:[0], plan:[3], original plan:[3], NExec left: 9, tskRt: 2425.000000
+INFO:Release queue[tot = 1]:
+INFO:- Task:[0], plan:[3], original_plan:[3], deadline:[5.000000], arrivalTime:[2430.000000], releaseTime:[2425.000000], N_exec left:[8 of 20], tskCres:[3.000000], tskStatus:[IDLE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------
+INFO:Ready queue[tot = 3]:
+INFO:- Task:[1], plan:[7], original_plan:[7], deadline:[2430.000000], arrivalTime:[2415.000000], releaseTime:[2415.000000], N_exec left:[0 of 2], tskCres:[4.000000], tskStatus:[EXEC], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- Task:[0], plan:[3], original_plan:[3], deadline:[2430.000000], arrivalTime:[2425.000000], releaseTime:[2425.000000], N_exec left:[8 of 20], tskCres:[3.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- SERVER[1]: curr_budget:[5.000000], curr_ddl:[2464.000000], queue.size:[2], deadline:[2464.000000], startTime:[2394.000000], arrivalTime:[2424.000000], tskCres:[0.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true], task:[2], plan:[2], original_plan:[2]
+INFO: -- task:[2], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2394.000000], releaseTime:[2394.000000], N_exec left:[0 of 1], tskCres:[1.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO: -- task:[3], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2394.000000], releaseTime:[2394.000000], N_exec left:[0 of 1], tskCres:[6.000000], tskStatus:[READY], tskExecType:[PARALLEL], isBeenAct:[true]
+INFO:-----------------------------
+
+t: 2428, COMPLETED tskId:[1], plan:[7], original_id:[7], N_exec left:[0 of 2], tskRt: 2415.000000, status:[COMPLETED]
+INFO: > Lateness:[-2.000000] = 2428 - 2430.000000 -> was_server: FALSE
+
+t=2428
+----phiI----
+INFO:t: 2428, Intention:[59], plan:[7], original_plan:[7] waiting for completion:[2430.000000]
+INFO:PhiI Result ------------------------------------
+INFO:
+INFO:List of Intentions[tot = 3]:
+INFO: Intention index:[60], from goal:[2], goal:(skill_isOvenOn), plan:[2], original_plan:[2], num. of actions: 2, startTime: 2394.000000, firstActivation: 2359.000000, lastExecution: 2394.000000, batch_startTime: 2394.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[2], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 6.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2394.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO: - Task:[3], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 6.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2394.000000, Execution_type:[PARALLEL] isBeenActivated:[true]
+INFO: Intention index:[61], from goal:[4], goal:(skill_isLightOn), plan:[3], original_plan:[3], num. of actions: 1, startTime: 2370.000000, firstActivation: 2370.000000, lastExecution: 2370.000000, batch_startTime: 2370.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[0], plan:[3], original_plan:[3], N_exec left: 9 of 20, compTime: 3.000000, DDL: 5.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2370.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO: Intention index:[59], from goal:[0], goal:(skill_isMusicOn), plan:[7], original_plan:[7], num. of actions: 0, startTime: 2428.000000, firstActivation: 2270.000000, lastExecution: 2428.000000, batch_startTime: 2400.000000, completion time: 2430.000000, waiting for completion: true <--
+INFO:-----------------------------
+INFO:-----------------------------
+INFO:Release queue[tot = 1]:
+****:- Task:[0], plan:[3], original_plan:[3], deadline:[5.000000], arrivalTime:[2430.000000], releaseTime:[2425.000000], N_exec left:[8 of 20], tskCres:[3.000000], tskStatus:[ACTIVE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------
+INFO:Ready queue[tot = 2]:
+****:- Task:[0], plan:[3], original_plan:[3], deadline:[2430.000000], arrivalTime:[2425.000000], releaseTime:[2425.000000], N_exec left:[8 of 20], tskCres:[3.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- SERVER[1]: curr_budget:[5.000000], curr_ddl:[2464.000000], queue.size:[2], deadline:[2464.000000], startTime:[2394.000000], arrivalTime:[2424.000000], tskCres:[0.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true], task:[2], plan:[2], original_plan:[2]
+INFO: -- task:[2], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2394.000000], releaseTime:[2394.000000], N_exec left:[0 of 1], tskCres:[1.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO: -- task:[3], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2394.000000], releaseTime:[2394.000000], N_exec left:[0 of 1], tskCres:[6.000000], tskStatus:[READY], tskExecType:[PARALLEL], isBeenAct:[true]
+INFO:PhiI Ended -------------------------------------
+
+t=2428
+INFO:----activate_task----
+INFO:t: 2428, ACTIVATED tskId:[0], plan:[3], original_plan:[3] tskRt:[2425.000000], C_Res: 3.000000 status:[EXEC]
+
+----------------------------------------------------------------------
+tskId:[0], plan:[3], original_plan:[3] run until 2430
+N_exec left:[8 of 20], tskCres:[3.000000], deadline:[5.00000]
+----------------------------------------------------------------------
+
+t=2430
+**** t: 2430, Intention:[0], from goal id:[7], name:[skill_isMusicOn], plan_id:[7], original_plan_id:[7] has no more actions. ****
+INFO:List of Intentions[tot = 2]:
+INFO: Intention index:[60], from goal:[2], goal:(skill_isOvenOn), plan:[2], original_plan:[2], num. of actions: 2, startTime: 2394.000000, firstActivation: 2359.000000, lastExecution: 2394.000000, batch_startTime: 2394.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[2], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 6.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2394.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO: - Task:[3], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 6.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2394.000000, Execution_type:[PARALLEL] isBeenActivated:[true]
+INFO: Intention index:[61], from goal:[4], goal:(skill_isLightOn), plan:[3], original_plan:[3], num. of actions: 1, startTime: 2370.000000, firstActivation: 2370.000000, lastExecution: 2370.000000, batch_startTime: 2370.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[0], plan:[3], original_plan:[3], N_exec left: 9 of 20, compTime: 3.000000, DDL: 5.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2370.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO:-----------------------------
+INFO:-----------------------------
+INFO:Release queue[tot = 1]:
+INFO:- Task:[0], plan:[3], original_plan:[3], deadline:[5.000000], arrivalTime:[2430.000000], releaseTime:[2425.000000], N_exec left:[8 of 20], tskCres:[3.000000], tskStatus:[ACTIVE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------
+INFO:Ready queue[tot = 2]:
+INFO:- Task:[0], plan:[3], original_plan:[3], deadline:[2430.000000], arrivalTime:[2425.000000], releaseTime:[2425.000000], N_exec left:[8 of 20], tskCres:[3.000000], tskStatus:[EXEC], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- SERVER[1]: curr_budget:[5.000000], curr_ddl:[2464.000000], queue.size:[2], deadline:[2464.000000], startTime:[2394.000000], arrivalTime:[2424.000000], tskCres:[0.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true], task:[2], plan:[2], original_plan:[2]
+INFO: -- task:[2], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2394.000000], releaseTime:[2394.000000], N_exec left:[0 of 1], tskCres:[1.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO: -- task:[3], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2394.000000], releaseTime:[2394.000000], N_exec left:[0 of 1], tskCres:[6.000000], tskStatus:[READY], tskExecType:[PARALLEL], isBeenAct:[true]
+INFO:-----------------------------
+
+t=2430
+INFO:-----ag_reasoning_cycle-----
+INFO:List of Intentions[tot = 2]:
+INFO: Intention index:[60], from goal:[2], goal:(skill_isOvenOn), plan:[2], original_plan:[2], num. of actions: 2, startTime: 2394.000000, firstActivation: 2359.000000, lastExecution: 2394.000000, batch_startTime: 2394.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[2], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 6.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2394.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO: - Task:[3], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 6.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2394.000000, Execution_type:[PARALLEL] isBeenActivated:[true]
+INFO: Intention index:[61], from goal:[4], goal:(skill_isLightOn), plan:[3], original_plan:[3], num. of actions: 1, startTime: 2370.000000, firstActivation: 2370.000000, lastExecution: 2370.000000, batch_startTime: 2370.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[0], plan:[3], original_plan:[3], N_exec left: 9 of 20, compTime: 3.000000, DDL: 5.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2370.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO:-----------------------------
+
+IsSchedulable: 
+            2394 ------------------------- 2464 (2,2,2 and 3,2,2) - skill_isOvenOn
+2370 ------      -------------------------      -------- 2470 (0,3,3) - skill_isLightOn
+
+skill_isOvenOn: INTERVAL: U: 0.142857 (only tasks), t_start: 2394.000000, t_end: 2464.000000
+INFO: - Interval:(2370.000000, 2394.000000, U: 0.600000)
+INFO: - Interval:(2394.000000, 2464.000000, U: 0.742857)
+INFO: - Interval:(2464.000000, 2470.000000, U: 0.600000)
+TRUE
+
+skill_isLightOn: INTERVAL: U: 0.600000 (only tasks), t_start: 2370.000000, t_end: 2470.000000s
+INFO: - Interval:(2370.000000, 2394.000000, U: 0.600000)
+INFO: - Interval:(2394.000000, 2464.000000, U: 0.742857)
+INFO: - Interval:(2464.000000, 2470.000000, U: 0.600000)
+TRUE
+
+skill_isMusicOn: 
+Body:
+ - Task:[0], plan:[7], original_plan:[7], N_exec left: 5 of 5, compTime: 3.000000, DDL: 30.000000, arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+ - Task:[1], plan:[7], original_plan:[7], N_exec left: 2 of 2, compTime: 4.000000, DDL: 15.000000, arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+BATCH 1: INTERVAL: U: 0.100000 (only tasks), t_start: 2430.000000, t_end: 2580.000000
+INFO: - Interval:(2430.000000, 2464.000000, U: 0.842857) = 0.742857 + 0.1
+INFO: - Interval:(2464.000000, 2470.000000, U: 0.700000) = 0.6 + 0.1
+INFO: - Interval:(2470.000000, 2580.000000, U: 0.100000) = 0.1
+TRUE
+BATCH 2: INTERVAL: U: 0.266667 (only tasks), t_start: 2580.000000, t_end: 2610.000000
+ - Interval:(2580.000000, 2610.000000, U: 0.266667) = 0.2666
+TRUE
+
+INFO:List of Intentions[tot = 3]:
+INFO: Intention index:[60], from goal:[2], goal:(skill_isOvenOn), plan:[2], original_plan:[2], num. of actions: 2, startTime: 2394.000000, firstActivation: 2359.000000, lastExecution: 2394.000000, batch_startTime: 2394.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[2], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 6.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2394.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO: - Task:[3], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 6.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2394.000000, Execution_type:[PARALLEL] isBeenActivated:[true]
+INFO: Intention index:[61], from goal:[4], goal:(skill_isLightOn), plan:[3], original_plan:[3], num. of actions: 1, startTime: 2370.000000, firstActivation: 2370.000000, lastExecution: 2370.000000, batch_startTime: 2370.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[0], plan:[3], original_plan:[3], N_exec left: 9 of 20, compTime: 3.000000, DDL: 5.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2370.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+NEW : Intention index:[62], from goal:[0], goal:(skill_isMusicOn), plan:[7], original_plan:[7], num. of actions: 2, startTime: 2430.000000, firstActivation: -1.000000, lastExecution: 2430.000000, batch_startTime: 2430.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[0], plan:[7], original_plan:[7], N_exec left: 5 of 5, compTime: 3.000000, DDL: 30.000000, arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Task:[1], plan:[7], original_plan:[7], N_exec left: 2 of 2, compTime: 4.000000, DDL: 15.000000, arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO:-----------------------------
+INFO:---------------------------
+INFO:Release queue[tot = 1]:
+INFO:- Task:[0], plan:[3], original_plan:[3], deadline:[5.000000], arrivalTime:[2430.000000], releaseTime:[2425.000000], N_exec left:[8 of 20], tskCres:[3.000000], tskStatus:[ACTIVE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:---------------------------
+INFO:Ready queue[tot = 2]:
+INFO:- Task:[0], plan:[3], original_plan:[3], deadline:[2430.000000], arrivalTime:[2425.000000], releaseTime:[2425.000000], N_exec left:[8 of 20], tskCres:[3.000000], tskStatus:[EXEC], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- SERVER[1]: curr_budget:[5.000000], curr_ddl:[2464.000000], queue.size:[2], deadline:[2464.000000], startTime:[2394.000000], arrivalTime:[2424.000000], tskCres:[0.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true], task:[2], plan:[2], original_plan:[2]
+INFO: -- task:[2], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2394.000000], releaseTime:[2394.000000], N_exec left:[0 of 1], tskCres:[1.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO: -- task:[3], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2394.000000], releaseTime:[2394.000000], N_exec left:[0 of 1], tskCres:[6.000000], tskStatus:[READY], tskExecType:[PARALLEL], isBeenAct:[true]
+INFO:--------------------------
+END OF ag_reasoning_cycle......
+
+t=2430
+INFO:----phiI----
+INFO:PhiI Result ------------------------------------
+INFO:
+INFO:List of Intentions[tot = 3]:
+INFO: Intention index:[60], from goal:[2], goal:(skill_isOvenOn), plan:[2], original_plan:[2], num. of actions: 2, startTime: 2394.000000, firstActivation: 2359.000000, lastExecution: 2394.000000, batch_startTime: 2394.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[2], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 6.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2394.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO: - Task:[3], plan:[2], original_plan:[2], N_exec left: 1 of 1, compTime: 6.000000, DDL: 35.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2394.000000, Execution_type:[PARALLEL] isBeenActivated:[true]
+INFO: Intention index:[61], from goal:[4], goal:(skill_isLightOn), plan:[3], original_plan:[3], num. of actions: 1, startTime: 2370.000000, firstActivation: 2370.000000, lastExecution: 2370.000000, batch_startTime: 2370.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[0], plan:[3], original_plan:[3], N_exec left: 9 of 20, compTime: 3.000000, DDL: 5.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2370.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO: Intention index:[62], from goal:[0], goal:(skill_isMusicOn), plan:[7], original_plan:[7], num. of actions: 2, startTime: 2430.000000, firstActivation: 2430.000000, lastExecution: 2430.000000, batch_startTime: 2430.000000, completion time: -1.000000, waiting for completion: false
+INFO: - Task:[0], plan:[7], original_plan:[7], N_exec left: 5 of 5, compTime: 3.000000, DDL: 30.000000, arrivalTimeInitial: 0.000000, arrivalTime: 2430.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO: - Task:[1], plan:[7], original_plan:[7], N_exec left: 2 of 2, compTime: 4.000000, DDL: 15.000000, arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO:-----------------------------
+INFO:-----------------------------
+INFO:Release queue[tot = 2]:
+INFO:- Task:[0], plan:[3], original_plan:[3], deadline:[5.000000], arrivalTime:[2435.000000], releaseTime:[2430.000000], N_exec left:[7 of 20], tskCres:[3.000000], tskStatus:[IDLE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- Task:[0], plan:[7], original_plan:[7], deadline:[30.000000], arrivalTime:[2430.000000], releaseTime:[-1.000000], N_exec left:[5 of 5], tskCres:[3.000000], tskStatus:[ACTIVE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------
+INFO:Ready queue[tot = 3]:
+****:- Task:[0], plan:[3], original_plan:[3], deadline:[2430.000000], arrivalTime:[2425.000000], releaseTime:[2425.000000], N_exec left:[8 of 20], tskCres:[3.000000], tskStatus:[EXEC], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+****:- Task:[0], plan:[3], original_plan:[3], deadline:[2435.000000], arrivalTime:[2430.000000], releaseTime:[2430.000000], N_exec left:[7 of 20], tskCres:[3.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- SERVER[1]: curr_budget:[5.000000], curr_ddl:[2464.000000], queue.size:[2], deadline:[2464.000000], startTime:[2394.000000], arrivalTime:[2424.000000], tskCres:[0.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true], task:[2], plan:[2], original_plan:[2]
+INFO: -- task:[2], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2394.000000], releaseTime:[2394.000000], N_exec left:[0 of 1], tskCres:[1.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO: -- task:[3], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2394.000000], releaseTime:[2394.000000], N_exec left:[0 of 1], tskCres:[6.000000], tskStatus:[READY], tskExecType:[PARALLEL], isBeenAct:[true]
+INFO:PhiI Ended -------------------------------------
+
+t=2430
+----schedule_taskset_rt----INFO:Release queue[tot = 2]:
+****:- Task:[0], plan:[3], original_plan:[3], deadline:[5.000000], arrivalTime:[2435.000000], releaseTime:[2430.000000], N_exec left:[7 of 20], tskCres:[3.000000], tskStatus:[ACTIVE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- Task:[0], plan:[7], original_plan:[7], deadline:[30.000000], arrivalTime:[2460.000000], releaseTime:[2430.000000], N_exec left:[4 of 5], tskCres:[3.000000], tskStatus:[IDLE], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------
+INFO:Ready queue[tot = 4]:
+****:- Task:[0], plan:[3], original_plan:[3], deadline:[2430.000000], arrivalTime:[2425.000000], releaseTime:[2425.000000], N_exec left:[8 of 20], tskCres:[3.000000], tskStatus:[EXEC], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+****:- Task:[0], plan:[3], original_plan:[3], deadline:[2435.000000], arrivalTime:[2430.000000], releaseTime:[2430.000000], N_exec left:[7 of 20], tskCres:[3.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- Task:[0], plan:[7], original_plan:[7], deadline:[2460.000000], arrivalTime:[2430.000000], releaseTime:[2430.000000], N_exec left:[4 of 5], tskCres:[3.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- SERVER[1]: curr_budget:[5.000000], curr_ddl:[2464.000000], queue.size:[2], deadline:[2464.000000], startTime:[2394.000000], arrivalTime:[2424.000000], tskCres:[0.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true], task:[2], plan:[2], original_plan:[2]
+INFO: -- task:[2], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2394.000000], releaseTime:[2394.000000], N_exec left:[0 of 1], tskCres:[1.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO: -- task:[3], plan:[2], original_plan:[2], deadline:[35.000000], arrivalTime:[2394.000000], releaseTime:[2394.000000], N_exec left:[0 of 1], tskCres:[6.000000], tskStatus:[READY], tskExecType:[PARALLEL], isBeenAct:[true]
+INFO:-----------------------------
+
+t: 2431, COMPLETED tskId:[0], plan:[3], original_id:[3], N_exec left:[8 of 20], tskRt: 2425.000000, status:[COMPLETED]
+INFO: > Lateness:[1.000000] = 2431 - 2430.000000 -> was_server: FALSE
+INFO:EDF > Lateness:[1.000000] -> Task:[0], plan_id[3], original_plan_id[3] now: 2431, tskArrivalTime:[2425.000000], tskReleaseTime:[2425.000000], tskCompTime:[3.000000] and tskDDL:[2430.000000]

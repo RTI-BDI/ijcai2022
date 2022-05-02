@@ -1,0 +1,72 @@
+{
+    "0": [
+        {
+            "name": "on_the_ground",
+            "value": true
+        },
+        {
+            "name": "fuel_level",
+            "value": 15
+        },
+        {
+            "name": "on_right_trajectory",
+            "value": false
+        },
+        {
+            "name": "boarding_passengers",
+            "value": false
+        },
+        {
+            "name": "boarding_luggage",
+            "value": false
+        },
+        {
+            "name": "at_gate",
+            "value": true
+        },
+        {
+            "name": "at_fuel_station",
+            "value": false
+        },
+        {
+            "name": "at_loading_area",
+            "value": false
+        },
+        {
+            "name": "in_Rome",
+            "value": false
+        },
+        {
+            "name": "in_Paris",
+            "value": false
+        },
+        {
+            "name": "in_NY",
+            "value": true
+        },
+        {
+            "name": "all_checks_completed",
+            "value": false
+        },
+        {
+            "name": "ready_to_takeoff",
+            "value": false
+        },
+        {
+            "name": "destination_set",
+            "value": false
+        },
+        {
+            "name": "landing_gear_open",
+            "value": false
+        },
+        {
+            "name": "engine_malfunction",
+            "value": false
+        },
+        {
+            "name": "autopilot_active",
+            "value": false
+        }
+    ]
+}

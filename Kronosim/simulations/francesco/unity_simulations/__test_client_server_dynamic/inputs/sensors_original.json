@@ -1,0 +1,40 @@
+{
+    "0": [
+        {
+            "belief_name": "one",
+            "mode": "SET",
+            "time": 0.0,
+            "value": true
+        },
+        {
+            "belief_name": "two X",
+            "mode": "SET",
+            "time": 5.0,
+            "value": true
+        },
+        {
+            "belief_name": "three X",
+            "mode": "SET",
+            "time": 5.0,
+            "value": true
+        },
+        {
+            "belief_name": "one X",
+            "mode": "SET",
+            "time": 6.0,
+            "value": false
+        },
+        {
+            "belief_name": "two X",
+            "mode": "SET",
+            "time": 10.0,
+            "value": false
+        },
+        {
+            "belief_name": "three X",
+            "mode": "SET",
+            "time": 10.0,
+            "value": false
+        }
+    ]
+}

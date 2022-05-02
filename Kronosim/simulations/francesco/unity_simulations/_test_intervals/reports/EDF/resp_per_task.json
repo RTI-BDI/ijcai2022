@@ -1,0 +1,62 @@
+[
+    {
+        "1": {
+            "0": [
+                {
+                    "arrivalTime": 0.0,
+                    "deadline": 5.0,
+                    "finishTime": 1.0,
+                    "firstActivation": 0.0,
+                    "n_exec": 2,
+                    "n_execInitial": 3,
+                    "responseTime": 1.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 5.0,
+                    "deadline": 10.0,
+                    "finishTime": 6.0,
+                    "firstActivation": 5.0,
+                    "n_exec": 1,
+                    "n_execInitial": 3,
+                    "responseTime": 1.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 10.0,
+                    "deadline": 15.0,
+                    "finishTime": 11.0,
+                    "firstActivation": 10.0,
+                    "n_exec": 0,
+                    "n_execInitial": 3,
+                    "responseTime": 1.0,
+                    "server": -1
+                }
+            ]
+        },
+        "2": {
+            "0": [
+                {
+                    "arrivalTime": 3.001,
+                    "deadline": 13.001,
+                    "finishTime": 4.001,
+                    "firstActivation": 3.001,
+                    "n_exec": 1,
+                    "n_execInitial": 2,
+                    "responseTime": 1.0000000000000004,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 13.001,
+                    "deadline": 23.000999999999998,
+                    "finishTime": 14.001,
+                    "firstActivation": 13.001,
+                    "n_exec": 0,
+                    "n_execInitial": 2,
+                    "responseTime": 1.0,
+                    "server": -1
+                }
+            ]
+        }
+    }
+]

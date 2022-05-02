@@ -1,0 +1,34 @@
+{
+    "0": [
+        {
+            "budget": 10.0,
+            "id": 0,
+            "period": 100.0
+        },
+        {
+            "budget": 5.0,
+            "id": 1,
+            "period": 50.0
+        },
+        {
+            "budget": 2.0,
+            "id": 2,
+            "period": 10.0
+        },
+        {
+            "budget": 5.0,
+            "id": 3,
+            "period": 75.0
+        },
+        {
+            "budget": 2.0,
+            "id": 4,
+            "period": 50.0
+        },
+        {
+            "budget": 1.0,
+            "id": 5,
+            "period": 15.0
+        }
+    ]
+}

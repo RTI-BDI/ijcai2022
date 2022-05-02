@@ -1,0 +1,10 @@
+{
+    "0": [
+        {
+            "belief_name": "isLightOn",
+            "mode": "SET",
+            "time": 11.0,
+            "value": true
+        }
+    ]
+}

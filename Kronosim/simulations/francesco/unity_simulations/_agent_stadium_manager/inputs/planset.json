@@ -1,0 +1,4197 @@
+{
+    "0": [
+        {
+            "body": [
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 100.0,
+                        "goal_name": "skill_lights_checked",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 150.0,
+                        "goal_name": "skill_surveilance_cameras_checked",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 100.0,
+                        "goal_name": "skill_emergency_lights_checked",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 100.0,
+                        "goal_name": "skill_emergency_sound_checked",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 100.0,
+                        "goal_name": "skill_metal_detector_checked",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 100.0,
+                        "goal_name": "skill_face_recognitions_checked",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 100.0,
+                        "goal_name": "skill_entertaining_systems_checked",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_game_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_gate_open"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_light_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "opening_activities",
+                    true
+                ]
+            ],
+            "goal_name": "skill_opening_activities",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_game_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_gate_open"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_light_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_game_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_gate_open"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_light_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.99
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 75.0,
+                        "goal_name": "skill_main_light_on",
+                        "priority": [
+                            0.2
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 75.0,
+                        "goal_name": "skill_surveilance_cameras_on",
+                        "priority": [
+                            0.2
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": -1.0,
+                        "goal_name": "skill_gate_metal_detectors_on",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": -1.0,
+                        "goal_name": "skill_gate_face_recognitions_on",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 100.0,
+                        "goal_name": "skill_main_gate_open",
+                        "priority": [
+                            0.2
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "pre_game_activities"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "opening_activities"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "pre_game_activities",
+                    true
+                ]
+            ],
+            "goal_name": "skill_pre_game_activities",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "pre_game_activities"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "opening_activities"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "pre_game_activities"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "opening_activities"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": -1,
+                        "period": 5.0,
+                        "relativeDeadline": 5.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "analize_surveilance_camera"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "pre_game_activities"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_stadium_open"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_game_aborted"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "analize_surveilance_camera",
+                    true
+                ]
+            ],
+            "goal_name": "skill_analize_surveilance_camera",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "analize_surveilance_camera"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "pre_game_activities"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_stadium_open"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_game_aborted"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "analize_surveilance_camera"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "pre_game_activities"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_stadium_open"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_game_aborted"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.85
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 100.0,
+                        "goal_name": "skill_video_system_on",
+                        "priority": [
+                            0.7
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 100.0,
+                        "goal_name": "skill_audio_system_on",
+                        "priority": [
+                            0.7
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "start_game_activities"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "pre_game_activities"
+                        ],
+                        true
+                    ],
+                    [
+                        "OR",
+                        [
+                            "==",
+                            [
+                                "READ_BELIEF",
+                                "video_system_on"
+                            ],
+                            false
+                        ],
+                        [
+                            "==",
+                            [
+                                "READ_BELIEF",
+                                "audio_system_on"
+                            ],
+                            false
+                        ]
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "start_game_activities",
+                    true
+                ],
+                [
+                    "ASSIGN",
+                    "is_game_on",
+                    true
+                ]
+            ],
+            "goal_name": "skill_start_game_activities",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "start_game_activities"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "pre_game_activities"
+                        ],
+                        true
+                    ],
+                    [
+                        "OR",
+                        [
+                            "==",
+                            [
+                                "READ_BELIEF",
+                                "video_system_on"
+                            ],
+                            false
+                        ],
+                        [
+                            "==",
+                            [
+                                "READ_BELIEF",
+                                "audio_system_on"
+                            ],
+                            false
+                        ]
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "start_game_activities"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "pre_game_activities"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 100.0,
+                        "goal_name": "skill_video_system_off",
+                        "priority": [
+                            0.7
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 100.0,
+                        "goal_name": "skill_audio_system_off",
+                        "priority": [
+                            0.7
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "OR",
+                        [
+                            "==",
+                            [
+                                "READ_BELIEF",
+                                "video_system_on"
+                            ],
+                            true
+                        ],
+                        [
+                            "==",
+                            [
+                                "READ_BELIEF",
+                                "audio_system_on"
+                            ],
+                            true
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "end_game_activities"
+                        ],
+                        false
+                    ],
+                    [
+                        "OR",
+                        [
+                            "==",
+                            [
+                                "READ_BELIEF",
+                                "is_game_on"
+                            ],
+                            true
+                        ],
+                        [
+                            "==",
+                            [
+                                "READ_BELIEF",
+                                "is_game_completed"
+                            ],
+                            true
+                        ],
+                        [
+                            "==",
+                            [
+                                "READ_BELIEF",
+                                "is_game_aborted"
+                            ],
+                            false
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "end_game_activities",
+                    true
+                ],
+                [
+                    "ASSIGN",
+                    "is_game_on",
+                    false
+                ]
+            ],
+            "goal_name": "skill_end_game_activities",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "OR",
+                        [
+                            "==",
+                            [
+                                "READ_BELIEF",
+                                "video_system_on"
+                            ],
+                            true
+                        ],
+                        [
+                            "==",
+                            [
+                                "READ_BELIEF",
+                                "audio_system_on"
+                            ],
+                            true
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "end_game_activities"
+                        ],
+                        false
+                    ],
+                    [
+                        "OR",
+                        [
+                            "==",
+                            [
+                                "READ_BELIEF",
+                                "is_game_on"
+                            ],
+                            true
+                        ],
+                        [
+                            "==",
+                            [
+                                "READ_BELIEF",
+                                "is_game_completed"
+                            ],
+                            true
+                        ],
+                        [
+                            "==",
+                            [
+                                "READ_BELIEF",
+                                "is_game_aborted"
+                            ],
+                            false
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "end_game_activities"
+                        ],
+                        false
+                    ],
+                    [
+                        "OR",
+                        [
+                            "==",
+                            [
+                                "READ_BELIEF",
+                                "is_game_on"
+                            ],
+                            true
+                        ],
+                        [
+                            "==",
+                            [
+                                "READ_BELIEF",
+                                "is_game_completed"
+                            ],
+                            true
+                        ],
+                        [
+                            "==",
+                            [
+                                "READ_BELIEF",
+                                "is_game_aborted"
+                            ],
+                            false
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 75.0,
+                        "goal_name": "skill_main_light_off",
+                        "priority": [
+                            0.2
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 75.0,
+                        "goal_name": "skill_surveilance_cameras_off",
+                        "priority": [
+                            0.2
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 100.0,
+                        "goal_name": "skill_gate_metal_detectors_off",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 100.0,
+                        "goal_name": "skill_gate_face_recognitions_off",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 100.0,
+                        "goal_name": "skill_main_gate_close",
+                        "priority": [
+                            0.2
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "closing_activities"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "end_game_activities"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_game_aborted"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "closing_activities",
+                    true
+                ],
+                [
+                    "ASSIGN",
+                    "is_stadium_open",
+                    false
+                ]
+            ],
+            "goal_name": "skill_closing_activities",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "closing_activities"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "end_game_activities"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_game_aborted"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "closing_activities"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "end_game_activities"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_game_aborted"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 50.0,
+                        "goal_name": "skill_activate_sprinkles",
+                        "priority": [
+                            1
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 50.0,
+                        "goal_name": "skill_call_fire_figthers",
+                        "priority": [
+                            0.9
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 50.0,
+                        "goal_name": "skill_emergency_lights_on",
+                        "priority": [
+                            0.8
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "fire_hazard_on"
+                    ],
+                    true
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "fire_hazard_on",
+                    false
+                ],
+                [
+                    "ASSIGN",
+                    "is_game_aborted",
+                    true
+                ]
+            ],
+            "goal_name": "skill_fire_hazard_off",
+            "post_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "fire_hazard_on"
+                    ],
+                    true
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_stadium_open"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 50.0,
+                        "goal_name": "skill_emergency_sound_on",
+                        "priority": [
+                            1
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 50.0,
+                        "goal_name": "skill_activate_sprinkles",
+                        "priority": [
+                            1
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 50.0,
+                        "goal_name": "skill_emergency_exists_open",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 50.0,
+                        "goal_name": "skill_call_fire_figthers",
+                        "priority": [
+                            0.8
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 50.0,
+                        "goal_name": "skill_emergency_lights_on",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "fire_hazard_on",
+                    false
+                ],
+                [
+                    "ASSIGN",
+                    "is_game_aborted",
+                    true
+                ]
+            ],
+            "goal_name": "skill_fire_hazard_off",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_stadium_open"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 5.0,
+                        "n_exec": 5,
+                        "period": 25.0,
+                        "relativeDeadline": 25.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 3.0,
+                        "n_exec": 5,
+                        "period": 30.0,
+                        "relativeDeadline": 30.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "lights_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "lights_checked",
+                    true
+                ]
+            ],
+            "goal_name": "skill_lights_checked",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "lights_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "lights_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 5.0,
+                        "n_exec": 5,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 5.0,
+                        "n_exec": 5,
+                        "period": 30.0,
+                        "relativeDeadline": 30.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "surveilance_cameras_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "surveilance_cameras_checked",
+                    true
+                ]
+            ],
+            "goal_name": "skill_surveilance_cameras_checked",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "surveilance_cameras_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "surveilance_cameras_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 2.0,
+                        "n_exec": 2,
+                        "period": 25.0,
+                        "relativeDeadline": 25.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "emergency_lights_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "emergency_lights_checked",
+                    true
+                ]
+            ],
+            "goal_name": "skill_emergency_lights_checked",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "emergency_lights_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "emergency_lights_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 2,
+                        "period": 15.0,
+                        "relativeDeadline": 15.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "emergency_sound_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "emergency_sound_checked",
+                    true
+                ]
+            ],
+            "goal_name": "skill_emergency_sound_checked",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "emergency_sound_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "emergency_sound_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 5.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 12
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "metal_detector_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "metal_detector_checked",
+                    true
+                ]
+            ],
+            "goal_name": "skill_metal_detector_checked",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "metal_detector_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "metal_detector_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 5.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 13
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "face_recognitions_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "face_recognitions_checked",
+                    true
+                ]
+            ],
+            "goal_name": "skill_face_recognitions_checked",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "face_recognitions_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "face_recognitions_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 5.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 14
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "entertaining_systems_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "entertaining_systems_checked",
+                    true
+                ]
+            ],
+            "goal_name": "skill_entertaining_systems_checked",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "entertaining_systems_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "entertaining_systems_checked"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 5,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_light_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "main_light_on",
+                    true
+                ]
+            ],
+            "goal_name": "skill_main_light_on",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_light_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_light_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 3.0,
+                        "n_exec": 3,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "surveilance_cameras_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "surveilance_cameras_on",
+                    true
+                ]
+            ],
+            "goal_name": "skill_surveilance_cameras_on",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "surveilance_cameras_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "surveilance_cameras_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 2.0,
+                        "n_exec": -1,
+                        "period": 15.0,
+                        "relativeDeadline": 15.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "gate_metal_detectors_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "gate_metal_detectors_on",
+                    true
+                ]
+            ],
+            "goal_name": "skill_gate_metal_detectors_on",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "gate_metal_detectors_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "gate_metal_detectors_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 5.0,
+                        "n_exec": -1,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "gate_face_recognitions_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "gate_face_recognitions_on",
+                    true
+                ]
+            ],
+            "goal_name": "skill_gate_face_recognitions_on",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "gate_face_recognitions_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "gate_face_recognitions_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 19
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_gate_open"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "main_gate_open",
+                    true
+                ]
+            ],
+            "goal_name": "skill_main_gate_open",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_gate_open"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_gate_open"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 10.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 20
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "video_system_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "video_system_on",
+                    true
+                ]
+            ],
+            "goal_name": "skill_video_system_on",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "video_system_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "video_system_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 12.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 21
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "audio_system_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "audio_system_on",
+                    true
+                ]
+            ],
+            "goal_name": "skill_audio_system_on",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "audio_system_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "audio_system_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 10.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 20
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "video_system_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "video_system_on",
+                    false
+                ]
+            ],
+            "goal_name": "skill_video_system_off",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "video_system_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "video_system_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 12.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 21
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "audio_system_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "audio_system_on",
+                    false
+                ]
+            ],
+            "goal_name": "skill_audio_system_off",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "audio_system_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "audio_system_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 5,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_light_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "main_light_on",
+                    false
+                ]
+            ],
+            "goal_name": "skill_main_light_off",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_light_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_light_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 3.0,
+                        "n_exec": 3,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "surveilance_cameras_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "surveilance_cameras_on",
+                    false
+                ]
+            ],
+            "goal_name": "skill_surveilance_cameras_off",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "surveilance_cameras_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "surveilance_cameras_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 2.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 26
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "gate_metal_detectors_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "gate_metal_detectors_on",
+                    false
+                ]
+            ],
+            "goal_name": "skill_gate_metal_detectors_off",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "gate_metal_detectors_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "gate_metal_detectors_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 5.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 27
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "gate_face_recognitions_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "gate_face_recognitions_on",
+                    false
+                ]
+            ],
+            "goal_name": "skill_gate_face_recognitions_off",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "gate_face_recognitions_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "gate_face_recognitions_on"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 19
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_gate_open"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "main_gate_open",
+                    false
+                ]
+            ],
+            "goal_name": "skill_main_gate_close",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_gate_open"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "main_gate_open"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 3.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 2
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "emergency_lights_on"
+                    ],
+                    false
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "emergency_lights_on",
+                    true
+                ]
+            ],
+            "goal_name": "skill_emergency_lights_on",
+            "post_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "emergency_lights_on"
+                    ],
+                    false
+                ]
+            ],
+            "preconditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "emergency_lights_on"
+                    ],
+                    false
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "call_fire_figthers"
+                    ],
+                    false
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "call_fire_figthers",
+                    true
+                ]
+            ],
+            "goal_name": "skill_call_fire_figthers",
+            "post_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "call_fire_figthers"
+                    ],
+                    false
+                ]
+            ],
+            "preconditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "call_fire_figthers"
+                    ],
+                    false
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "activate_sprinkles"
+                    ],
+                    false
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "activate_sprinkles",
+                    true
+                ],
+                [
+                    "ASSIGN",
+                    "pre_game_activities",
+                    true
+                ]
+            ],
+            "goal_name": "skill_activate_sprinkles",
+            "post_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "activate_sprinkles"
+                    ],
+                    false
+                ]
+            ],
+            "preconditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "activate_sprinkles"
+                    ],
+                    false
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 3
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "emergency_sound_on"
+                    ],
+                    false
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "emergency_sound_on",
+                    true
+                ]
+            ],
+            "goal_name": "skill_emergency_sound_on",
+            "post_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "emergency_sound_on"
+                    ],
+                    false
+                ]
+            ],
+            "preconditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "emergency_sound_on"
+                    ],
+                    false
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 5.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 4
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "emergency_exists_open"
+                    ],
+                    false
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "emergency_exists_open",
+                    true
+                ]
+            ],
+            "goal_name": "skill_emergency_exists_open",
+            "post_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "emergency_exists_open"
+                    ],
+                    false
+                ]
+            ],
+            "preconditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "emergency_exists_open"
+                    ],
+                    false
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

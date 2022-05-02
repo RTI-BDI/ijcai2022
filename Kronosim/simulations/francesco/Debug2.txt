@@ -1,0 +1,68 @@
+INFO:List of Intentions[tot = 4]:
+INFO: Intention index:[0], from goal:[0], goal:(skill_batteryLevel), plan:[6], original_plan:[6], num. of actions: 5, startTime: 0.000000, firstActivation: 0.000000, lastExecution: 0.000000, batch_startTime: 17.000000, current completion time: -1.000000, set completion time: -1.000000, waiting for completion: false
+INFO: - Goal:[id=7], name:[skill_isFronDoorLocked], plan:[6], original_plan:[6], belief:(skill_isFronDoorLocked), arrivalTime:[0.000000], absolute arrivalTime:[0.000000], DDL:[100.000000], ExecType:[SEQUENTIAL], forceReasoning:[false], isBeenActivated:[true]
+INFO: - Task:[0], plan:[6], original_plan:[6], N_exec left: 1 of 1, compTime: 6.000000, DDL: 20.000000, SERVER:[4], arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Task:[1], plan:[6], original_plan:[6], N_exec left: 1 of 1, compTime: 2.000000, DDL: 25.000000, SERVER:[4], arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Task:[2], plan:[6], original_plan:[6], N_exec left: 1 of 1, compTime: 4.000000, DDL: 20.000000, SERVER:[4], arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Goal:[id=8], name:[skill_isGardenIrrigationOn], plan:[6], original_plan:[6], belief:(skill_isGardenIrrigationOn), arrivalTime:[0.000000], absolute arrivalTime:[-1.000000], DDL:[200.000000], ExecType:[SEQUENTIAL], forceReasoning:[false], isBeenActivated:[false]
+INFO: Intention index:[3], from goal:[7], goal:(skill_isFronDoorLocked), plan:[6], original_plan:[9], num. of actions: 1, startTime: 16.000000, firstActivation: 0.000000, lastExecution: 16.000000, batch_startTime: 0.000000, current completion time: -1.000000, set completion time: -1.000000, waiting for completion: false
+INFO: - Task:[3], plan:[6], original_plan:[9], N_exec left: 1 of 1, compTime: 4.000000, DDL: 20.000000, SERVER:[3], arrivalTimeInitial: 0.000000, arrivalTime: 17.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO: Intention index:[1], from goal:[1], goal:(skill_isOvenOn), plan:[0], original_plan:[0], num. of actions: 6, startTime: 0.000000, firstActivation: -1.000000, lastExecution: 0.000000, batch_startTime: 17.000000, current completion time: -1.000000, set completion time: -1.000000, waiting for completion: false
+INFO: - Task:[0], plan:[0], original_plan:[0], N_exec left: 1 of 1, compTime: 7.000000, DDL: 20.000000, SERVER:[1], arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Task:[1], plan:[0], original_plan:[0], N_exec left: 1 of 1, compTime: 1.000000, DDL: 20.000000, SERVER:[2], arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Task:[2], plan:[0], original_plan:[0], N_exec left: 1 of 1, compTime: 1.000000, DDL: 25.000000, SERVER:[3], arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Task:[3], plan:[0], original_plan:[0], N_exec left: 1 of 1, compTime: 6.000000, DDL: 20.000000, SERVER:[1], arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Goal:[id=3], name:[skill_needsWeatherForecast], plan:[0], original_plan:[0], belief:(skill_needsWeatherForecast), arrivalTime:[0.000000], absolute arrivalTime:[-1.000000], DDL:[75.000000], ExecType:[SEQUENTIAL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Task:[4], plan:[0], original_plan:[0], N_exec left: 1 of 1, compTime: 2.000000, DDL: 18.000000, SERVER:[0], arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: Intention index:[2], from goal:[2], goal:(skill_isRoomAtRightTemperature), plan:[2], original_plan:[2], num. of actions: 3, startTime: 0.000000, firstActivation: -1.000000, lastExecution: 0.000000, batch_startTime: 17.000000, current completion time: -1.000000, set completion time: -1.000000, waiting for completion: false
+INFO: - Goal:[id=4], name:[skill_isMusicOn], plan:[2], original_plan:[2], belief:(skill_isMusicOn), arrivalTime:[0.000000], absolute arrivalTime:[-1.000000], DDL:[300.000000], ExecType:[SEQUENTIAL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Task:[0], plan:[2], original_plan:[2], N_exec left: 2 of 2, compTime: 1.000000, DDL: 24.000000, SERVER:[-1], arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Goal:[id=5], name:[skill_isLightOn], plan:[2], original_plan:[2], belief:(skill_isLightOn), arrivalTime:[0.000000], absolute arrivalTime:[-1.000000], DDL:[200.000000], ExecType:[SEQUENTIAL], forceReasoning:[false], isBeenActivated:[false]
+INFO:-----------------------------
+
+ Intention:[1], plan id:[0], original plan id:[0], Cont_conditions: [ ==, [ READ_BELIEF, isOvenOn, true ], [ false, ], ],
+WARN: X Intention:[1], goal:[skill_isOvenOn] plan:[0] original plan:[0] HAS TO BE REMOVED do to false conditions. Remove entire intention:[2] X
+
+INFO:List of Intentions[tot = 3]:
+INFO: Intention index:[0], from goal:[0], goal:(skill_batteryLevel), plan:[6], original_plan:[6], num. of actions: 5, startTime: 0.000000, firstActivation: 0.000000, lastExecution: 0.000000, batch_startTime: 17.000000, current completion time: -1.000000, set completion time: -1.000000, waiting for completion: false
+INFO: - Goal:[id=7], name:[skill_isFronDoorLocked], plan:[6], original_plan:[6], belief:(skill_isFronDoorLocked), arrivalTime:[0.000000], absolute arrivalTime:[0.000000], DDL:[100.000000], ExecType:[SEQUENTIAL], forceReasoning:[false], isBeenActivated:[true]
+INFO: - Task:[0], plan:[6], original_plan:[6], N_exec left: 1 of 1, compTime: 6.000000, DDL: 20.000000, SERVER:[4], arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Task:[1], plan:[6], original_plan:[6], N_exec left: 1 of 1, compTime: 2.000000, DDL: 25.000000, SERVER:[4], arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Task:[2], plan:[6], original_plan:[6], N_exec left: 1 of 1, compTime: 4.000000, DDL: 20.000000, SERVER:[4], arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Goal:[id=8], name:[skill_isGardenIrrigationOn], plan:[6], original_plan:[6], belief:(skill_isGardenIrrigationOn), arrivalTime:[0.000000], absolute arrivalTime:[-1.000000], DDL:[200.000000], ExecType:[SEQUENTIAL], forceReasoning:[false], isBeenActivated:[false]
+INFO: Intention index:[3], from goal:[7], goal:(skill_isFronDoorLocked), plan:[6], original_plan:[9], num. of actions: 1, startTime: 16.000000, firstActivation: 0.000000, lastExecution: 16.000000, batch_startTime: 0.000000, current completion time: -1.000000, set completion time: -1.000000, waiting for completion: false
+INFO: - Task:[3], plan:[6], original_plan:[9], N_exec left: 1 of 1, compTime: 4.000000, DDL: 20.000000, SERVER:[3], arrivalTimeInitial: 0.000000, arrivalTime: 17.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO: Intention index:[2], from goal:[2], goal:(skill_isRoomAtRightTemperature), plan:[2], original_plan:[2], num. of actions: 3, startTime: 0.000000, firstActivation: -1.000000, lastExecution: 0.000000, batch_startTime: 17.000000, current completion time: -1.000000, set completion time: -1.000000, waiting for completion: false
+INFO: - Goal:[id=4], name:[skill_isMusicOn], plan:[2], original_plan:[2], belief:(skill_isMusicOn), arrivalTime:[0.000000], absolute arrivalTime:[-1.000000], DDL:[300.000000], ExecType:[SEQUENTIAL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Task:[0], plan:[2], original_plan:[2], N_exec left: 2 of 2, compTime: 1.000000, DDL: 24.000000, SERVER:[-1], arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Goal:[id=5], name:[skill_isLightOn], plan:[2], original_plan:[2], belief:(skill_isLightOn), arrivalTime:[0.000000], absolute arrivalTime:[-1.000000], DDL:[200.000000], ExecType:[SEQUENTIAL], forceReasoning:[false], isBeenActivated:[false]
+INFO:-----------------------------
+
+INFO: INTERVAL: --> Is plan:[6], name:[skill_batteryLevel] valid: ((160.000000) <= (551.000000 + 0.000000)) --> (160.000000 <= 551.000000): TRUE
+INFO: INTERVAL: --> Is plan:[7], name:[skill_batteryLevel] valid: ((200.000000) <= (551.000000 + 0.000000)) --> (200.000000 <= 551.000000): TRUE
+
+INFO:List of Intentions[tot = 3]:
+INFO: Intention index:[3], from goal:[7], goal:(skill_isFronDoorLocked), plan:[6], original_plan:[9], num. of actions: 1, startTime: 16.000000, firstActivation: 0.000000, lastExecution: 16.000000, batch_startTime: 0.000000, current completion time: -1.000000, set completion time: -1.000000, waiting for completion: false
+INFO: - Task:[3], plan:[6], original_plan:[9], N_exec left: 1 of 1, compTime: 4.000000, DDL: 20.000000, SERVER:[3], arrivalTimeInitial: 0.000000, arrivalTime: 17.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[true]
+INFO: Intention index:[3], from goal:[0], goal:(skill_batteryLevel), plan:[7], original_plan:[7], num. of actions: 3, startTime: 20.000000, firstActivation: -1.000000, lastExecution: 20.000000, batch_startTime: 20.000000, current completion time: -1.000000, set completion time: -1.000000, waiting for completion: false
+INFO: - Goal:[id=9], name:[skill_isFronDoorLocked], plan:[7], original_plan:[7], belief:(skill_isFronDoorLocked), arrivalTime:[0.000000], absolute arrivalTime:[-1.000000], DDL:[100.000000], ExecType:[SEQUENTIAL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Task:[0], plan:[7], original_plan:[7], N_exec left: 1 of 1, compTime: 6.000000, DDL: 20.000000, SERVER:[4], arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Goal:[id=10], name:[skill_isGardenIrrigationOn], plan:[7], original_plan:[7], belief:(skill_isGardenIrrigationOn), arrivalTime:[0.000000], absolute arrivalTime:[-1.000000], DDL:[200.000000], ExecType:[SEQUENTIAL], forceReasoning:[false], isBeenActivated:[false]
+INFO: Intention index:[2], from goal:[2], goal:(skill_isRoomAtRightTemperature), plan:[2], original_plan:[2], num. of actions: 3, startTime: 0.000000, firstActivation: -1.000000, lastExecution: 0.000000, batch_startTime: 17.000000, current completion time: -1.000000, set completion time: -1.000000, waiting for completion: false
+INFO: - Goal:[id=4], name:[skill_isMusicOn], plan:[2], original_plan:[2], belief:(skill_isMusicOn), arrivalTime:[0.000000], absolute arrivalTime:[-1.000000], DDL:[300.000000], ExecType:[SEQUENTIAL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Task:[0], plan:[2], original_plan:[2], N_exec left: 2 of 2, compTime: 1.000000, DDL: 24.000000, SERVER:[-1], arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO: - Goal:[id=5], name:[skill_isLightOn], plan:[2], original_plan:[2], belief:(skill_isLightOn), arrivalTime:[0.000000], absolute arrivalTime:[-1.000000], DDL:[200.000000], ExecType:[SEQUENTIAL], forceReasoning:[false], isBeenActivated:[false]
+INFO:-----------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+

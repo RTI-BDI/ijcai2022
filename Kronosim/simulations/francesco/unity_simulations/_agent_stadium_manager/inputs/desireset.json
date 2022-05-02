@@ -1,0 +1,308 @@
+{
+    "0": [
+        {
+            "cont_conditions": [],
+            "deadline": 800.0,
+            "goal_name": "skill_opening_activities",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "opening_activities"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_stadium_open"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": -1.0,
+            "goal_name": "skill_pre_game_activities",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "pre_game_activities"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "opening_activities"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": -1.0,
+            "goal_name": "skill_analize_surveilance_camera",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "analize_surveilance_camera"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "pre_game_activities"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_game_aborted"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": 100.0,
+            "goal_name": "skill_start_game_activities",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "start_game_activities"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "pre_game_activities"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": 150.0,
+            "goal_name": "skill_end_game_activities",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "end_game_activities"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_game_completed"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_game_aborted"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": 200.0,
+            "goal_name": "skill_closing_activities",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "closing_activities"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "end_game_activities"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "is_game_completed"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": 200.0,
+            "goal_name": "skill_fire_hazard_off",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "fire_hazard_on"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": 200.0,
+            "goal_name": "skill_terrorism_hazard_off",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "terrorism_hazard_on"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

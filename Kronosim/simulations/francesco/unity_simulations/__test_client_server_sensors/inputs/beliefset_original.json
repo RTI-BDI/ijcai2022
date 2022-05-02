@@ -1,0 +1,32 @@
+{
+    "0": [
+        {
+            "name": "one",
+            "value": false
+        },
+        {
+            "name": "two",
+            "value": false
+        },
+        {
+            "name": "three",
+            "value": false
+        },
+        {
+            "name": "igA",
+            "value": false
+        },
+        {
+            "name": "igB",
+            "value": false
+        },
+        {
+            "name": "igC",
+            "value": false
+        },
+        {
+            "name": "false_post_condition",
+            "value": false
+        }
+    ]
+}

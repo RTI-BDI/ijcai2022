@@ -1,0 +1,207 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="if (top.frames['componentsframe'] == undefined) { s = window.location.toString(); window.location = 'index.html?p=' + s.substring(s.lastIndexOf('/')+1); }">
+<h2 class="comptitle">Message <i>agentMSG</i></h2>
+<b>File: <a href="src-agentMSG.msg.html">src/agentMSG.msg</a></b><br/><p>(no description)</p><h3 class="subtitle">Fields:</h3>
+<table class="fieldstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+<tr class="local">
+   <td>source</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td>destination</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td>hopCount</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td>
+</td>
+</tr>
+<tr class="local">
+   <td>informative</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td>content</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td>neg_step</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td>
+</td>
+</tr>
+<tr class="local">
+   <td>ag_id</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td>
+<p>scheduler related</p>
+</td>
+</tr>
+<tr class="local">
+   <td>ag_task_id</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td>ag_task_t_finito</td>
+   <td>
+      <i>
+double</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td>ag_task_release_time</td>
+   <td>
+      <i>
+double</i>
+   </td>
+   <td>
+</td>
+</tr>
+<tr class="local">
+   <td>ag_need_id</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td>
+<p>needs related</p>
+</td>
+</tr>
+<tr class="local">
+   <td>ag_need_r</td>
+   <td>
+      <i>
+double</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td>ag_needed_task_id</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td>
+<p>negotiation related</p>
+</td>
+</tr>
+<tr class="local">
+   <td>ag_pub_tasks_ids</td>
+   <td>
+      <i>
+int[24]</i>
+   </td>
+   <td>
+<p>This is the number of max public services publicable at ones.
+Remember to keep this value aligned with "ag_pub_tasks_ids" 
+variable in the XML file</p>
+</td>
+</tr>
+<tr class="local">
+   <td>df_pub_agents_per_task</td>
+   <td>
+      <i>
+int[20]</i>
+   </td>
+   <td>
+<p>This is the number of max agents available per public task at ones.
+Remember to keep this value aligned with "DIM_df_pub_agents_per_task" 
+variable in the XML file</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">message</span><span style="color: #000000; "> </span><span style="color: #000000; ">agentMSG</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">source</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">destination</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">hopCount</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">informative</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">content</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">neg_step</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+
+    </span><span style="color: #808080; font-style: italic; ">// scheduler related
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">ag_id</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">ag_task_id</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">ag_task_t_finito</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">ag_task_release_time</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+
+    </span><span style="color: #808080; font-style: italic; ">// needs related
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">ag_need_id</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">ag_need_r</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">ag_needed_task_id</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+
+    </span><span style="color: #808080; font-style: italic; ">// negotiation related
+</span><span style="color: #000000; ">
+
+
+    </span><span style="color: #808080; font-style: italic; ">// This is the number of max public services publicable at ones.
+</span><span style="color: #000000; ">    </span><span style="color: #808080; font-style: italic; ">// Remember to keep this value aligned with &quot;ag_pub_tasks_ids&quot; 
+</span><span style="color: #000000; ">    </span><span style="color: #808080; font-style: italic; ">// variable in the XML file 
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">ag_pub_tasks_ids</span><span style="color: #000000; ">[</span><span style="color: #008000; ">24</span><span style="color: #000000; ">];
+
+    </span><span style="color: #808080; font-style: italic; ">// This is the number of max agents available per public task at ones.
+</span><span style="color: #000000; ">    </span><span style="color: #808080; font-style: italic; ">// Remember to keep this value aligned with &quot;DIM_df_pub_agents_per_task&quot; 
+</span><span style="color: #000000; ">    </span><span style="color: #808080; font-style: italic; ">// variable in the XML file 
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">df_pub_agents_per_task</span><span style="color: #000000; ">[</span><span style="color: #008000; ">20</span><span style="color: #000000; ">];
+
+}
+
+</span><span style="color: #808080; font-style: italic; ">// NEG_STEP (used for messages between Ag and Ag)
+// 200 - [Ag] initiates negotiation (require a bid fo a specific task)
+// 201 - [Ag] bids
+</span><span style="color: #000000; ">
+</span><span style="color: #808080; font-style: italic; ">// CONTENT (used for messages between Ag and DF)
+// 100 - [!DF] set_public_services_to_df
+// 100 -  [DF] get_public_services_to_df
+// 101 - [!DF] Ag asks list_agent_per_service
+// 101 - [DF] receive request for list_agent_per_service
+// 102 - [DF] sends list_agent_per_service
+// 102 - [!DF] Ag processes list_agent_per_service
+</span><span style="color: #000000; ">
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

@@ -1,0 +1,8 @@
+INFO:Ready queue[tot = 6]:
+INFO:- Task:[3], plan:[0], original_plan:[0], deadline:[20.000000], arrivalTime:[22.000000], releaseTime:[22.000000], N_exec left:[0 of 1], tskCres:[6.000000], tskStatus:[READY], tskExecType:[PARALLEL], isBeenAct:[true]
+INFO:- Task:[1], plan:[2], original_plan:[3], deadline:[6.000000], arrivalTime:[22.000000], releaseTime:[22.000000], N_exec left:[1 of 2], tskCres:[1.000000], tskStatus:[READY], tskExecType:[PARALLEL], isBeenAct:[true]
+INFO:- Task:[1], plan:[2], original_plan:[3], deadline:[6.000000], arrivalTime:[28.000000], releaseTime:[28.000000], N_exec left:[0 of 2], tskCres:[1.000000], tskStatus:[READY], tskExecType:[PARALLEL], isBeenAct:[true]
+INFO:- Task:[0], plan:[2], original_plan:[3], deadline:[7.000000], arrivalTime:[29.000000], releaseTime:[29.000000], N_exec left:[0 of 2], tskCres:[1.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- Task:[0], plan:[0], original_plan:[0], deadline:[20.000000], arrivalTime:[30.000000], releaseTime:[22.000000], N_exec left:[0 of 1], tskCres:[3.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:- Task:[0], plan:[8], original_plan:[7], deadline:[15.000000], arrivalTime:[30.000000], releaseTime:[30.000000], N_exec left:[2 of 5], tskCres:[1.000000], tskStatus:[READY], tskExecType:[SEQUENTIAL], isBeenAct:[true]
+INFO:-----------------------------

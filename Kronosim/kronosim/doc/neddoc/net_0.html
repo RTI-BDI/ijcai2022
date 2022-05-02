@@ -1,0 +1,93 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="if (top.frames['componentsframe'] == undefined) { s = window.location.toString(); window.location = 'index.html?p=' + s.substring(s.lastIndexOf('/')+1); }">
+<h2 class="comptitle">Network <i>net_0</i></h2>
+<b>Package:</b> default<br/><b>File: <a href="net.ned.html">net.ned</a></b><br/>
+<p>TODO documentation</p>
+<h3 class="subtitle">Properties:</h3>
+<table class="propertiestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="value">Value</th>
+      <th class="description">Description</th>
+   </tr>
+<tr>
+   <td>isNetwork</td>
+   <td><i></i></td>
+   <td></td>
+</tr>
+<tr>
+   <td>display</td>
+   <td><i>bgb=331,135</i></td>
+   <td>
+<p>int aAddress;
+       int n @prompt("Number of clients") = default(6);
+       int k = 0;</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Unassigned submodule parameters:</h3>
+<table class="deepparamstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+<tr>
+   <td><a href="agent.html">ag</a>.sched_type</td>
+   <td>
+      <i>int</i>
+   </td>
+   <td></td>
+   <td>
+<p>scheduler type to use (0 = FCFS, 1 = RR)
+   volatile double delayTime @unit(s);   // delay before sending back message</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// TODO documentation
+//
+</span><span style="color: #800000; font-weight: bold; ">network</span><span style="color: #000000; "> </span><span style="color: #000000; ">net_0</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #808080; font-style: italic; ">//        int aAddress;
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">//        int n @prompt(&quot;Number of clients&quot;) = default(6);
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">//        int k = 0;
+</span><span style="color: #000000; ">        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;bgb=331,135&quot;</span><span style="color: #000000; ">);
+</span><span style="color: #808080; font-style: italic; ">//        @display(&quot;bgb=611,287&quot;);
+</span><span style="color: #000000; ">
+    </span><span style="color: #800000; font-weight: bold; ">types</span><span style="color: #000000; ">:
+        </span><span style="color: #800000; font-weight: bold; ">channel</span><span style="color: #000000; "> </span><span style="color: #000000; ">Channel</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">ned</span><span style="color: #000000; ">.</span><span style="color: #000000; ">DelayChannel</span><span style="color: #000000; ">
+        {
+            </span><span style="color: #000000; ">delay</span><span style="color: #000000; "> = </span><span style="color: #008000; ">100</span><span style="color: #000000; ">ms</span><span style="color: #000000; ">;
+        }
+    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+</span><span style="color: #808080; font-style: italic; ">//        DF: agent {
+//            //  @display(&quot;p=41,40&quot;);
+//            @display(&quot;i=,gold&quot;);
+//        }
+</span><span style="color: #000000; ">
+        </span><span style="color: #000000; ">ag</span><span style="color: #000000; ">: </span><span style="color: #000000; ">agent</span><span style="color: #000000; ">;
+    </span><span style="color: #800000; font-weight: bold; ">connections</span><span style="color: #000000; ">:
+
+</span><span style="color: #808080; font-style: italic; ">//      	for i=0..n-1 {
+//            ag[i].gate++ &lt;--&gt; Channel &lt;--&gt; DF.gate++;
+//        }
+</span><span style="color: #000000; ">
+</span><span style="color: #808080; font-style: italic; ">//		for i=0..n-2, for k=i+1..n-1{
+//            ag[i].gate++ &lt;--&gt; Channel &lt;--&gt; ag[k].gate++;
+//        }
+</span><span style="color: #000000; ">
+
+}
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

@@ -1,0 +1,22 @@
+{
+    "0": [
+        {
+            "belief_name": "on_the_ground",
+            "mode": "SET",
+            "time": 69.0,
+            "value": false
+        },
+        {
+            "belief_name": "engine_malfunction",
+            "mode": "SET",
+            "time": 70.0,
+            "value": true
+        },
+        {
+            "belief_name": "on_right_trajectory",
+            "mode": "SET",
+            "time": 75.0,
+            "value": true
+        }
+    ]
+}

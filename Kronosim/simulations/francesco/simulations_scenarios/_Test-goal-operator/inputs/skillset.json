@@ -1,0 +1,25 @@
+{
+    "0": [
+        {
+            "goal_name": "skill_isMusicOn"
+        },
+        {
+            "goal_name": "skill_internal_goal_A"
+        },
+        {
+            "goal_name": "skill_batteryLevel"
+        },
+        {
+            "goal_name": "skill_internal_goal_A"
+        },
+        {
+            "goal_name": "skill_internal_goal_A"
+        },
+        {
+            "goal_name": "skill_batteryLevel"
+        },
+        {
+            "goal_name": "skill_batteryLevel"
+        }
+    ]
+}

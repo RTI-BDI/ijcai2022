@@ -1,0 +1,55 @@
+
+Running configuration General, run #0...
+Assigned runID=General-0-20210917-09:43:48-62518
+Setting up network "ag_network"...
+Initializing...
+Initializing module ag_network, stage 0
+Initializing module ag_network.ag[0], stage 0
+
+Running simulation...
+** Event #1  t=0  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #2  t=0  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #3  t=0  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #4  t=0  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #5  t=0  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #6  t=0  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #7  t=3  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #8  t=3  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #9  t=3  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #10  t=3  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #11  t=3  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #12  t=3  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #13  t=3  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #14  t=4  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #15  t=4  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #16  t=4  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #17  t=4  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #18  t=9  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #19  t=9  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #20  t=9  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #21  t=9  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #22  t=9  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #23  t=18  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #24  t=18  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #25  t=18  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #26  t=23  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #27  t=23  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #28  t=23  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #29  t=23  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #30  t=24  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #31  t=24  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #32  t=24  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #33  t=28  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #34  t=28  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #35  t=28  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #36  t=28  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #37  t=33  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #38  t=33  0% completed  (0% total)   ag_network.ag[0] (agent, id=2)
+** Event #39  t=10000  100% completed  (100% total)   
+
+<!> Simulation time limit reached -- at t=10000s, event #39
+
+Calling finish() at end of Run #0...
+[INFO]	....Successfully Created ("../simulations/francesco/generated_simulations/test-overlapping-plans-2/test-overlapping-plans-2_seed_200/reports")
+[INFO]	....Successfully Created ("../simulations/francesco/generated_simulations/test-overlapping-plans-2/test-overlapping-plans-2_seed_200/reports/FCFS")
+[ERROR]	 > Error while sending message to the client!

@@ -1,0 +1,24 @@
+{
+    "0": [
+        {
+            "name": "main_belief",
+            "value": false
+        },
+        {
+            "name": "ig_belief_1",
+            "value": false
+        },
+        {
+            "name": "ig_belief_2",
+            "value": false
+        },
+        {
+            "name": "ig_belief_3",
+            "value": false
+        },
+        {
+            "name": "ig_belief_4",
+            "value": false
+        }
+    ]
+}

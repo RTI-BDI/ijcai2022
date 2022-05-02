@@ -1,0 +1,19 @@
+[
+    {
+        "arrivalTime": 192.0,
+        "computationTime": 3.0,
+        "demander": 0,
+        "executor": 0,
+        "finishTime": 195.0,
+        "firstActivation": 192.0,
+        "id": 0,
+        "lastActivation": 192.0,
+        "lateness": 173.0,
+        "original_plan_id": 1,
+        "period": 17.0,
+        "plan_id": 1,
+        "relativeDeadline": 17.0,
+        "releaseTime": 192.0,
+        "server": -1
+    }
+]

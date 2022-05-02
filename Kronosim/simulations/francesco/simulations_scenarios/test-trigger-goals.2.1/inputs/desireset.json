@@ -1,0 +1,304 @@
+{
+    "0": [
+        {
+            "cont_conditions": [],
+            "deadline": 450.0,
+            "goal_name": "skill_isMusicOn",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "isMusicOn"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "schema1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    [
+                        "/",
+                        [
+                            "-",
+                            100,
+                            [
+                                "READ_BELIEF",
+                                "batteryLevel"
+                            ]
+                        ],
+                        100
+                    ]
+                ],
+                "reference_table": [
+                    {
+                        "belief_name": "batteryLevel",
+                        "op": "GREATER_EQUAL",
+                        "priority": 0.8,
+                        "threshold": 75
+                    },
+                    {
+                        "belief_name": "batteryLevel",
+                        "op": "LESS",
+                        "priority": 0.6,
+                        "threshold": 75
+                    },
+                    {
+                        "belief_name": "batteryLevel",
+                        "op": "LESS_EQUAL",
+                        "priority": 0.3,
+                        "threshold": 35
+                    }
+                ]
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": 45.0,
+            "goal_name": "skill_needsWeatherForecast",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "needsWeatherForecast"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "schema1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                [
+                    "+",
+                    0.5,
+                    [
+                        "+",
+                        [
+                            "/",
+                            [
+                                "*",
+                                0.4,
+                                [
+                                    "READ_BELIEF",
+                                    "number"
+                                ]
+                            ],
+                            100
+                        ],
+                        0.3
+                    ]
+                    ]
+                ],
+                "reference_table": [
+                    {
+                        "belief_name": "batteryLevel",
+                        "op": "GREATER_EQUAL",
+                        "priority": 0.8,
+                        "threshold": 75
+                    },
+                    {
+                        "belief_name": "batteryLevel",
+                        "op": "LESS",
+                        "priority": 0.6,
+                        "threshold": 75
+                    },
+                    {
+                        "belief_name": "batteryLevel",
+                        "op": "LESS_EQUAL",
+                        "priority": 0.3,
+                        "threshold": 35
+                    }
+                ]
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": 80.0,
+            "goal_name": "skill_isOvenOn",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "isOvenOn"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "schema2"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "activated"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.05
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": 150.0,
+            "goal_name": "skill_isTvOn",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "isTvOn"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "schema1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    [
+                    "/",
+                    [
+                        "*",
+                        0.85,
+                        [
+                            "READ_BELIEF",
+                            "numb"
+                        ]
+                    ],
+                    100
+                ]
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": 60.0,
+            "goal_name": "skill_isLightOn",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "isLightOn"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "schema2"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    [
+                    "/",
+                    [
+                        "*",
+                        0.3,
+                        [
+                            "READ_BELIEF",
+                            "numb"
+                        ]
+                    ],
+                    200
+                ]
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isRoomAtRightTemperature"
+                    ],
+                    false
+                ]
+            ],
+            "deadline": -1.0,
+            "goal_name": "skill_isRoomAtRightTemperature",
+            "preconditions": [],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    [
+                    "/",
+                    [
+                        "-",
+                        [
+                            "*",
+                            [
+                                "READ_BELIEF",
+                                "batteryLevel"
+                            ],
+                            2
+                        ],
+                        100
+                    ],
+                    100
+                ]
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

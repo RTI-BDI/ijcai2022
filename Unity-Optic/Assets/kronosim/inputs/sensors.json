@@ -1,0 +1,40 @@
+{
+  "0": [
+    {
+      "belief_name": "battery-amount_c1",
+      "mode": "SET",
+      "time": 101,
+      "value": 68
+    },
+    {
+      "belief_name": "posX_c1",
+      "mode": "SET",
+      "time": 101,
+      "value": 4
+    },
+    {
+      "belief_name": "battery-amount_c1",
+      "mode": "SET",
+      "time": 221,
+      "value": 66
+    },
+    {
+      "belief_name": "posX_c1",
+      "mode": "SET",
+      "time": 221,
+      "value": 3
+    },
+    {
+      "belief_name": "posX_c1",
+      "mode": "SET",
+      "time": 226,
+      "value": 3
+    },
+    {
+      "belief_name": "posY_c1",
+      "mode": "SET",
+      "time": 226,
+      "value": 1
+    }
+  ]
+}

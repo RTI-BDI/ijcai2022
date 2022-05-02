@@ -1,0 +1,223 @@
+{
+  "0": [
+    {
+      "goal_name": "plan_execution",
+      "body": [
+        {
+          "action": {
+            "priority": 0.5,
+            "deadline": 120,
+            "goal_name": "move-right_c1",
+            "arrivalTime": 50
+          },
+          "action_type": "GOAL",
+          "execution": "SEQUENTIAL"
+        },
+        {
+          "action": {
+            "priority": 0.5,
+            "deadline": 120,
+            "goal_name": "move-up_c1",
+            "arrivalTime": 100
+          },
+          "action_type": "GOAL",
+          "execution": "PARALLEL"
+        },
+        {
+          "action_type": "TASK",
+          "execution": "PARALLEL",
+          "action": {
+            "computationTime": 4,
+            "n_exec": 2,
+            "period": 12,
+            "relativeDeadline": 12,
+            "server": -1
+          }
+        }        
+      ],
+      "cont_conditions": [],
+      "effects_at_begin": [],
+      "effects_at_end": [
+        ["ASSIGN", "execute_plan", false ]
+      ],
+      "post_conditions": [],
+      "preconditions": [
+        [
+          "AND",
+          [
+            "==",
+            [
+              "READ_BELIEF",
+              "execute_plan"
+            ],
+            true
+          ]
+        ]
+      ],
+      "preference": {
+        "computedDynamically": true,
+        "formula": [ 1 ],
+        "reference_table": []
+      }
+    },
+    
+    {
+      "goal_name": "move-right_c1",
+      "body": [
+        {
+          "action_type": "TASK",
+          "execution": "SEQUENTIAL",
+          "action": {
+            "computationTime": 4,
+            "n_exec": 10,
+            "period": 12,
+            "relativeDeadline": 12,
+            "server": -1
+          }
+        }
+      ],
+      "cont_conditions": [],
+      "effects_at_begin": [
+        [
+          "ASSIGN",
+          "free_c1",
+          false
+        ]
+      ],
+      "effects_at_end": [
+        [
+          "ASSIGN",
+          "free_c1",
+          true
+        ]
+      ],
+      "post_conditions": [ ],
+      "preconditions": [
+        [
+          "AND",
+          [
+            "==",
+            [
+              "READ_BELIEF",
+              "free_c1"
+            ],
+            true
+          ],
+          [
+            "==",
+            [
+              "READ_BELIEF",
+              "false_precondition_belief"
+            ],
+            true
+          ]
+        ]
+      ],
+      "preference": {
+        "computedDynamically": true,
+        "formula": [ 1 ],
+        "reference_table": []
+      }
+    },
+    {
+      "goal_name": "move-right_c1",
+      "body": [
+        {
+          "action_type": "TASK",
+          "execution": "SEQUENTIAL",
+          "action": {
+            "computationTime": 2,
+            "n_exec": 10,
+            "period": 10,
+            "relativeDeadline": 10,
+            "server": -1
+          }
+        }
+      ],
+      "cont_conditions": [],
+      "effects_at_begin": [
+        [
+          "ASSIGN",
+          "free_c1",
+          false
+        ]
+      ],
+      "effects_at_end": [
+        [
+          "ASSIGN",
+          "free_c1",
+          true
+        ]
+      ],
+      "post_conditions": [ ],
+      "preconditions": [
+        [
+          "AND",
+          [
+            "==",
+            [
+              "READ_BELIEF",
+              "free_c1"
+            ],
+            true
+          ]
+        ]
+      ],
+      "preference": {
+        "computedDynamically": true,
+        "formula": [ 0.8 ],
+        "reference_table": []
+      }
+    },
+    {
+      "goal_name": "move-up_c1",
+      "body": [
+        {
+          "action_type": "TASK",
+          "execution": "SEQUENTIAL",
+          "action": {
+            "computationTime": 2,
+            "n_exec": 2,
+            "period": 10,
+            "relativeDeadline": 10,
+            "server": -1
+          }
+        }
+      ],
+      "cont_conditions": [],
+      "effects_at_begin": [
+        [
+          "ASSIGN",
+          "free_c1",
+          false
+        ]
+      ],
+      "effects_at_end": [
+        [
+          "ASSIGN",
+          "free_c1",
+          true
+        ]
+      ],
+      "post_conditions": [ ],
+      "preconditions": [
+        [
+          "AND",
+          [
+            "==",
+            [
+              "READ_BELIEF",
+              "free_c1"
+            ],
+            true
+          ]
+        ]
+      ],
+      "preference": {
+        "computedDynamically": true,
+        "formula": [ 0.8 ],
+        "reference_table": []
+      }
+    }
+  ]
+}

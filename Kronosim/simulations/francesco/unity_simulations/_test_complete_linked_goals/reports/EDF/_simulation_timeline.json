@@ -1,0 +1,5 @@
+[
+    "t: 1 COMPLETED tskId:[0], plan:[0], original_id:[3], deadline:[10.000000], lateness:[-9.000000], ddl_miss:[NO]",
+    "t: 11 COMPLETED tskId:[0], plan:[0], original_id:[3], deadline:[20.000000], lateness:[-9.000000], ddl_miss:[NO]",
+    "Deadline miss: 0"
+]

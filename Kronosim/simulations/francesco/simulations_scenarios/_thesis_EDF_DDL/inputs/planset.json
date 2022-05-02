@@ -1,0 +1,1497 @@
+{
+    "0": [
+        {
+            "body": [
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 200.0,
+                        "goal_name": "skill_destination_set",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 200.0,
+                        "goal_name": "skill_boarding_passengers",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 200.0,
+                        "goal_name": "skill_boarding_luggage",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "computationTime": 2.0,
+                        "n_exec": 1,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": 1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "ready_to_takeoff"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_ready_to_takeoff",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "ready_to_takeoff"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "ready_to_takeoff"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Rome"
+                        ],
+                        false
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "fuel_level"
+                        ],
+                        70
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.7
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 200.0,
+                        "goal_name": "skill_fuel_level",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 200.0,
+                        "goal_name": "skill_destination_set",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 200.0,
+                        "goal_name": "skill_boarding_passengers",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 200.0,
+                        "goal_name": "skill_boarding_luggage",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "computationTime": 2.0,
+                        "n_exec": 1,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": 1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "ready_to_takeoff"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_ready_to_takeoff",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "ready_to_takeoff"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "ready_to_takeoff"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Rome"
+                        ],
+                        false
+                    ],
+                    [
+                        "<",
+                        [
+                            "READ_BELIEF",
+                            "fuel_level"
+                        ],
+                        20
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.9
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "in_Paris"
+                    ],
+                    false
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_destination_set",
+            "post_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "in_Paris"
+                    ],
+                    false
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "destination_set"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Paris"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.9
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "in_Rome"
+                    ],
+                    false
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_destination_set",
+            "post_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "in_Rome"
+                    ],
+                    false
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "destination_set"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Rome"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.9
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "in_NY"
+                    ],
+                    false
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_destination_set",
+            "post_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "in_NY"
+                    ],
+                    false
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "destination_set"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_NY"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.7
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 3.0,
+                        "n_exec": 2,
+                        "period": 30.0,
+                        "relativeDeadline": 30.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "<=",
+                    [
+                        "READ_BELIEF",
+                        "fuel_level"
+                    ],
+                    100
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_fuel_level",
+            "post_conditions": [
+                [
+                    "<=",
+                    [
+                        "READ_BELIEF",
+                        "fuel_level"
+                    ],
+                    100
+                ]
+            ],
+            "preconditions": [
+                [
+                    "<=",
+                    [
+                        "READ_BELIEF",
+                        "fuel_level"
+                    ],
+                    20
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.9
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 2,
+                        "period": 5.0,
+                        "relativeDeadline": 5.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "at_gate"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_boarding_passengers",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "at_gate"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "at_gate"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.9
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 4,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 2,
+                        "period": 5.0,
+                        "relativeDeadline": 5.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "at_gate"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_boarding_luggage",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "at_gate"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "at_gate"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.9
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 2.0,
+                        "n_exec": 1,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": 2
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 2.0,
+                        "n_exec": 1,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": 1
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "computationTime": 3.0,
+                        "n_exec": 1,
+                        "period": 15.0,
+                        "relativeDeadline": 15.0,
+                        "server": 3
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Rome"
+                        ],
+                        false
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "fuel_level"
+                        ],
+                        35
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "engine_malfunction"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_in_Rome",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Rome"
+                        ],
+                        false
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "fuel_level"
+                        ],
+                        35
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "engine_malfunction"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Rome"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        true
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "fuel_level"
+                        ],
+                        80
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "ready_to_takeoff"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "engine_malfunction"
+                        ],
+                        false
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.75
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 2.0,
+                        "n_exec": 1,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": 2
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 2.0,
+                        "n_exec": 1,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": 1
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "computationTime": 3.0,
+                        "n_exec": 1,
+                        "period": 15.0,
+                        "relativeDeadline": 15.0,
+                        "server": 3
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Paris"
+                        ],
+                        false
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "fuel_level"
+                        ],
+                        25
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "engine_malfunction"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_in_Paris",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Paris"
+                        ],
+                        false
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "fuel_level"
+                        ],
+                        25
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "engine_malfunction"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Paris"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        true
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "fuel_level"
+                        ],
+                        80
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "ready_to_takeoff"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "engine_malfunction"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.75
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 2.0,
+                        "n_exec": 1,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": 2
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Paris"
+                        ],
+                        false
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "fuel_level"
+                        ],
+                        5
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "engine_malfunction"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_in_Paris",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Paris"
+                        ],
+                        false
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "fuel_level"
+                        ],
+                        5
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "engine_malfunction"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Paris"
+                        ],
+                        false
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "fuel_level"
+                        ],
+                        30
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "engine_malfunction"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.75
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 4.0,
+                        "n_exec": 1,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": 4
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Rome"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_on_the_ground",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Rome"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Rome"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.9
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 4.0,
+                        "n_exec": 1,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": 4
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Paris"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_on_the_ground",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Paris"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "in_Paris"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.9
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": -1,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "on_right_trajectory"
+                    ],
+                    false
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_on_right_trajectory",
+            "post_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "on_right_trajectory"
+                    ],
+                    false
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_the_ground"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "on_right_trajectory"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "ready_to_takeoff"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.95
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

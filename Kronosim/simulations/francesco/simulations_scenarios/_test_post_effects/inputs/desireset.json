@@ -1,0 +1,100 @@
+{
+    "0": [
+        {
+            "cont_conditions": [],
+            "deadline": 500.0,
+            "goal_name": "skill_belief_constant",
+            "preconditions": [],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.55
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": 500.0,
+            "goal_name": "skill_isOvenOn",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "isOvenOn"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "schema2"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                [
+                    "+",
+                    0.5
+                ]
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": 500.0,
+            "goal_name": "skill_isRoomAtRightTemperature",
+            "preconditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isRoomAtRightTemperature"
+                    ],
+                    false
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.9
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": 500.0,
+            "goal_name": "skill_isFronDoorLocked",
+            "preconditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isFronDoorLocked"
+                    ],
+                    false
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                [
+                    "+",
+                    0.8
+                ]
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

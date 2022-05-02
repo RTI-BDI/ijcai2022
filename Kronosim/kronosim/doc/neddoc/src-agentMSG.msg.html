@@ -1,0 +1,97 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="if (top.frames['componentsframe'] == undefined) { s = window.location.toString(); window.location = 'index.html?p=' + s.substring(s.lastIndexOf('/')+1); }">
+<h2 class="comptitle">Msg File <i>src/agentMSG.msg</i></h2>
+<table class="typestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+<tr>
+   <td>
+<a href="src-agentMSG.html">agentMSG</a>
+   </td>
+   <td>
+<i>message</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//    cplusplus {{
+//        #include &quot;ag_sim_settings.h&quot; 
+//	  }};
+</span><span style="color: #000000; ">
+
+
+</span><span style="color: #800000; font-weight: bold; ">message</span><span style="color: #000000; "> </span><span style="color: #000000; ">agentMSG</span><span style="color: #000000; ">
+{ 
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">source</span><span style="color: #000000; "> 		= </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; ">	</span><span style="color: #000000; ">destination</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; ">	</span><span style="color: #000000; ">hopCount</span><span style="color: #000000; ">    = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; ">	</span><span style="color: #000000; ">informative</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">content</span><span style="color: #000000; ">		= </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">neg_step</span><span style="color: #000000; ">	= </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+   
+    </span><span style="color: #808080; font-style: italic; ">// scheduler related
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; ">		</span><span style="color: #000000; ">ag_id</span><span style="color: #000000; "> 			  = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; ">		</span><span style="color: #000000; ">ag_task_id</span><span style="color: #000000; "> 		  = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> 	</span><span style="color: #000000; ">ag_task_t_finito</span><span style="color: #000000; ">  = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; ">  </span><span style="color: #000000; ">ag_task_release_time</span><span style="color: #000000; ">     = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    
+    </span><span style="color: #808080; font-style: italic; ">// needs related
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; ">		</span><span style="color: #000000; ">ag_need_id</span><span style="color: #000000; "> 		  = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; ">	</span><span style="color: #000000; ">ag_need_r</span><span style="color: #000000; ">  		  = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; ">		</span><span style="color: #000000; ">ag_needed_task_id</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+     
+    </span><span style="color: #808080; font-style: italic; ">// negotiation related
+</span><span style="color: #000000; ">    
+    
+
+    </span><span style="color: #808080; font-style: italic; ">// This is the number of max public services publicable at ones.
+</span><span style="color: #000000; ">    </span><span style="color: #808080; font-style: italic; ">// Remember to keep this value aligned with &quot;ag_pub_tasks_ids&quot; 
+</span><span style="color: #000000; ">    </span><span style="color: #808080; font-style: italic; ">// variable in the XML file 
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; ">	</span><span style="color: #000000; ">ag_pub_tasks_ids</span><span style="color: #000000; ">[</span><span style="color: #008000; ">24</span><span style="color: #000000; ">];
+    
+    </span><span style="color: #808080; font-style: italic; ">// This is the number of max agents available per public task at ones.
+</span><span style="color: #000000; ">    </span><span style="color: #808080; font-style: italic; ">// Remember to keep this value aligned with &quot;DIM_df_pub_agents_per_task&quot; 
+</span><span style="color: #000000; ">    </span><span style="color: #808080; font-style: italic; ">// variable in the XML file 
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; ">	</span><span style="color: #000000; ">df_pub_agents_per_task</span><span style="color: #000000; ">[</span><span style="color: #008000; ">20</span><span style="color: #000000; ">];
+          
+}
+
+</span><span style="color: #808080; font-style: italic; ">// NEG_STEP (used for messages between Ag and Ag)
+// 200 - [Ag] initiates negotiation (require a bid fo a specific task)
+// 201 - [Ag] bids
+</span><span style="color: #000000; ">
+</span><span style="color: #808080; font-style: italic; ">// CONTENT (used for messages between Ag and DF)
+// 100 - [!DF] set_public_services_to_df
+// 100 -  [DF] get_public_services_to_df
+// 101 - [!DF] Ag asks list_agent_per_service
+// 101 - [DF] receive request for list_agent_per_service
+// 102 - [DF] sends list_agent_per_service
+// 102 - [!DF] Ag processes list_agent_per_service
+</span><span style="color: #000000; ">
+
+</span><span style="color: #808080; font-style: italic; ">// INFORMATIVE (used for selfMessages)
+// 1  - set_ag_taskSet
+// 2  - set_ag_Scheduler 
+// 3  - set_df_taskset
+// 4  - set_task_arrival (load it into ready_queue ordered by ddl)
+// 5  - set_check_thask_end
+// 6  - set_check_ddl_miss
+// 7  - set_preemption
+// 8  - set_resume_post_preemption -- it seems it's not useful
+// 9  - set_public_services (publish public &quot;exposed&quot; tasks on DF table)
+// 10 - set_single_agent_needs (generate instants and needs to be negotiated by the agent)
+// 11 - release single need per agent</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

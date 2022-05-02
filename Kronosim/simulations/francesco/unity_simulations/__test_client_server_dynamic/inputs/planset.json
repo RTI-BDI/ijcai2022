@@ -1,0 +1,58 @@
+{
+    "0": [ 
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.001,
+                        "n_exec": 1,
+                        "period": 40.0,
+                        "relativeDeadline": 40.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [ ],
+            "effects_at_end": [
+                ["ASSIGN", "four", false ]
+            ],
+            "goal_name": "skill_four",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "false_post_condition"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "four"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

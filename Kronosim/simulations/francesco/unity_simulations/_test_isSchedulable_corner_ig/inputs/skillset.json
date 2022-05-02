@@ -1,0 +1,89 @@
+{
+    "0": [
+        {
+            "goal_name": "store_one_wood_one_stone"
+        },
+        {
+            "goal_name": "produce_one_wood_one_stone"
+        },
+        {
+            "goal_name": "do_stuff_test"
+        },
+        {
+            "goal_name": "retrieve_lv0"
+        },
+        {
+            "goal_name": "produce_lv0"
+        },
+        {
+            "goal_name": "move_right_c1_lv0"
+        },
+        {
+            "goal_name": "move_right_c1_lv1"
+        },
+        {
+            "goal_name": "collect_lvA"
+        },        
+        
+        {
+            "goal_name": "move_up_c1"
+        },
+        {
+            "goal_name": "move_down_c1"
+        },
+        {
+            "goal_name": "move_left_c1"
+        },
+        {
+            "goal_name": "move_right_c1"
+        },
+        {
+            "goal_name": "move_up_p1"
+        },
+        {
+            "goal_name": "move_down_p1"
+        },
+        {
+            "goal_name": "move_left_p1"
+        },
+        {
+            "goal_name": "move_right_p1"
+        },
+        {
+            "goal_name": "collect_stone"
+        },
+        {
+            "goal_name": "collect_wood"
+        },
+        {
+            "goal_name": "recharge_c1"
+        },
+        {
+            "goal_name": "recharge_p1"
+        },
+        {
+            "goal_name": "store_wood_c1"
+        },
+        {
+            "goal_name": "store_wood_p1"
+        },
+        {
+            "goal_name": "store_stone_c1"
+        },
+        {
+            "goal_name": "store_stone_p1"
+        },
+        {
+            "goal_name": "store_chest_p1"
+        },
+        {
+            "goal_name": "retrieve_wood_c1"
+        },
+        {
+            "goal_name": "retrieve_stone_c1"
+        },
+        {
+            "goal_name": "produce_chest_p1"
+        }
+    ]
+}

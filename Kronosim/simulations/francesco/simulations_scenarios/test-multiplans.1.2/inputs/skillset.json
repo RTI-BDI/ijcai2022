@@ -1,0 +1,28 @@
+{
+    "0": [
+        {
+            "goal_name": "skill_isMusicOn"
+        },
+        {
+            "goal_name": "skill_needsWeatherForecast"
+        },
+        {
+            "goal_name": "skill_isOvenOn"
+        },
+        {
+            "goal_name": "skill_isTvOn"
+        },
+        {
+            "goal_name": "skill_isLightOn"
+        },
+        {
+            "goal_name": "skill_isRoomAtRightTemperature"
+        },
+        {
+            "goal_name": "skill_internal_goal_A"
+        },
+        {
+            "goal_name": "skill_internal_goal_B"
+        }
+    ]
+}

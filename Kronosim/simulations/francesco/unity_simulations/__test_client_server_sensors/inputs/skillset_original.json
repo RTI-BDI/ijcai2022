@@ -1,0 +1,20 @@
+{
+    "0": [
+        {
+            "goal_name": "skill_one"
+        },
+        {
+            "goal_name": "skill_two"
+        },
+
+        {
+            "goal_name": "skill_igA"
+        },
+        {
+            "goal_name": "skill_igB"
+        },
+        {
+            "goal_name": "skill_igC"
+        }
+    ]
+}

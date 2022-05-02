@@ -1,0 +1,29 @@
+{
+    "0": [
+        {
+            "cont_conditions": [],
+            "deadline": -1.0,
+            "goal_name": "main_desire",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "need_main_desire"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

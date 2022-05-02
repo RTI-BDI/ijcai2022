@@ -1,0 +1,64 @@
+{
+    "0": [
+        {
+            "name": "internal_belief",
+            "value": 20
+        },
+        {
+            "name": "number2",
+            "value": 20
+        },
+        {
+            "name": "numb",
+            "value": 75
+        },
+        {
+            "name": "number",
+            "value": 3
+        },
+        {
+            "name": "batteryLevel",
+            "value": 20
+        },
+        {
+            "name": "isMusicOn",
+            "value": false
+        },
+        {
+            "name": "needsWeatherForecast",
+            "value": false
+        },
+        {
+            "name": "isOvenOn",
+            "value": false
+        },
+        {
+            "name": "isTvOn",
+            "value": false
+        },
+        {
+            "name": "isLightOn",
+            "value": false
+        },
+        {
+            "name": "isRoomAtRightTemperature",
+            "value": true
+        },
+        {
+            "name": "isFronDoorLocked",
+            "value": false
+        },
+        {
+            "name": "isGardenIrrigationOn",
+            "value": false
+        },
+        {
+            "name": "schema1",
+            "value": false
+        },
+        {
+            "name": "schema2",
+            "value": false
+        }
+    ]
+}

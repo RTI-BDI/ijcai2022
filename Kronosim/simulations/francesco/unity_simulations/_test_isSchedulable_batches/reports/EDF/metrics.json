@@ -1,0 +1,117 @@
+[
+    {
+        "Simulation_crash": false
+    },
+    {
+        "Forced_simulation_end": false
+    },
+    {
+        "Average_lateness": 0,
+        "Deadlinemiss_generated": null,
+        "Scheduling_type": "EDF",
+        "Tot_completed_tasks": 0.0,
+        "Tot_miss_generated": 0
+    },
+    {
+        "AVG_response_time": 0.0,
+        "Num_of_executed_tasks": 0,
+        "Response_time": []
+    },
+    {
+        "Avg_active_goals_rc": 0.0,
+        "Avg_active_intentions_rc": 0.0,
+        "Reasoningcycle_stats": "Reasoning cycles stats",
+        "Stats_rc": [
+            {
+                "Active_goals": 0,
+                "Active_intentions": 0,
+                "Iteration": 1,
+                "Time": 0.0
+            },
+            {
+                "Active_goals": 0,
+                "Active_intentions": 0,
+                "Iteration": 2,
+                "Time": 0.0
+            },
+            {
+                "Active_goals": 0,
+                "Active_intentions": 0,
+                "Iteration": 3,
+                "Time": 5.0
+            }
+        ]
+    },
+    {
+        "Avg_active_goals_phiI": 0,
+        "Avg_active_intentions_phiI": 0,
+        "PhiI_stats": "PhiI stats",
+        "Stats_phiI": []
+    },
+    {
+        "Goals_activation": [
+            {
+                "Activation_time": 5.0,
+                "Annidation_level": "not set",
+                "Belief_name": "store_one_wood_one_stone",
+                "Completion_time": 5.0,
+                "Deadline": -1.0,
+                "Due_to": "FORCE REASONING CYCLE",
+                "Goal_id": 0,
+                "Origina_plan_id": -1,
+                "Plan_id": -1,
+                "Plan_pref_index": 0
+            }
+        ],
+        "Intentions_activation": [],
+        "Ready_vector": 0,
+        "Release_vector": 0,
+        "Simulation_limit_reached": false,
+        "Still_active_events": "Still active",
+        "Still_active_intentions": 0,
+        "Still_active_intentions_waiting_completion": 0
+    },
+    {
+        "Achieved_goals": [],
+        "Tot_achievedGoals": 0
+    },
+    {
+        "Tasks": [],
+        "Tot_exec": 0,
+        "Unexpected_executions": "Unexpected executions"
+    },
+    {
+        "Generated_errors": null,
+        "Num_of_generated_errors": 0
+    },
+    {
+        "Generated_warnings": [
+            {
+                "Cause": "[WARNING] Stop agent reasoning cycle, there are no goals to check!",
+                "Function": "ag_reasoning_cycle",
+                "Time": 0.0
+            },
+            {
+                "Cause": "[WARNING] Stop agent reasoning cycle, there are no goals to check!",
+                "Function": "ag_reasoning_cycle",
+                "Time": 0.0
+            },
+            {
+                "Cause": "[WARNING] Plan:[0], goal:[store_one_wood_one_stone] is NOT valid, no plans for the internal goals!",
+                "Function": "ag_reasoning_cycle",
+                "Time": 5.0
+            },
+            {
+                "Cause": "[WARNING] There are no feasible plans for Goal:[0], name:[store_one_wood_one_stone] -> removed.",
+                "Function": "ag_reasoning_cycle",
+                "Time": 5.0
+            },
+            {
+                "Cause": "[WARNING] There are no Plans that satisfy the active goal(s).",
+                "Function": "ag_reasoning_cycle",
+                "Time": 5.0
+            }
+        ],
+        "Num_of_generated_warnings": 5
+    }
+]

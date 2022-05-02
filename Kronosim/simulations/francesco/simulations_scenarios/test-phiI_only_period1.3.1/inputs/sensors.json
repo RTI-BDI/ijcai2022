@@ -1,0 +1,34 @@
+{
+    "0": [
+        {
+            "belief_name": "isOvenOn",
+            "mode": "SET",
+            "time": 5.0,
+            "value": false
+        },
+        {
+            "belief_name": "isMusicOn",
+            "mode": "SET",
+            "time": 5.0,
+            "value": false
+        },
+        {
+            "belief_name": "needsWeatherForecast",
+            "mode": "SET",
+            "time": 5.0,
+            "value": true
+        },
+        {
+            "belief_name": "isRoomAtRightTemperature",
+            "mode": "SET",
+            "time": 5.0,
+            "value": false
+        },
+        {
+            "belief_name": "isRoomAtRightTemperature",
+            "mode": "SET",
+            "time": 200.0,
+            "value": true
+        }
+    ]
+}

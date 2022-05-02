@@ -1,0 +1,44 @@
+{
+    "0": [
+        {
+            "name": "internal_goal_A",
+            "value": 50
+        },
+        {
+            "name": "batteryLevel",
+            "value": 80
+        },
+        {
+            "name": "isMusicOn",
+            "value": false
+        },
+        {
+            "name": "needsWeatherForecast",
+            "value": false
+        },
+        {
+            "name": "isOvenOn",
+            "value": true
+        },
+        {
+            "name": "isTvOn",
+            "value": true
+        },
+        {
+            "name": "isLightOn",
+            "value": true
+        },
+        {
+            "name": "schema1",
+            "value": true
+        },
+        {
+            "name": "schema2",
+            "value": true
+        },
+        {
+            "name": "isRoomAtRightTemperature",
+            "value": true
+        }
+    ]
+}

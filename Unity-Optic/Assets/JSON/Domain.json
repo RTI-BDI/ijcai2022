@@ -1,0 +1,319 @@
+{
+	"domain": 
+			[ "define_domain",
+				"S_Example",				
+				[ "defineTypes",
+					[ "type", [ "array", "robot", "r_station", "resource", "storage" ], "object" ],
+					[ "type", [ "array", "collector", "producer" ], "robot" ],
+					[ "type", [ "array", "wood", "stone" ], "resource"]
+				],
+				[ "definePredicates",
+					[ "predicate", "free", ["array", [ "parameter", "r", "robot"]]]
+				],
+				[ "defineFunctions",
+					[ "function", "battery-amount", [ "array", [ "parameter", "r", "robot" ]]],
+					[ "function", "wood-amount", [ "array", [ "parameter", "r", "robot" ]]],
+					[ "function", "stone-amount", [ "array", [ "parameter", "r", "robot" ]]],
+					[ "function", "chest-amount", [ "array", [ "parameter", "p", "producer" ]]],
+
+					[ "function", "posX", [ "array", [ "parameter", "o", "object" ]]],
+					[ "function", "posY", [ "array", [ "parameter", "o", "object" ]]],
+
+					[ "function", "wood-stored", [ "array", [ "parameter", "s", "storage" ]]],
+					[ "function", "stone-stored", [ "array", [ "parameter", "s", "storage" ]]],
+					[ "function", "chest-stored", [ "array", [ "parameter", "s", "storage" ]]],
+
+					[ "constant", "battery-capacity"],
+					[ "constant", "sample-capacity"],
+					[ "constant", "grid-size"]
+				],
+				[ "defineActions",
+					["action",
+						"move-up",
+						[ "defineParameters", [ "array", [ "parameter", "r", "robot" ]]],
+						[ "duration", "120" ],
+						[ "andConditions",					
+							[ "at_start", [ ">", [ "function", "battery-amount", ["array",  "r"]], "10"]],
+							[ "at_start", [ "true", [ "predicate", "free", ["array", "r"]]]],
+							[ "at_start", [ "<", [ "function", "posY", ["array", "r"]], [ "-", [ "constant", "grid-size"], 1]]]
+						],
+						[ "andEffects", 
+							[ "at_start", [ "false", [ "predicate", "free", ["array", "r"]]]],
+							[ "at_end", [ "true", [ "predicate", "free", ["array", "r"]]]]	
+						],
+						[ "andPostConditions", 
+							[ "at_end", [ "decrease", ["function", "battery-amount", ["array", "r"]], "2"]],
+							[ "at_end", [ "increase", ["function", "posY", ["array", "r"]], "1"]]
+						],
+						[ "kronosim_period", 12],
+						[ "kronosim_computation_cost", 4]
+					],
+					["action",
+						"move-down",
+						[ "defineParameters", [ "array", [ "parameter", "r", "robot" ]]],
+						[ "duration", "120" ],
+						[ "andConditions",					
+							[ "at_start", [ ">", [ "function", "battery-amount", ["array",  "r"]], "10"]],
+							[ "at_start", [ "true", [ "predicate", "free", ["array", "r"]]]],
+							[ "at_start", [ ">", [ "function", "posY", ["array", "r"]], 0]]
+						],
+						[ "andEffects", 
+							[ "at_start", [ "false", [ "predicate", "free", ["array", "r"]]]],
+							[ "at_end", [ "true", [ "predicate", "free", ["array", "r"]]]]
+						],
+						[ "andPostConditions", 
+							[ "at_end", [ "decrease", ["function", "battery-amount", ["array", "r"]], "2"]],
+							[ "at_end", [ "decrease", ["function", "posY", ["array", "r"]], "1"]]
+						],
+						[ "kronosim_period", 12],
+						[ "kronosim_computation_cost", 4]
+					],
+					["action",
+						"move-right",
+						[ "defineParameters", [ "array", [ "parameter", "r", "robot" ]]],
+						[ "duration", "120" ],
+						[ "andConditions",					
+							[ "at_start", [ ">", [ "function", "battery-amount", ["array",  "r"]], "10"]],
+							[ "at_start", [ "true", [ "predicate", "free", ["array", "r"]]]],
+							[ "at_start", [ "<", [ "function", "posX", ["array", "r"]], [ "-", [ "constant", "grid-size"], 1]]]
+						],
+						[ "andEffects", 
+							[ "at_start", [ "false", [ "predicate", "free", ["array", "r"]]]],
+							[ "at_end", [ "true", [ "predicate", "free", ["array", "r"]]]]
+						],
+						[ "andPostConditions", 
+							[ "at_end", [ "decrease", ["function", "battery-amount", ["array", "r"]], "2"]],
+							[ "at_end", [ "increase", ["function", "posX", ["array", "r"]], "1"]]
+						],
+						[ "kronosim_period", 12],
+						[ "kronosim_computation_cost", 4]
+					],
+					["action",
+						"move-left",
+						[ "defineParameters", [ "array", [ "parameter", "r", "robot" ]]],
+						[ "duration", "120" ],
+						[ "andConditions",					
+							[ "at_start", [ ">", [ "function", "battery-amount", ["array",  "r"]], "10"]],
+							[ "at_start", [ "true", [ "predicate", "free", ["array", "r"]]]],
+							[ "at_start", [ ">", [ "function", "posX", ["array", "r"]], 0]]
+						],
+						[ "andEffects", 
+							[ "at_start", [ "false", [ "predicate", "free", ["array", "r"]]]],
+							[ "at_end", [ "true", [ "predicate", "free", ["array", "r"]]]]
+						],
+						[ "andPostConditions", 
+							[ "at_end", [ "decrease", ["function", "battery-amount", ["array", "r"]], "2"]],
+							[ "at_end", [ "decrease", ["function", "posX", ["array", "r"]], "1"]]
+						],
+						[ "kronosim_period", 12],
+						[ "kronosim_computation_cost", 4]
+					],
+					["action",
+						"collect-wood",
+						[ "defineParameters", [ "array", [ "parameter", "c", "collector" ], [ "parameter", "w", "wood" ]]],
+						[ "duration", "120" ],
+						[ "andConditions",					
+							[ "at_start", [ ">", [ "function", "battery-amount", [ "array",  "c"]], "10"]],
+							[ "at_start", [ "equal", [ "function", "posX", [ "array", "c" ]], [ "function", "posX", [ "array", "w" ]]]],
+							[ "at_start", [ "equal", [ "function", "posY", [ "array", "c" ]], [ "function", "posY", [ "array", "w" ]]]],
+							[ "at_start", [ "<", [ "function", "wood-amount", [ "array", "c" ]], [ "constant", "sample-capacity"]]],
+							[ "at_start", [ "true", [ "predicate", "free", ["array", "c"]]]]
+						],
+						[ "andEffects", 
+							[ "at_start", [ "false", [ "predicate", "free", ["array", "c"]]]],
+							[ "at_end", [ "true", [ "predicate", "free", ["array", "c"]]]]
+						],
+						[ "andPostConditions", 
+							[ "at_end", [ "decrease", ["function", "battery-amount", ["array", "c"]], "5"]],
+							[ "at_end", [ "increase", ["function", "wood-amount", ["array", "c"]], "1"]]
+						],
+						[ "kronosim_period", 10],
+						[ "kronosim_computation_cost", 3]
+					],
+					["action",
+						"collect-stone",
+						[ "defineParameters", [ "array", [ "parameter", "c", "collector" ], [ "parameter", "s", "stone" ]]],
+						[ "duration", "120" ],
+						[ "andConditions",					
+							[ "at_start", [ ">", [ "function", "battery-amount", [ "array",  "c"]], "10"]],
+							[ "at_start", [ "equal", [ "function", "posX", [ "array", "c" ]], [ "function", "posX", [ "array", "s" ]]]],
+							[ "at_start", [ "equal", [ "function", "posY", [ "array", "c" ]], [ "function", "posY", [ "array", "s" ]]]],
+							[ "at_start", [ "<", [ "function", "stone-amount", [ "array", "c" ]], [ "constant", "sample-capacity"]]],
+							[ "at_start", [ "true", [ "predicate", "free", ["array", "c"]]]]
+						],
+						[ "andEffects", 
+							[ "at_start", [ "false", [ "predicate", "free", ["array", "c"]]]],
+							[ "at_end", [ "true", [ "predicate", "free", ["array", "c"]]]]
+						],
+						[ "andPostConditions", 
+							[ "at_end", [ "decrease", ["function", "battery-amount", ["array", "c"]], "5"]],
+							[ "at_end", [ "increase", ["function", "stone-amount", ["array", "c"]], "1"]]
+						],
+						[ "kronosim_period", 10],
+						[ "kronosim_computation_cost", 3]
+					],
+					["action",
+						"recharge",
+						[ "defineParameters", [ "array", [ "parameter", "r", "robot" ], [ "parameter", "rs", "r_station" ]]],
+						[ "duration", ["-", ["constant", "battery-capacity"], ["function", "battery-amount", ["array", "r"]]]],
+						[ "andConditions",					
+							[ "at_start", [ ">", [ "function", "battery-amount", [ "array",  "r"]], "0"]],
+							[ "at_start", [ "equal", [ "function", "posX", [ "array", "r" ]], [ "function", "posX", [ "array", "rs" ]]]],
+							[ "at_start", [ "equal", [ "function", "posY", [ "array", "r" ]], [ "function", "posY", [ "array", "rs" ]]]],
+							[ "at_start", [ "<", [ "function", "battery-amount", [ "array", "r" ]], [ "constant", "battery-capacity"]]],
+							[ "at_start", [ "true", [ "predicate", "free", ["array", "r"]]]]
+						],
+						[ "andEffects", 
+							[ "at_start", [ "false", [ "predicate", "free", ["array", "r"]]]],
+							[ "at_end", [ "true", [ "predicate", "free", ["array", "r"]]]]
+
+						],
+						[ "andPostConditions", 
+							[ "at_end", [ "increase", ["function", "battery-amount", ["array", "r"]], [ "-", [ "constant", "battery-capacity" ], [ "function", "battery-amount", ["array", "r"]] ]]]
+						],
+						[ "kronosim_period", 2],
+						[ "kronosim_computation_cost", 1]
+					],
+					["action",
+						"store-wood",
+						[ "defineParameters", [ "array", [ "parameter", "r", "robot" ], [ "parameter", "s", "storage" ]]],
+						[ "duration", "60" ],
+						[ "andConditions",					
+							[ "at_start", [ ">", [ "function", "battery-amount", [ "array",  "r"]], "10"]],
+							[ "at_start", [ ">", [ "function", "wood-amount", [ "array", "r" ]], "0"]],
+							[ "at_start", [ "equal", [ "function", "posX", [ "array", "r" ]], [ "function", "posX", [ "array", "s" ]]]],
+							[ "at_start", [ "equal", [ "function", "posY", [ "array", "r" ]], [ "function", "posY", [ "array", "s" ]]]],
+							[ "at_start", [ "true", [ "predicate", "free", ["array", "r"]]]]
+						],
+						[ "andEffects", 
+							[ "at_start", [ "false", [ "predicate", "free", ["array", "r"]]]],
+							[ "at_end", [ "true", [ "predicate", "free", ["array", "r"]]]]
+						],
+						[ "andPostConditions", 
+							[ "at_end", [ "decrease", ["function", "battery-amount", ["array", "r"]], "1"]],
+							[ "at_end", [ "increase", ["function", "wood-stored", ["array", "s"]], "1"]],
+							[ "at_end", [ "decrease", ["function", "wood-amount", ["array", "r"]], "1"]]
+						],
+						[ "kronosim_period", 5],
+						[ "kronosim_computation_cost", 1]
+					],
+					["action",
+						"store-stone",
+						[ "defineParameters", [ "array", [ "parameter", "r", "robot" ], [ "parameter", "s", "storage" ]]],
+						[ "duration", "60" ],
+						[ "andConditions",					
+							[ "at_start", [ ">", [ "function", "battery-amount", [ "array",  "r"]], "10"]],
+							[ "at_start", [ ">", [ "function", "stone-amount", [ "array", "r" ]], "0"]],
+							[ "at_start", [ "equal", [ "function", "posX", [ "array", "r" ]], [ "function", "posX", [ "array", "s" ]]]],
+							[ "at_start", [ "equal", [ "function", "posY", [ "array", "r" ]], [ "function", "posY", [ "array", "s" ]]]],
+							[ "at_start", [ "true", [ "predicate", "free", ["array", "r"]]]]
+						],
+						[ "andEffects", 
+							[ "at_start", [ "false", [ "predicate", "free", ["array", "r"]]]],
+							[ "at_end", [ "true", [ "predicate", "free", ["array", "r"]]]]
+						],
+						[ "andPostConditions", 
+							[ "at_end", [ "decrease", ["function", "battery-amount", ["array", "r"]], "1"]],
+							[ "at_end", [ "increase", ["function", "stone-stored", ["array", "s"]], "1"]],
+							[ "at_end", [ "decrease", ["function", "stone-amount", ["array", "r"]], "1"]]
+						],
+						[ "kronosim_period", 5],
+						[ "kronosim_computation_cost", 1]
+					],
+					["action",
+						"store-chest",
+						[ "defineParameters", [ "array", [ "parameter", "p", "producer" ], [ "parameter", "s", "storage" ]]],
+						[ "duration", "60" ],
+						[ "andConditions",					
+							[ "at_start", [ ">", [ "function", "battery-amount", [ "array",  "p"]], "10"]],
+							[ "at_start", [ ">", [ "function", "chest-amount", [ "array", "p" ]], "0"]],
+							[ "at_start", [ "equal", [ "function", "posX", [ "array", "p" ]], [ "function", "posX", [ "array", "s" ]]]],
+							[ "at_start", [ "equal", [ "function", "posY", [ "array", "p" ]], [ "function", "posY", [ "array", "s" ]]]],
+							[ "at_start", [ "true", [ "predicate", "free", ["array", "p"]]]]
+						],
+						[ "andEffects", 
+							[ "at_start", [ "false", [ "predicate", "free", ["array", "p"]]]],
+							[ "at_end", [ "true", [ "predicate", "free", ["array", "p"]]]]
+						],
+						[ "andPostConditions", 
+							[ "at_end", [ "decrease", ["function", "battery-amount", ["array", "p"]], "1"]],
+							[ "at_end", [ "increase", ["function", "chest-stored", ["array", "s"]], "1"]],
+							[ "at_end", [ "decrease", ["function", "chest-amount", ["array", "p"]], "1"]]
+						],
+						[ "kronosim_period", 5],
+						[ "kronosim_computation_cost", 1]
+					],
+					["action",
+						"retrieve-wood",
+						[ "defineParameters", [ "array", [ "parameter", "p", "producer" ], [ "parameter", "c", "collector" ]]],
+						[ "duration", "60" ],
+						[ "andConditions",	
+							[ "at_start", [ "equal", [ "function", "posX", [ "array", "p" ]], [ "function", "posX", [ "array", "c" ]]]],
+							[ "at_start", [ "equal", [ "function", "posY", [ "array", "p" ]], [ "function", "posY", [ "array", "c" ]]]],				
+							[ "at_start", [ ">", [ "function", "wood-amount", [ "array",  "c"]], "0"]],
+							[ "at_start", [ "true", [ "predicate", "free", ["array", "c"]]]],
+							[ "at_start", [ "true", [ "predicate", "free", ["array", "p"]]]]
+						],
+						[ "andEffects", 
+							[ "at_start", [ "false", [ "predicate", "free", ["array", "c"]]]],
+							[ "at_start", [ "false", [ "predicate", "free", ["array", "p"]]]],
+							[ "at_end", [ "true", [ "predicate", "free", ["array", "c"]]]],
+							[ "at_end", [ "true", [ "predicate", "free", ["array", "p"]]]]
+						],
+						[ "andPostConditions", 
+							[ "at_end", [ "decrease", ["function", "wood-amount", ["array", "c"]], "1"]],
+							[ "at_end", [ "increase", ["function", "wood-amount", ["array", "p"]], "1"]]
+						],
+						[ "kronosim_period", 6],
+						[ "kronosim_computation_cost", 2]
+					],
+					["action",
+						"retrieve-stone",
+						[ "defineParameters", [ "array", [ "parameter", "p", "producer" ], [ "parameter", "c", "collector" ]]],
+						[ "duration", "60" ],
+						[ "andConditions",	
+							[ "at_start", [ "equal", [ "function", "posX", [ "array", "p" ]], [ "function", "posX", [ "array", "c" ]]]],
+							[ "at_start", [ "equal", [ "function", "posY", [ "array", "p" ]], [ "function", "posY", [ "array", "c" ]]]],				
+							[ "at_start", [ ">", [ "function", "stone-amount", [ "array",  "c"]], "0"]],
+							[ "at_start", [ "true", [ "predicate", "free", ["array", "c"]]]],
+							[ "at_start", [ "true", [ "predicate", "free", ["array", "p"]]]]
+						],
+						[ "andEffects", 
+							[ "at_start", [ "false", [ "predicate", "free", ["array", "c"]]]],
+							[ "at_start", [ "false", [ "predicate", "free", ["array", "p"]]]],
+							[ "at_end", [ "true", [ "predicate", "free", ["array", "c"]]]],
+							[ "at_end", [ "true", [ "predicate", "free", ["array", "p"]]]]
+						],
+						[ "andPostConditions", 
+							[ "at_end", [ "decrease", ["function", "stone-amount", ["array", "c"]], "1"]],
+							[ "at_end", [ "increase", ["function", "stone-amount", ["array", "p"]], "1"]]
+						],
+						[ "kronosim_period", 6],
+						[ "kronosim_computation_cost", 2]
+					],
+					["action",
+						"produce-chest",
+						[ "defineParameters", [ "array", [ "parameter", "p", "producer" ]]],
+						[ "duration", "120" ],
+						[ "andConditions",	
+							[ "at_start", [ ">", [ "function", "battery-amount", [ "array", "p" ]], "10"]],			
+							[ "at_start", [ ">", [ "function", "wood-amount", [ "array",  "p"]], "0"]],
+							[ "at_start", [ ">", [ "function", "stone-amount", [ "array",  "p"]], "0"]],
+							[ "at_start", [ "true", [ "predicate", "free", ["array", "p"]]]]
+						],
+						[ "andEffects", 
+							[ "at_start", [ "false", [ "predicate", "free", ["array", "p"]]]],
+							[ "at_end", [ "true", [ "predicate", "free", ["array", "p"]]]]
+						],
+						[ "andPostConditions", 
+							[ "at_end", [ "decrease", ["function", "battery-amount", ["array", "p"]], "5"]],
+							[ "at_end", [ "increase", ["function", "chest-amount", ["array", "p"]], "1"]],
+							[ "at_end", [ "decrease", ["function", "wood-amount", ["array", "p"]], "1"]],
+							[ "at_end", [ "decrease", ["function", "stone-amount", ["array", "p"]], "1"]]
+						],
+						[ "kronosim_period", 12],
+						[ "kronosim_computation_cost", 4]
+					]
+				]
+			]
+}

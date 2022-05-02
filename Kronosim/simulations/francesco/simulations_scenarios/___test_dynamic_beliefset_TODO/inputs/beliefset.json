@@ -1,0 +1,92 @@
+{
+    "0": [
+        {
+            "name": "internal_belief",
+            "value": 20
+        },
+        {
+            "name": "internal_belief",
+            "value": false
+        },
+        {
+            "name": "number2",
+            "value": 20
+        },
+        {
+            "name": "numb",
+            "value": 75
+        },
+        {
+            "name": "number",
+            "value": 3
+        },
+        {
+            "name": "batteryLevel",
+            "value": 20
+        },
+        {
+            "name": "isMusicOn",
+            "value": false
+        },
+        {
+            "name": "needsWeatherForecast",
+            "value": false
+        },
+        {
+            "name": "isOvenOn",
+            "value": false
+        },
+        {
+            "name": "isTvOn",
+            "value": false
+        },
+        {
+            "name": "isLightOn",
+            "value": false
+        },
+        {
+            "name": "isRoomAtRightTemperature",
+            "value": false
+        },
+        {
+            "name": "isFronDoorLocked",
+            "value": false
+        },
+        {
+            "name": "isGardenIrrigationOn",
+            "value": false
+        },
+        {
+            "name": "schema1",
+            "value": false
+        },
+        {
+            "name": "schema2",
+            "value": false
+        },
+        {
+            "name": "effect_belief",
+            "value": 200
+        },
+        {
+            "name": "effect_belief_bool",
+            "value": false
+        },
+        {
+            "name": "zero",
+            "value": 0
+        },
+        {
+            "name": "belief_constant",
+            "value": 0
+        },
+        {
+            "name": "is_free",
+            "value": true
+        },
+        {
+            "name": "distance",
+            "value": 20
+        }
+    ]
+}

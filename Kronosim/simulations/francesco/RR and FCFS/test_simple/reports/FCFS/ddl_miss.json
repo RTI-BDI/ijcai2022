@@ -1,0 +1,20 @@
+[
+    {
+        "agUtilization": 0.17647058823529413,
+        "arrivalTime": 192.0,
+        "computationTime": 3.0,
+        "ddlMissTime": 195.0,
+        "demander": 0,
+        "executor": 0,
+        "firstActivation": 192.0,
+        "id": 0,
+        "lastActivation": 192.0,
+        "original_plan_id": 1,
+        "period": 17.0,
+        "plan_id": 1,
+        "relativeDeadline": 17.0,
+        "releaseTime": 192.0,
+        "runningTasks": 0,
+        "server": -1
+    }
+]

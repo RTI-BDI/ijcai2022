@@ -1,0 +1,35 @@
+{
+    "0": [
+        {
+            "goal_name": "skill_desire_one"
+        },
+        {
+            "goal_name": "skill_desire_two"
+        },
+        {
+            "goal_name": "skill_desire_three"
+        },
+
+        {
+            "goal_name": "skill_ig1_A"
+        },
+        {
+            "goal_name": "skill_ig1_B"
+        },
+        {
+            "goal_name": "skill_ig1_C"
+        },
+        {
+            "goal_name": "skill_ig1_D"
+        },
+        {
+            "goal_name": "skill_ig2_A"
+        },
+        {
+            "goal_name": "skill_ig2_B"
+        },
+        {
+            "goal_name": "skill_ig2_C"
+        }
+    ]
+}

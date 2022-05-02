@@ -1,0 +1,40 @@
+{
+    "0": [
+        {
+            "name": "batteryLevel",
+            "value": 80
+        },
+        {
+            "name": "isMusicOn",
+            "value": false
+        },
+        {
+            "name": "needsWeatherForecast",
+            "value": false
+        },
+        {
+            "name": "isOvenOn",
+            "value": true
+        },
+        {
+            "name": "isTvOn",
+            "value": false
+        },
+        {
+            "name": "isLightOn",
+            "value": false
+        },
+        {
+            "name": "schema1",
+            "value": true
+        },
+        {
+            "name": "schema2",
+            "value": true
+        },
+        {
+            "name": "isRoomAtRightTemperature",
+            "value": true
+        }
+    ]
+}

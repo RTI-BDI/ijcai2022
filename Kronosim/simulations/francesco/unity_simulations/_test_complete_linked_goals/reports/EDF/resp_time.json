@@ -1,0 +1,40 @@
+[
+    [
+        {
+            "absolute_deadline": 10.0,
+            "arrivalTime": 0.0,
+            "arrivalTimeInitial": 0.0,
+            "compTime": 1.0,
+            "deadline": 10.0,
+            "execution": "SEQUENTIAL",
+            "finishTime": 1.0,
+            "firstActivation": 0.0,
+            "lastActivation": 0.0,
+            "n_exec": 1,
+            "n_execInitial": 2,
+            "responseTime": 1.0,
+            "server": -1,
+            "taskId": 0,
+            "taskOriginalPlanId": 3,
+            "taskPlanId": 0
+        },
+        {
+            "absolute_deadline": 10.0,
+            "arrivalTime": 10.0,
+            "arrivalTimeInitial": 0.0,
+            "compTime": 1.0,
+            "deadline": 20.0,
+            "execution": "SEQUENTIAL",
+            "finishTime": 11.0,
+            "firstActivation": 10.0,
+            "lastActivation": 10.0,
+            "n_exec": 0,
+            "n_execInitial": 2,
+            "responseTime": 1.0,
+            "server": -1,
+            "taskId": 0,
+            "taskOriginalPlanId": 3,
+            "taskPlanId": 0
+        }
+    ]
+]

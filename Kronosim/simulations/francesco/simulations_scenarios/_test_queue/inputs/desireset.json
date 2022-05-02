@@ -1,0 +1,44 @@
+{
+    "0": [
+        {
+            "cont_conditions": [],
+            "deadline": 500.0,
+            "goal_name": "action_first_desire",
+            "preconditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "first_desire"
+                    ],
+                    true
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [ 0.5 ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": 500.0,
+            "goal_name": "action_second_desire",
+            "preconditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "second_desire"
+                    ],
+                    true
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [ 0.5 ],
+                "reference_table": []
+            }
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "0": [
+        {
+            "cont_conditions": [],
+            "deadline": -1.0,
+            "goal_name": "store_one_wood_one_stone",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "activate_store_one_wood_one_stone"
+                        ],
+                        true
+                    ],
+                    [
+                        "NOT",
+                        [
+                            "AND",
+                            [
+                                "==",
+                                [
+                                    "READ_BELIEF",
+                                    "wood_stored_s1"
+                                ],
+                                1
+                            ],
+                            [
+                                "==",
+                                [
+                                    "READ_BELIEF",
+                                    "stone_stored_s1"
+                                ],
+                                1
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "cont_conditions": [],
+            "deadline": -1.0,
+            "goal_name": "produce_one_wood_one_stone",
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "activate_produce_one_wood_one_stone"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "priority": {
+                "computedDynamically": true,
+                "formula": [
+                    1
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

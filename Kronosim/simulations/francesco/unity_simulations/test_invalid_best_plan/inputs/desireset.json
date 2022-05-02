@@ -1,0 +1,29 @@
+{
+  "0": [
+    {
+      "priority": {
+        "computedDynamically": true,
+        "formula": [
+          0.8
+        ],
+        "reference_table": []
+      },
+      "deadline": -1,
+      "cont_conditions": [],
+      "preconditions": [
+        [
+          "AND",
+          [
+            "==",
+            [
+              "READ_BELIEF",
+              "execute_plan"
+            ],
+            true
+          ]
+        ]
+      ],
+      "goal_name": "plan_execution"
+    }
+  ]
+}

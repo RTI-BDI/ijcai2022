@@ -1,0 +1,6 @@
+[
+    "time: 0, Plan:[0]",
+    "[Main plan] New Batch: 1",
+    "    Checking tasks OVERLAP: 0.000000 < 20.000000 && 20.000000 > 0.000000 --> Task:[0], OriginalPlan:[3] = true",
+    " - U > 1? FALSE: plan:[0], name:[skill_main_belief] -> 0.100000"
+]

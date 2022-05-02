@@ -1,0 +1,259 @@
+
+INFO:checkIfAllMessagesAreInFuture: time t: 119
+INFO: - ACK --->>> {"command":"ACK_RUN","new_actions":[],"now":119.0}
+INFO: > Successfully sent message to the client!
+INFO:
+INFO: ---------------------------
+INFO: Reading buffer: bytes_read=[43]
+INFO:A scheduled:[195], cancelled:[170], pending:[25]
+INFO:Background thread: Run until t: 120
+INFO: - Resume simulation, execute until time t: 120
+** Event #172  t=120  ag_network.ag[0] (agent, id=2)  on selfmsg Schedule intention completion (agentMSG, id=189)
+
+INFO:checkIfAllMessagesAreInFuture: time t: 120
+INFO: - ACK --->>> {"command":"ACK_RUN","new_actions":[],"now":120.0}
+INFO: > Successfully sent message to the client!
+INFO:
+INFO: ---------------------------
+INFO: Reading buffer: bytes_read=[43]
+INFO:A scheduled:[196], cancelled:[171], pending:[25]
+INFO:Background thread: Run until t: 121
+INFO: - Resume simulation, execute until time t: 121
+INFO:----wrapper_intention_has_been_completed----
+INFO:**** t: 120, Intention:[1], from goal id:[0], name:[move-right_c1], plan_id:[0], original_plan_id:[13] has no more actions. ****
+INFO:----intention_has_been_completed----
+INFO: - Step 3: Remove Intention: index[1], goal name:[move-right_c1], plan_id[0], original_plan_id[13]
+INFO: Apply Effects_at_end of Intention:[1], from goal:[1], name:[move-right_c1], plan_id:[0], original_plan_id:[13]
+INFO: ----updateBeliefsetDueToEffect----
+INFO: - Effect:[1 of 1] -> Belief:[free_c1] updated from:[false] to:[true]
+INFO: - Scheduled new reasoning cycle at time: 120
+INFO:
+INFO:List of Completed Intentions[tot = 1]:
+INFO: Intention index:[1], from goal:[1], goal:(move-right_c1), plan:[0], original_plan:[13], num. of actions: 0, startTime: 112.000000, firstActivation: 0.000000, lastExecution: 112.000000, batch_startTime: 0.000000, current completion time: 120.000000, set completion time: 120.000000
+INFO:-----------------------------
+INFO:
+INFO:List of Intentions[tot = 1]:
+INFO: Intention index:[0], from goal:[0], goal:(plan_execution), plan:[0], original_plan:[0], num. of actions: 24, startTime: 0.000000, firstActivation: 0.000000, lastExecution: 0.000000, batch_startTime: 0.000000, current completion time: -1.000000, set completion time: -1.000000, waiting for completion: false
+INFO: - Goal:[id=2], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[120.001000], absolute arrivalTime:[120.001000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=3], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[240.002000], absolute arrivalTime:[240.002000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=4], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[360.003000], absolute arrivalTime:[360.003000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=5], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[480.004000], absolute arrivalTime:[480.004000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=6], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[600.005000], absolute arrivalTime:[600.005000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=7], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[720.006000], absolute arrivalTime:[720.006000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=8], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[840.007000], absolute arrivalTime:[840.007000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=9], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[960.008000], absolute arrivalTime:[960.008000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=10], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1080.009000], absolute arrivalTime:[1080.009000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=11], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1200.010000], absolute arrivalTime:[1200.010000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=12], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1320.011000], absolute arrivalTime:[1320.011000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=13], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1440.012000], absolute arrivalTime:[1440.012000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=14], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[1560.013000], absolute arrivalTime:[1560.013000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=15], name:[collect-wood_c1_w1], plan:[0], original_plan:[0], belief:(collect-wood_c1_w1), arrivalTime:[1680.014000], absolute arrivalTime:[1680.014000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=16], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[1800.015000], absolute arrivalTime:[1800.015000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=17], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[1920.016000], absolute arrivalTime:[1920.016000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=18], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2040.017000], absolute arrivalTime:[2040.017000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=19], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2160.018000], absolute arrivalTime:[2160.018000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=20], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2280.019000], absolute arrivalTime:[2280.019000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=21], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[2400.020000], absolute arrivalTime:[2400.020000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=22], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[2520.021000], absolute arrivalTime:[2520.021000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=23], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2640.022000], absolute arrivalTime:[2640.022000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=24], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[2760.023000], absolute arrivalTime:[2760.023000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=25], name:[store-wood_c1_st1], plan:[0], original_plan:[0], belief:(store-wood_c1_st1), arrivalTime:[2880.024000], absolute arrivalTime:[2880.024000], DDL:[60.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO:-----------------------------
+INFO:-----------------------------
+INFO:Release queue[tot = 0]:
+INFO:-----------------------------
+INFO:Ready queue[tot = 0]:
+INFO:-----------------------------
+INFO:----ended wrapper_intention_has_been_completed----
+** Event #173  t=120  ag_network.ag[0] (agent, id=2)  on selfmsg Setting Run Until (agentMSG, id=198)
+
+INFO: - Resume simulation, execute until time t: 121
+** Event #174  t=120  ag_network.ag[0] (agent, id=2)  on selfmsg Start Reasoning Cycle (agentMSG, id=200)
+
+INFO: - Resume simulation, execute until time t: 121
+INFO:-----ag_reasoning_cycle-----
+WARN:[WARNING] XXX reset due to reasoning cycle
+INFO:
+INFO:List of Intentions[tot = 1]:
+INFO: Intention index:[0], from goal:[0], goal:(plan_execution), plan:[0], original_plan:[0], num. of actions: 24, startTime: 0.000000, firstActivation: 0.000000, lastExecution: 0.000000, batch_startTime: 0.000000, current completion time: -1.000000, set completion time: -1.000000, waiting for completion: false
+INFO: - Goal:[id=2], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[120.001000], absolute arrivalTime:[120.001000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=3], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[240.002000], absolute arrivalTime:[240.002000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=4], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[360.003000], absolute arrivalTime:[360.003000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=5], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[480.004000], absolute arrivalTime:[480.004000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=6], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[600.005000], absolute arrivalTime:[600.005000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=7], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[720.006000], absolute arrivalTime:[720.006000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=8], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[840.007000], absolute arrivalTime:[840.007000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=9], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[960.008000], absolute arrivalTime:[960.008000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=10], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1080.009000], absolute arrivalTime:[1080.009000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=11], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1200.010000], absolute arrivalTime:[1200.010000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=12], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1320.011000], absolute arrivalTime:[1320.011000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=13], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1440.012000], absolute arrivalTime:[1440.012000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=14], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[1560.013000], absolute arrivalTime:[1560.013000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=15], name:[collect-wood_c1_w1], plan:[0], original_plan:[0], belief:(collect-wood_c1_w1), arrivalTime:[1680.014000], absolute arrivalTime:[1680.014000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=16], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[1800.015000], absolute arrivalTime:[1800.015000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=17], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[1920.016000], absolute arrivalTime:[1920.016000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=18], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2040.017000], absolute arrivalTime:[2040.017000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=19], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2160.018000], absolute arrivalTime:[2160.018000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=20], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2280.019000], absolute arrivalTime:[2280.019000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=21], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[2400.020000], absolute arrivalTime:[2400.020000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=22], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[2520.021000], absolute arrivalTime:[2520.021000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=23], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2640.022000], absolute arrivalTime:[2640.022000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=24], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[2760.023000], absolute arrivalTime:[2760.023000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=25], name:[store-wood_c1_st1], plan:[0], original_plan:[0], belief:(store-wood_c1_st1), arrivalTime:[2880.024000], absolute arrivalTime:[2880.024000], DDL:[60.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO:-----------------------------
+INFO:Release queue[tot = 0]:
+INFO:-----------------------------
+INFO:Ready queue[tot = 0]:
+INFO:-----------------------------
+INFO:
+INFO:Start executing actions....
+INFO:List of Goals[tot = 1]:
+INFO:Goal:[id=0], name:[plan_execution], Priority:[0.800000], status:[ACTIVE], Deadline:[-1.000000]
+INFO:----------------------------------
+INFO:
+INFO:List of Intentions[tot = 1]:
+INFO: Intention index:[0], from goal:[0], goal:(plan_execution), plan:[0], original_plan:[0], num. of actions: 24, startTime: 0.000000, firstActivation: 0.000000, lastExecution: 0.000000, batch_startTime: 0.000000, current completion time: -1.000000, set completion time: -1.000000, waiting for completion: false
+INFO: - Goal:[id=2], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[120.001000], absolute arrivalTime:[120.001000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=3], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[240.002000], absolute arrivalTime:[240.002000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=4], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[360.003000], absolute arrivalTime:[360.003000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=5], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[480.004000], absolute arrivalTime:[480.004000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=6], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[600.005000], absolute arrivalTime:[600.005000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=7], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[720.006000], absolute arrivalTime:[720.006000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=8], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[840.007000], absolute arrivalTime:[840.007000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=9], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[960.008000], absolute arrivalTime:[960.008000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=10], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1080.009000], absolute arrivalTime:[1080.009000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=11], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1200.010000], absolute arrivalTime:[1200.010000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=12], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1320.011000], absolute arrivalTime:[1320.011000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=13], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1440.012000], absolute arrivalTime:[1440.012000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=14], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[1560.013000], absolute arrivalTime:[1560.013000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=15], name:[collect-wood_c1_w1], plan:[0], original_plan:[0], belief:(collect-wood_c1_w1), arrivalTime:[1680.014000], absolute arrivalTime:[1680.014000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=16], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[1800.015000], absolute arrivalTime:[1800.015000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=17], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[1920.016000], absolute arrivalTime:[1920.016000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=18], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2040.017000], absolute arrivalTime:[2040.017000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=19], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2160.018000], absolute arrivalTime:[2160.018000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=20], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2280.019000], absolute arrivalTime:[2280.019000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=21], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[2400.020000], absolute arrivalTime:[2400.020000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=22], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[2520.021000], absolute arrivalTime:[2520.021000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=23], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2640.022000], absolute arrivalTime:[2640.022000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=24], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[2760.023000], absolute arrivalTime:[2760.023000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=25], name:[store-wood_c1_st1], plan:[0], original_plan:[0], belief:(store-wood_c1_st1), arrivalTime:[2880.024000], absolute arrivalTime:[2880.024000], DDL:[60.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO:-----------------------------
+INFO:Release queue[tot = 0]:
+INFO:---------------------------
+INFO:Ready queue[tot = 0]:
+INFO:---------------------------
+INFO:END of function 'ag_reasoning_cycle'
+** Event #175  t=120  ag_network.ag[0] (agent, id=2)  on selfmsg Select next task from intention (agentMSG, id=201)
+
+INFO: - Resume simulation, execute until time t: 121
+INFO:----phiI----
+[.....]
+INFO:
+INFO:List of Intentions[tot = 1]:
+INFO: Intention index:[0], from goal:[0], goal:(plan_execution), plan:[0], original_plan:[0], num. of actions: 24, startTime: 0.000000, firstActivation: 0.000000, lastExecution: 0.000000, batch_startTime: 0.000000, current completion time: -1.000000, set completion time: -1.000000, waiting for completion: false
+INFO:-----------------------------
+INFO:Release queue[tot = 0]:
+INFO:-----------------------------
+INFO:Ready queue[tot = 0]:
+INFO:PhiI Ended -------------------------------------
+** Event #176  t=120  ag_network.ag[0] (agent, id=2)  on selfmsg Setting Scheduler (agentMSG, id=202)
+
+INFO: - Resume simulation, execute until time t: 121
+INFO:----schedule_taskset_rt----
+INFO: ---------- End of function 'schedule_taskset_rt' ----------
+INFO:Release queue[tot = 0]:
+INFO:-----------------------------
+INFO:Ready queue[tot = 0]:
+INFO:-----------------------------
+** Event #177  t=120.001  ag_network.ag[0] (agent, id=2)  on selfmsg Schedule internal goal arrival (agentMSG, id=4)
+
+INFO: - Resume simulation, execute until time t: 121
+INFO: ----ag_internal_goal_activation----
+INFO:t: 120.001: fabs(120.001 - (0.000000 + 120.001000)) < 0.000100? -> -0.000000 < 0.000100? true
+INFO:t: 120.001, ag_internal_goal_activation: internal goal id:[2], goal name:[move-right_c1], plan_id:[0], original_plan_id:[0] is linked to intention:[0], intention_id:[0]
+INFO:Internal goal:[move-right_c1], id: 2, plan: 0, original_plan: 0, execution_type: PARALLEL
+INFO:Action:[0 of 24] Goal id: (2 == 2) && name: (move-right_c1 == move-right_c1)
+INFO: && arrival_time: (120.001000 == 120.001000) && isBeenActivated: false == false) ==> true
+INFO:-------------------------
+INFO:New internal goal: chosen plan:[13]
+INFO:A NEW INTENTION FROM GOAL:[2], goal name:[move-right_c1]
+INFO: ----updateBeliefsetDueToEffect----
+INFO: - Effect:[1 of 3] -> Belief:[free_c1] updated from:[true] to:[false]
+INFO: - Effect:[2 of 3] -> Performed:[DEFINE_VARIABLE] with name:[battery-amount_c1_old] and value:[63]
+INFO: - Effect:[3 of 3] -> Performed:[DEFINE_VARIABLE] with name:[posX_c1_old] and value:[1]
+INFO:->-> BELIEFSET CHANGED DUE TO EFFECTS -> SCHEDULE NEW REASONING CYCLE... <-<-
+INFO:
+INFO:List of Intentions[tot = 2]:
+INFO: Intention index:[0], from goal:[0], goal:(plan_execution), plan:[0], original_plan:[0], num. of actions: 24, startTime: 0.000000, firstActivation: 0.000000, lastExecution: 0.000000, batch_startTime: 0.000000, current completion time: -1.000000, set completion time: -1.000000, waiting for completion: false
+INFO: - Goal:[id=2], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[120.001000], absolute arrivalTime:[120.001000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[true]
+INFO: - Goal:[id=3], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[240.002000], absolute arrivalTime:[240.002000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=4], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[360.003000], absolute arrivalTime:[360.003000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=5], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[480.004000], absolute arrivalTime:[480.004000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=6], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[600.005000], absolute arrivalTime:[600.005000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=7], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[720.006000], absolute arrivalTime:[720.006000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=8], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[840.007000], absolute arrivalTime:[840.007000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=9], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[960.008000], absolute arrivalTime:[960.008000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=10], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1080.009000], absolute arrivalTime:[1080.009000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=11], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1200.010000], absolute arrivalTime:[1200.010000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=12], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1320.011000], absolute arrivalTime:[1320.011000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=13], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1440.012000], absolute arrivalTime:[1440.012000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=14], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[1560.013000], absolute arrivalTime:[1560.013000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=15], name:[collect-wood_c1_w1], plan:[0], original_plan:[0], belief:(collect-wood_c1_w1), arrivalTime:[1680.014000], absolute arrivalTime:[1680.014000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=16], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[1800.015000], absolute arrivalTime:[1800.015000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=17], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[1920.016000], absolute arrivalTime:[1920.016000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=18], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2040.017000], absolute arrivalTime:[2040.017000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=19], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2160.018000], absolute arrivalTime:[2160.018000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=20], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2280.019000], absolute arrivalTime:[2280.019000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=21], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[2400.020000], absolute arrivalTime:[2400.020000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=22], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[2520.021000], absolute arrivalTime:[2520.021000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=23], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2640.022000], absolute arrivalTime:[2640.022000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=24], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[2760.023000], absolute arrivalTime:[2760.023000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=25], name:[store-wood_c1_st1], plan:[0], original_plan:[0], belief:(store-wood_c1_st1), arrivalTime:[2880.024000], absolute arrivalTime:[2880.024000], DDL:[60.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: Intention index:[1], from goal:[2], goal:(move-right_c1), plan:[0], original_plan:[13], num. of actions: 1, startTime: 120.001000, firstActivation: -1.000000, lastExecution: 120.001000, batch_startTime: 120.001000, current completion time: -1.000000, set completion time: -1.000000, waiting for completion: false
+INFO: - Task:[0], plan:[0], original_plan:[13], N_exec left: 10 of 10, compTime: 4.000000, DDL: 12.000000, SERVER:[-1], arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO:-----------------------------
+INFO:-----------------------------
+INFO:Release queue[tot = 0]:
+INFO:-----------------------------
+INFO:Ready queue[tot = 0]:
+INFO:-----------------------------
+** Event #178  t=120.001  ag_network.ag[0] (agent, id=2)  on selfmsg Start Reasoning Cycle (agentMSG, id=203)
+
+INFO: - Resume simulation, execute until time t: 121
+INFO:-----ag_reasoning_cycle-----
+WARN:[WARNING] XXX reset due to reasoning cycle
+INFO:move-right_c1
+INFO:
+INFO:List of Intentions[tot = 2]:
+INFO: Intention index:[0], from goal:[0], goal:(plan_execution), plan:[0], original_plan:[0], num. of actions: 24, startTime: 0.000000, firstActivation: 0.000000, lastExecution: 0.000000, batch_startTime: 0.000000, current completion time: -1.000000, set completion time: -1.000000, waiting for completion: false
+INFO: - Goal:[id=2], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[120.001000], absolute arrivalTime:[120.001000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[true]
+INFO: - Goal:[id=3], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[240.002000], absolute arrivalTime:[240.002000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=4], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[360.003000], absolute arrivalTime:[360.003000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=5], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[480.004000], absolute arrivalTime:[480.004000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=6], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[600.005000], absolute arrivalTime:[600.005000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=7], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[720.006000], absolute arrivalTime:[720.006000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=8], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[840.007000], absolute arrivalTime:[840.007000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=9], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[960.008000], absolute arrivalTime:[960.008000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=10], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1080.009000], absolute arrivalTime:[1080.009000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=11], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1200.010000], absolute arrivalTime:[1200.010000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=12], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1320.011000], absolute arrivalTime:[1320.011000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=13], name:[move-right_c1], plan:[0], original_plan:[0], belief:(move-right_c1), arrivalTime:[1440.012000], absolute arrivalTime:[1440.012000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=14], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[1560.013000], absolute arrivalTime:[1560.013000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=15], name:[collect-wood_c1_w1], plan:[0], original_plan:[0], belief:(collect-wood_c1_w1), arrivalTime:[1680.014000], absolute arrivalTime:[1680.014000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=16], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[1800.015000], absolute arrivalTime:[1800.015000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=17], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[1920.016000], absolute arrivalTime:[1920.016000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=18], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2040.017000], absolute arrivalTime:[2040.017000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=19], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2160.018000], absolute arrivalTime:[2160.018000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=20], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2280.019000], absolute arrivalTime:[2280.019000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=21], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[2400.020000], absolute arrivalTime:[2400.020000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=22], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[2520.021000], absolute arrivalTime:[2520.021000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=23], name:[move-left_c1], plan:[0], original_plan:[0], belief:(move-left_c1), arrivalTime:[2640.022000], absolute arrivalTime:[2640.022000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=24], name:[move-up_c1], plan:[0], original_plan:[0], belief:(move-up_c1), arrivalTime:[2760.023000], absolute arrivalTime:[2760.023000], DDL:[120.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: - Goal:[id=25], name:[store-wood_c1_st1], plan:[0], original_plan:[0], belief:(store-wood_c1_st1), arrivalTime:[2880.024000], absolute arrivalTime:[2880.024000], DDL:[60.000000], ExecType:[PARALLEL], forceReasoning:[false], isBeenActivated:[false]
+INFO: Intention index:[1], from goal:[2], goal:(move-right_c1), plan:[0], original_plan:[13], num. of actions: 1, startTime: 120.001000, firstActivation: -1.000000, lastExecution: 120.001000, batch_startTime: 120.001000, current completion time: -1.000000, set completion time: -1.000000, waiting for completion: false
+INFO: - Task:[0], plan:[0], original_plan:[13], N_exec left: 10 of 10, compTime: 4.000000, DDL: 12.000000, SERVER:[-1], arrivalTimeInitial: 0.000000, arrivalTime: 0.000000, Execution_type:[SEQUENTIAL] isBeenActivated:[false]
+INFO:-----------------------------
+INFO:Release queue[tot = 0]:
+INFO:-----------------------------
+INFO:Ready queue[tot = 0]:
+INFO:-----------------------------

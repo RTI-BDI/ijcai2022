@@ -1,0 +1,124 @@
+{
+    "0": [
+        {
+            "name": "is_stadium_open",
+            "value": true
+        },
+        {
+            "name": "is_game_on",
+            "value": false
+        },
+        {
+            "name": "is_game_completed",
+            "value": false
+        },
+        {
+            "name": "main_gate_open",
+            "value": false
+        },
+        {
+            "name": "secondary_gate_open",
+            "value": false
+        },
+        {
+            "name": "main_light_on",
+            "value": false
+        },
+        {
+            "name": "secondary_light_on",
+            "value": false
+        },
+        {
+            "name": "video_system_on",
+            "value": false
+        },
+        {
+            "name": "audio_system_on",
+            "value": false
+        },
+        {
+            "name": "emergency_lights_on",
+            "value": false
+        },
+        {
+            "name": "emergency_exists_open",
+            "value": false
+        },
+        {
+            "name": "fire_hazard_on",
+            "value": false
+        },
+        {
+            "name": "terrorism_hazard_on",
+            "value": false
+        },
+        {
+            "name": "surveilance_cameras_on",
+            "value": false
+        },
+        {
+            "name": "analize_surveilance_camera",
+            "value": false
+        },
+        {
+            "name": "gate_face_recognitions_on",
+            "value": false
+        },
+        {
+            "name": "gate_metal_detectors_on",
+            "value": false
+        },
+        {
+            "name": "criminal_person_detected",
+            "value": false
+        },
+        {
+            "name": "weapon_detected",
+            "value": false
+        },
+        {
+            "name": "maximum_capacity",
+            "value": false
+        },
+        {
+            "name": "opening_activities",
+            "value": false
+        },
+        {
+            "name": "pre_game_activities",
+            "value": false
+        },
+        {
+            "name": "start_game_activities",
+            "value": false
+        },
+        {
+            "name": "end_game_activities",
+            "value": false
+        },
+        {
+            "name": "closing_activities",
+            "value": true
+        },
+        {
+            "name": "fire_hazard_management",
+            "value": true
+        },
+        {
+            "name": "terrorism_hazard_management",
+            "value": true
+        },
+        {
+            "name": "entertaining_systems_checked",
+            "value": false
+        },
+        {
+            "name": "call_fire_figthers",
+            "value": false
+        },
+        {
+            "name": "activate_sprinkles",
+            "value": false
+        }
+    ]
+}

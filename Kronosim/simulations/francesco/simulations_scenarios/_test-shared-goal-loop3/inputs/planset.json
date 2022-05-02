@@ -1,0 +1,788 @@
+{
+    "0": [
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 7.0,
+                        "n_exec": 1,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": 1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": 2
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 25.0,
+                        "relativeDeadline": 25.0,
+                        "server": 3
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "computationTime": 6.0,
+                        "n_exec": 1,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": 1
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 75.0,
+                        "goal_name": "skill_needsWeatherForecast",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 2.0,
+                        "n_exec": 1,
+                        "period": 18.0,
+                        "relativeDeadline": 18.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isOvenOn"
+                    ],
+                    false
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_isOvenOn",
+            "post_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isOvenOn"
+                    ],
+                    false
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "isOvenOn"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "schema2"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 2,
+                        "period": 15.0,
+                        "relativeDeadline": 15.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 15.0,
+                        "relativeDeadline": 15.0,
+                        "server": 5
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "needsWeatherForecast"
+                    ],
+                    false
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_needsWeatherForecast",
+            "post_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "needsWeatherForecast"
+                    ],
+                    false
+                ]
+            ],
+            "preconditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "needsWeatherForecast"
+                    ],
+                    false
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 500.0,
+                        "goal_name": "skill_isMusicOn",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 2,
+                        "period": 24.0,
+                        "relativeDeadline": 24.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 200.0,
+                        "goal_name": "skill_isLightOn",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isRoomAtRightTemperature"
+                    ],
+                    false
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_isRoomAtRightTemperature",
+            "post_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isRoomAtRightTemperature"
+                    ],
+                    false
+                ]
+            ],
+            "preconditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isRoomAtRightTemperature"
+                    ],
+                    false
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": [
+                    {
+                        "belief_name": "batteryLevel",
+                        "op": "GREATER_EQUAL",
+                        "pref": 0.8,
+                        "threshold": 75
+                    },
+                    {
+                        "belief_name": "batteryLevel",
+                        "op": "GREATER_EQUAL",
+                        "pref": 0.6,
+                        "threshold": 65
+                    },
+                    {
+                        "belief_name": "batteryLevel",
+                        "op": "GREATER_EQUAL",
+                        "pref": 0.3,
+                        "threshold": 35
+                    }
+                ]
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 2,
+                        "period": 16.0,
+                        "relativeDeadline": 16.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 2,
+                        "period": 5.0,
+                        "relativeDeadline": 5.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 2,
+                        "period": 6.0,
+                        "relativeDeadline": 6.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isMusicOn"
+                    ],
+                    false
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_isMusicOn",
+            "post_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isMusicOn"
+                    ],
+                    false
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "isMusicOn"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "schema2"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 2.0,
+                        "n_exec": 2,
+                        "period": 11.0,
+                        "relativeDeadline": 11.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 2,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 2,
+                        "period": 15.0,
+                        "relativeDeadline": 15.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isTvOn"
+                    ],
+                    false
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_isTvOn",
+            "post_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isTvOn"
+                    ],
+                    false
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "isTvOn"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "schema2"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 2,
+                        "period": 15.0,
+                        "relativeDeadline": 15.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 2,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isLightOn"
+                    ],
+                    false
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_isLightOn",
+            "post_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isLightOn"
+                    ],
+                    false
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "isLightOn"
+                        ],
+                        false
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "schema2"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 100.0,
+                        "goal_name": "skill_isFronDoorLocked",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 6.0,
+                        "n_exec": 1,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": 4
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "computationTime": 2.0,
+                        "n_exec": 1,
+                        "period": 25.0,
+                        "relativeDeadline": 25.0,
+                        "server": 4
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "computationTime": 4.0,
+                        "n_exec": 1,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": 4
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "<",
+                    [
+                        "READ_BELIEF",
+                        "batteryLevel"
+                    ],
+                    100
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_batteryLevel",
+            "post_conditions": [
+                [
+                    "<",
+                    [
+                        "READ_BELIEF",
+                        "batteryLevel"
+                    ],
+                    100
+                ]
+            ],
+            "preconditions": [
+                [
+                    "<",
+                    [
+                        "READ_BELIEF",
+                        "batteryLevel"
+                    ],
+                    100
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 5,
+                        "period": 15.0,
+                        "relativeDeadline": 15.0,
+                        "server": -1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 200.0,
+                        "goal_name": "skill_batteryLevel",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isGardenIrrigationOn"
+                    ],
+                    false
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_isGardenIrrigationOn",
+            "post_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isGardenIrrigationOn"
+                    ],
+                    false
+                ]
+            ],
+            "preconditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isGardenIrrigationOn"
+                    ],
+                    false
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 200.0,
+                        "goal_name": "skill_isGardenIrrigationOn",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 6.0,
+                        "n_exec": 1,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": 1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 2.0,
+                        "n_exec": 1,
+                        "period": 25.0,
+                        "relativeDeadline": 25.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "computationTime": 4.0,
+                        "n_exec": 1,
+                        "period": 20.0,
+                        "relativeDeadline": 20.0,
+                        "server": 3
+                    },
+                    "action_type": "TASK",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isFronDoorLocked"
+                    ],
+                    false
+                ]
+            ],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_isFronDoorLocked",
+            "post_conditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isFronDoorLocked"
+                    ],
+                    false
+                ]
+            ],
+            "preconditions": [
+                [
+                    "==",
+                    [
+                        "READ_BELIEF",
+                        "isFronDoorLocked"
+                    ],
+                    false
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.8
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

@@ -1,0 +1,1015 @@
+[
+    {
+        "Simulation_crash": false
+    },
+    {
+        "Forced_simulation_end": false
+    },
+    {
+        "Average_lateness": 11.352941176470589,
+        "Deadlinemiss_generated": [
+            {
+                "Id": 1,
+                "Lateness": 3.0,
+                "LatenessLog": "RR t: 17 case A > Lateness: 17 - (5.000000 + 9.000000) -> lateness: 3.000000",
+                "N_exec": 0,
+                "Original_plan": 1,
+                "Plan": 1,
+                "Time": 17.0
+            },
+            {
+                "Id": 2,
+                "Lateness": 5.0,
+                "LatenessLog": "RR t: 23 case A > Lateness: 23 - (5.000000 + 13.000000) -> lateness: 5.000000",
+                "N_exec": 2,
+                "Original_plan": 1,
+                "Plan": 1,
+                "Time": 23.0
+            },
+            {
+                "Id": 3,
+                "Lateness": 5.0,
+                "LatenessLog": "RR t: 26 case A > Lateness: 26 - (5.000000 + 16.000000) -> lateness: 5.000000",
+                "N_exec": 1,
+                "Original_plan": 1,
+                "Plan": 1,
+                "Time": 26.0
+            },
+            {
+                "Id": 0,
+                "Lateness": 8.0,
+                "LatenessLog": "RR t: 28 case A > Lateness: 28 - (5.000000 + 15.000000) -> lateness: 8.000000",
+                "N_exec": 1,
+                "Original_plan": 8,
+                "Plan": 0,
+                "Time": 28.0
+            },
+            {
+                "Id": 3,
+                "Lateness": 14.0,
+                "LatenessLog": "RR t: 31 case A > Lateness: 31 - (5.000000 + 12.000000) -> lateness: 14.000000",
+                "N_exec": 1,
+                "Original_plan": 0,
+                "Plan": 0,
+                "Time": 31.0
+            },
+            {
+                "Id": 4,
+                "Lateness": 21.0,
+                "LatenessLog": "RR t: 34 case A > Lateness: 34 - (5.000000 + 8.000000) -> lateness: 21.000000",
+                "N_exec": 0,
+                "Original_plan": 1,
+                "Plan": 1,
+                "Time": 34.0
+            },
+            {
+                "Id": 3,
+                "Lateness": 11.0,
+                "LatenessLog": "RR t: 40 case A > Lateness: 40 - (17.000000 + 12.000000) -> lateness: 11.000000",
+                "N_exec": 0,
+                "Original_plan": 0,
+                "Plan": 0,
+                "Time": 40.0
+            },
+            {
+                "Id": 2,
+                "Lateness": 12.0,
+                "LatenessLog": "RR t: 43 case A > Lateness: 43 - (18.000000 + 13.000000) -> lateness: 12.000000",
+                "N_exec": 1,
+                "Original_plan": 1,
+                "Plan": 1,
+                "Time": 43.0
+            },
+            {
+                "Id": 2,
+                "Lateness": 11.0,
+                "LatenessLog": "RR t: 46 case A > Lateness: 46 - (20.000000 + 15.000000) -> lateness: 11.000000",
+                "N_exec": 1,
+                "Original_plan": 0,
+                "Plan": 0,
+                "Time": 46.0
+            },
+            {
+                "Id": 0,
+                "Lateness": 13.0,
+                "LatenessLog": "RR t: 48 case A > Lateness: 48 - (20.000000 + 15.000000) -> lateness: 13.000000",
+                "N_exec": 0,
+                "Original_plan": 8,
+                "Plan": 0,
+                "Time": 48.0
+            },
+            {
+                "Id": 3,
+                "Lateness": 14.0,
+                "LatenessLog": "RR t: 51 case A > Lateness: 51 - (21.000000 + 16.000000) -> lateness: 14.000000",
+                "N_exec": 0,
+                "Original_plan": 1,
+                "Plan": 1,
+                "Time": 51.0
+            },
+            {
+                "Id": 0,
+                "Lateness": 15.0,
+                "LatenessLog": "RR t: 54 case A > Lateness: 54 - (22.000000 + 17.000000) -> lateness: 15.000000",
+                "N_exec": 1,
+                "Original_plan": 1,
+                "Plan": 1,
+                "Time": 54.0
+            },
+            {
+                "Id": 0,
+                "Lateness": 12.0,
+                "LatenessLog": "RR t: 57 case A > Lateness: 57 - (25.000000 + 20.000000) -> lateness: 12.000000",
+                "N_exec": 1,
+                "Original_plan": 0,
+                "Plan": 0,
+                "Time": 57.0
+            },
+            {
+                "Id": 2,
+                "Lateness": 16.0,
+                "LatenessLog": "RR t: 60 case A > Lateness: 60 - (31.000000 + 13.000000) -> lateness: 16.000000",
+                "N_exec": 0,
+                "Original_plan": 1,
+                "Plan": 1,
+                "Time": 60.0
+            },
+            {
+                "Id": 2,
+                "Lateness": 13.0,
+                "LatenessLog": "RR t: 63 case A > Lateness: 63 - (35.000000 + 15.000000) -> lateness: 13.000000",
+                "N_exec": 0,
+                "Original_plan": 0,
+                "Plan": 0,
+                "Time": 63.0
+            },
+            {
+                "Id": 0,
+                "Lateness": 13.0,
+                "LatenessLog": "RR t: 69 case A > Lateness: 69 - (39.000000 + 17.000000) -> lateness: 13.000000",
+                "N_exec": 0,
+                "Original_plan": 1,
+                "Plan": 1,
+                "Time": 69.0
+            },
+            {
+                "Id": 0,
+                "Lateness": 7.0,
+                "LatenessLog": "RR t: 72 case A > Lateness: 72 - (45.000000 + 20.000000) -> lateness: 7.000000",
+                "N_exec": 0,
+                "Original_plan": 0,
+                "Plan": 0,
+                "Time": 72.0
+            }
+        ],
+        "Scheduling_type": "RR",
+        "Tot_completed_tasks": 28.0,
+        "Tot_miss_generated": 17.0
+    },
+    {
+        "AVG_response_time": 19.892857142857142,
+        "Num_of_executed_tasks": 28,
+        "Response_time": [
+            {
+                "absolute_deadline": 25.0,
+                "arrivalTime": 5.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 8.0,
+                "firstActivation": 5.0,
+                "lastActivation": 5.0,
+                "n_exec": 2,
+                "n_execInitial": 3,
+                "relative_deadline": 20.0,
+                "responseTime": 3.0,
+                "server": -1,
+                "taskId": 0,
+                "taskOriginalPlanId": 0,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 22.0,
+                "arrivalTime": 5.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 11.0,
+                "firstActivation": 8.0,
+                "lastActivation": 8.0,
+                "n_exec": 2,
+                "n_execInitial": 3,
+                "relative_deadline": 17.0,
+                "responseTime": 6.0,
+                "server": -1,
+                "taskId": 0,
+                "taskOriginalPlanId": 1,
+                "taskPlanId": 1
+            },
+            {
+                "absolute_deadline": 15.0,
+                "arrivalTime": 5.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 14.0,
+                "firstActivation": 11.0,
+                "lastActivation": 11.0,
+                "n_exec": 0,
+                "n_execInitial": 1,
+                "relative_deadline": 10.0,
+                "responseTime": 9.0,
+                "server": 0,
+                "taskId": 1,
+                "taskOriginalPlanId": 0,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 14.0,
+                "arrivalTime": 5.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 17.0,
+                "firstActivation": 14.0,
+                "lastActivation": 14.0,
+                "n_exec": 0,
+                "n_execInitial": 1,
+                "relative_deadline": 9.0,
+                "responseTime": 12.0,
+                "server": 0,
+                "taskId": 1,
+                "taskOriginalPlanId": 1,
+                "taskPlanId": 1
+            },
+            {
+                "absolute_deadline": 20.0,
+                "arrivalTime": 5.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 20.0,
+                "firstActivation": 17.0,
+                "lastActivation": 17.0,
+                "n_exec": 2,
+                "n_execInitial": 3,
+                "relative_deadline": 15.0,
+                "responseTime": 15.0,
+                "server": -1,
+                "taskId": 2,
+                "taskOriginalPlanId": 0,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 18.0,
+                "arrivalTime": 5.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 23.0,
+                "firstActivation": 20.0,
+                "lastActivation": 20.0,
+                "n_exec": 2,
+                "n_execInitial": 3,
+                "relative_deadline": 13.0,
+                "responseTime": 18.0,
+                "server": -1,
+                "taskId": 2,
+                "taskOriginalPlanId": 1,
+                "taskPlanId": 1
+            },
+            {
+                "absolute_deadline": 21.0,
+                "arrivalTime": 5.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 26.0,
+                "firstActivation": 23.0,
+                "lastActivation": 23.0,
+                "n_exec": 1,
+                "n_execInitial": 2,
+                "relative_deadline": 16.0,
+                "responseTime": 21.0,
+                "server": -1,
+                "taskId": 3,
+                "taskOriginalPlanId": 1,
+                "taskPlanId": 1
+            },
+            {
+                "absolute_deadline": 20.0,
+                "arrivalTime": 5.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 2.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 28.0,
+                "firstActivation": 26.0,
+                "lastActivation": 26.0,
+                "n_exec": 1,
+                "n_execInitial": 2,
+                "relative_deadline": 15.0,
+                "responseTime": 23.0,
+                "server": -1,
+                "taskId": 0,
+                "taskOriginalPlanId": 8,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 17.0,
+                "arrivalTime": 5.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 31.0,
+                "firstActivation": 28.0,
+                "lastActivation": 28.0,
+                "n_exec": 1,
+                "n_execInitial": 2,
+                "relative_deadline": 12.0,
+                "responseTime": 26.0,
+                "server": -1,
+                "taskId": 3,
+                "taskOriginalPlanId": 0,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 13.0,
+                "arrivalTime": 5.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 34.0,
+                "firstActivation": 31.0,
+                "lastActivation": 31.0,
+                "n_exec": 0,
+                "n_execInitial": 1,
+                "relative_deadline": 8.0,
+                "responseTime": 29.0,
+                "server": 0,
+                "taskId": 4,
+                "taskOriginalPlanId": 1,
+                "taskPlanId": 1
+            },
+            {
+                "absolute_deadline": 38.0,
+                "arrivalTime": 5.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 37.0,
+                "firstActivation": 34.0,
+                "lastActivation": 34.0,
+                "n_exec": 2,
+                "n_execInitial": 3,
+                "relative_deadline": 33.0,
+                "responseTime": 32.0,
+                "server": -1,
+                "taskId": 5,
+                "taskOriginalPlanId": 1,
+                "taskPlanId": 1
+            },
+            {
+                "absolute_deadline": 29.0,
+                "arrivalTime": 17.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 40.0,
+                "firstActivation": 37.0,
+                "lastActivation": 37.0,
+                "n_exec": 0,
+                "n_execInitial": 2,
+                "relative_deadline": 12.0,
+                "responseTime": 23.0,
+                "server": -1,
+                "taskId": 3,
+                "taskOriginalPlanId": 0,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 31.0,
+                "arrivalTime": 18.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 43.0,
+                "firstActivation": 40.0,
+                "lastActivation": 40.0,
+                "n_exec": 1,
+                "n_execInitial": 3,
+                "relative_deadline": 13.0,
+                "responseTime": 25.0,
+                "server": -1,
+                "taskId": 2,
+                "taskOriginalPlanId": 1,
+                "taskPlanId": 1
+            },
+            {
+                "absolute_deadline": 35.0,
+                "arrivalTime": 20.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 46.0,
+                "firstActivation": 43.0,
+                "lastActivation": 43.0,
+                "n_exec": 1,
+                "n_execInitial": 3,
+                "relative_deadline": 15.0,
+                "responseTime": 26.0,
+                "server": -1,
+                "taskId": 2,
+                "taskOriginalPlanId": 0,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 35.0,
+                "arrivalTime": 20.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 2.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 48.0,
+                "firstActivation": 46.0,
+                "lastActivation": 46.0,
+                "n_exec": 0,
+                "n_execInitial": 2,
+                "relative_deadline": 15.0,
+                "responseTime": 28.0,
+                "server": -1,
+                "taskId": 0,
+                "taskOriginalPlanId": 8,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 37.0,
+                "arrivalTime": 21.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 51.0,
+                "firstActivation": 48.0,
+                "lastActivation": 48.0,
+                "n_exec": 0,
+                "n_execInitial": 2,
+                "relative_deadline": 16.0,
+                "responseTime": 30.0,
+                "server": -1,
+                "taskId": 3,
+                "taskOriginalPlanId": 1,
+                "taskPlanId": 1
+            },
+            {
+                "absolute_deadline": 39.0,
+                "arrivalTime": 22.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 54.0,
+                "firstActivation": 51.0,
+                "lastActivation": 51.0,
+                "n_exec": 1,
+                "n_execInitial": 3,
+                "relative_deadline": 17.0,
+                "responseTime": 32.0,
+                "server": -1,
+                "taskId": 0,
+                "taskOriginalPlanId": 1,
+                "taskPlanId": 1
+            },
+            {
+                "absolute_deadline": 45.0,
+                "arrivalTime": 25.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 57.0,
+                "firstActivation": 54.0,
+                "lastActivation": 54.0,
+                "n_exec": 1,
+                "n_execInitial": 3,
+                "relative_deadline": 20.0,
+                "responseTime": 32.0,
+                "server": -1,
+                "taskId": 0,
+                "taskOriginalPlanId": 0,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 44.0,
+                "arrivalTime": 31.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 60.0,
+                "firstActivation": 57.0,
+                "lastActivation": 57.0,
+                "n_exec": 0,
+                "n_execInitial": 3,
+                "relative_deadline": 13.0,
+                "responseTime": 29.0,
+                "server": -1,
+                "taskId": 2,
+                "taskOriginalPlanId": 1,
+                "taskPlanId": 1
+            },
+            {
+                "absolute_deadline": 50.0,
+                "arrivalTime": 35.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 63.0,
+                "firstActivation": 60.0,
+                "lastActivation": 60.0,
+                "n_exec": 0,
+                "n_execInitial": 3,
+                "relative_deadline": 15.0,
+                "responseTime": 28.0,
+                "server": -1,
+                "taskId": 2,
+                "taskOriginalPlanId": 0,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 71.0,
+                "arrivalTime": 38.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 66.0,
+                "firstActivation": 63.0,
+                "lastActivation": 63.0,
+                "n_exec": 1,
+                "n_execInitial": 3,
+                "relative_deadline": 33.0,
+                "responseTime": 28.0,
+                "server": -1,
+                "taskId": 5,
+                "taskOriginalPlanId": 1,
+                "taskPlanId": 1
+            },
+            {
+                "absolute_deadline": 56.0,
+                "arrivalTime": 39.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 69.0,
+                "firstActivation": 66.0,
+                "lastActivation": 66.0,
+                "n_exec": 0,
+                "n_execInitial": 3,
+                "relative_deadline": 17.0,
+                "responseTime": 30.0,
+                "server": -1,
+                "taskId": 0,
+                "taskOriginalPlanId": 1,
+                "taskPlanId": 1
+            },
+            {
+                "absolute_deadline": 65.0,
+                "arrivalTime": 45.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 72.0,
+                "firstActivation": 69.0,
+                "lastActivation": 69.0,
+                "n_exec": 0,
+                "n_execInitial": 3,
+                "relative_deadline": 20.0,
+                "responseTime": 27.0,
+                "server": -1,
+                "taskId": 0,
+                "taskOriginalPlanId": 0,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 104.0,
+                "arrivalTime": 71.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 75.0,
+                "firstActivation": 72.0,
+                "lastActivation": 72.0,
+                "n_exec": 0,
+                "n_execInitial": 3,
+                "relative_deadline": 33.0,
+                "responseTime": 4.0,
+                "server": -1,
+                "taskId": 5,
+                "taskOriginalPlanId": 1,
+                "taskPlanId": 1
+            },
+            {
+                "absolute_deadline": 82.0,
+                "arrivalTime": 72.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 78.0,
+                "firstActivation": 75.0,
+                "lastActivation": 75.0,
+                "n_exec": 0,
+                "n_execInitial": 1,
+                "relative_deadline": 10.0,
+                "responseTime": 6.0,
+                "server": 0,
+                "taskId": 4,
+                "taskOriginalPlanId": 0,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 92.0,
+                "arrivalTime": 72.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 81.0,
+                "firstActivation": 78.0,
+                "lastActivation": 78.0,
+                "n_exec": 2,
+                "n_execInitial": 3,
+                "relative_deadline": 20.0,
+                "responseTime": 9.0,
+                "server": -1,
+                "taskId": 5,
+                "taskOriginalPlanId": 0,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 112.0,
+                "arrivalTime": 92.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 95.0,
+                "firstActivation": 92.0,
+                "lastActivation": 92.0,
+                "n_exec": 1,
+                "n_execInitial": 3,
+                "relative_deadline": 20.0,
+                "responseTime": 3.0,
+                "server": -1,
+                "taskId": 5,
+                "taskOriginalPlanId": 0,
+                "taskPlanId": 0
+            },
+            {
+                "absolute_deadline": 132.0,
+                "arrivalTime": 112.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 3.0,
+                "execution": "PARALLEL",
+                "finishTime": 115.0,
+                "firstActivation": 112.0,
+                "lastActivation": 112.0,
+                "n_exec": 0,
+                "n_execInitial": 3,
+                "relative_deadline": 20.0,
+                "responseTime": 3.0,
+                "server": -1,
+                "taskId": 5,
+                "taskOriginalPlanId": 0,
+                "taskPlanId": 0
+            }
+        ]
+    },
+    {
+        "Avg_active_goals_rc": 1.0,
+        "Avg_active_intentions_rc": 1.0,
+        "Reasoningcycle_stats": "Reasoning cycles stats",
+        "Stats_rc": [
+            {
+                "Active_goals": 0,
+                "Active_intentions": 0,
+                "Iteration": 1,
+                "Time": 0.0
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 2,
+                "Time": 5.0
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 3,
+                "Time": 48.0
+            },
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 4,
+                "Time": 104.0
+            },
+            {
+                "Active_goals": 0,
+                "Active_intentions": 0,
+                "Iteration": 5,
+                "Time": 132.0
+            }
+        ]
+    },
+    {
+        "Avg_active_goals_phiI": 2.2,
+        "Avg_active_intentions_phiI": 2.2,
+        "PhiI_stats": "PhiI stats",
+        "Stats_phiI": [
+            {
+                "Active_goals": 3,
+                "Active_intentions": 3,
+                "Iteration": 1,
+                "Time": 5.0
+            },
+            {
+                "Active_goals": 3,
+                "Active_intentions": 3,
+                "Iteration": 2,
+                "Time": 14.0
+            },
+            {
+                "Active_goals": 3,
+                "Active_intentions": 3,
+                "Iteration": 3,
+                "Time": 17.0
+            },
+            {
+                "Active_goals": 3,
+                "Active_intentions": 3,
+                "Iteration": 4,
+                "Time": 34.0
+            },
+            {
+                "Active_goals": 3,
+                "Active_intentions": 3,
+                "Iteration": 5,
+                "Time": 40.0
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 6,
+                "Time": 48.0
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 7,
+                "Time": 51.0
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 8,
+                "Time": 60.0
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 9,
+                "Time": 63.0
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 10,
+                "Time": 69.0
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 11,
+                "Time": 72.0
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 12,
+                "Time": 75.0
+            },
+            {
+                "Active_goals": 2,
+                "Active_intentions": 2,
+                "Iteration": 13,
+                "Time": 78.0
+            },
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 14,
+                "Time": 104.0
+            },
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 15,
+                "Time": 115.0
+            }
+        ]
+    },
+    {
+        "Goals_activation": [
+            {
+                "Activation_time": 5.0,
+                "Annidation_level": "0",
+                "Belief_name": "skill_desire_one",
+                "Completion_time": 132.0,
+                "Deadline": -1.0,
+                "Due_to": "Intention completed!",
+                "Goal_id": 0,
+                "Origina_plan_id": 0,
+                "Plan_id": 0,
+                "Plan_pref_index": 0
+            },
+            {
+                "Activation_time": 5.0,
+                "Annidation_level": "0",
+                "Belief_name": "skill_desire_two",
+                "Completion_time": 104.0,
+                "Deadline": -1.0,
+                "Due_to": "Intention completed!",
+                "Goal_id": 1,
+                "Origina_plan_id": 1,
+                "Plan_id": 1,
+                "Plan_pref_index": 0
+            },
+            {
+                "Activation_time": 5.0,
+                "Annidation_level": "internal goal",
+                "Belief_name": "skill_ig2_A",
+                "Completion_time": 48.0,
+                "Deadline": 250.0,
+                "Due_to": "Intention completed!",
+                "Goal_id": 4,
+                "Origina_plan_id": 8,
+                "Plan_id": 8,
+                "Plan_pref_index": 0
+            }
+        ],
+        "Intentions_activation": [
+            {
+                "Activation_time": 5.0,
+                "Completion_time": 132.0,
+                "Due_to": "intention_has_been_completed",
+                "Goal_id": 0,
+                "Goal_name": "skill_desire_one",
+                "Intention_id": 0,
+                "Original_plan_id": 0
+            },
+            {
+                "Activation_time": 5.0,
+                "Completion_time": 104.0,
+                "Due_to": "intention_has_been_completed",
+                "Goal_id": 1,
+                "Goal_name": "skill_desire_two",
+                "Intention_id": 1,
+                "Original_plan_id": 1
+            },
+            {
+                "Activation_time": 5.0,
+                "Completion_time": 48.0,
+                "Due_to": "intention_has_been_completed",
+                "Goal_id": 4,
+                "Goal_name": "skill_ig2_A",
+                "Intention_id": 2,
+                "Original_plan_id": 8
+            }
+        ],
+        "Ready_vector": 0,
+        "Release_vector": 0,
+        "Simulation_limit_reached": false,
+        "Still_active_events": "Still active",
+        "Still_active_intentions": 0,
+        "Still_active_intentions_waiting_completion": 0
+    },
+    {
+        "Achieved_goals": [
+            {
+                "Goal_name": "skill_ig2_A",
+                "Intention": 2,
+                "Reason": "intention_has_been_completed",
+                "Time": 48.0
+            },
+            {
+                "Goal_name": "skill_desire_two",
+                "Intention": 1,
+                "Reason": "intention_has_been_completed",
+                "Time": 104.0
+            },
+            {
+                "Goal_name": "skill_desire_one",
+                "Intention": 0,
+                "Reason": "intention_has_been_completed",
+                "Time": 132.0
+            }
+        ],
+        "Tot_achievedGoals": 3
+    },
+    {
+        "Tasks": [],
+        "Tot_exec": 0,
+        "Unexpected_executions": "Unexpected executions"
+    },
+    {
+        "Generated_errors": null,
+        "Num_of_generated_errors": 0
+    },
+    {
+        "Generated_warnings": [
+            {
+                "Cause": "[WARNING] Desire:[skill_desire_two XXXX], id:[2] is linked to an invalid skill! -> keep it anyway...",
+                "Function": "read_desireset_from_json",
+                "Time": 0.0
+            },
+            {
+                "Cause": "[WARNING] Desire:[skill_desire_three XXX], id:[3] is linked to an invalid skill! -> keep it anyway...",
+                "Function": "read_desireset_from_json",
+                "Time": 0.0
+            },
+            {
+                "Cause": "[WARNING] Plan:[skill_desire_two XXX], id:[2] is linked to an invalid skill! -> keep it anyway...",
+                "Function": "read_planset_from_json",
+                "Time": 0.0
+            },
+            {
+                "Cause": "[WARNING] Plan:[skill_desire_three XXX], id:[3] is linked to an invalid skill! -> keep it anyway...",
+                "Function": "read_planset_from_json",
+                "Time": 0.0
+            },
+            {
+                "Cause": "[WARNING] t: 0.000000 Sensor:[desire_two_three] has activation time:[-1.000000] in the past! -> ignored it!",
+                "Function": "read_sensors_from_json",
+                "Time": 0.0
+            },
+            {
+                "Cause": "[WARNING] INVALID DESIRE:[skill_desire_two XXXX] NOT linked to any skill! -> Can not be activated!",
+                "Function": "activateGoalBRF",
+                "Time": 0.0
+            },
+            {
+                "Cause": "[WARNING] INVALID DESIRE:[skill_desire_three XXX] NOT linked to any skill! -> Can not be activated!",
+                "Function": "activateGoalBRF",
+                "Time": 0.0
+            },
+            {
+                "Cause": "[WARNING] Stop agent reasoning cycle, there are no goals to check!",
+                "Function": "ag_reasoning_cycle",
+                "Time": 0.0
+            },
+            {
+                "Cause": "[WARNING] INVALID DESIRE:[skill_desire_two XXXX] NOT linked to any skill! -> Can not be activated!",
+                "Function": "activateGoalBRF",
+                "Time": 5.0
+            },
+            {
+                "Cause": "[WARNING] INVALID DESIRE:[skill_desire_three XXX] NOT linked to any skill! -> Can not be activated!",
+                "Function": "activateGoalBRF",
+                "Time": 5.0
+            },
+            {
+                "Cause": " ++++ [WARNING][!] Task absolute deadline is in the past! t:[48], absolute deadline:[35.000000] -> schedule intention completion to now:[48] ++++",
+                "Function": "ag_intention_task_completed",
+                "Time": 48.0
+            },
+            {
+                "Cause": "[WARNING] INVALID DESIRE:[skill_desire_two XXXX] NOT linked to any skill! -> Can not be activated!",
+                "Function": "activateGoalBRF",
+                "Time": 48.0
+            },
+            {
+                "Cause": "[WARNING] INVALID DESIRE:[skill_desire_three XXX] NOT linked to any skill! -> Can not be activated!",
+                "Function": "activateGoalBRF",
+                "Time": 48.0
+            },
+            {
+                "Cause": "[WARNING] INVALID DESIRE:[skill_desire_two XXXX] NOT linked to any skill! -> Can not be activated!",
+                "Function": "activateGoalBRF",
+                "Time": 104.0
+            },
+            {
+                "Cause": "[WARNING] INVALID DESIRE:[skill_desire_three XXX] NOT linked to any skill! -> Can not be activated!",
+                "Function": "activateGoalBRF",
+                "Time": 104.0
+            },
+            {
+                "Cause": "[WARNING] INVALID DESIRE:[skill_desire_two XXXX] NOT linked to any skill! -> Can not be activated!",
+                "Function": "activateGoalBRF",
+                "Time": 132.0
+            },
+            {
+                "Cause": "[WARNING] INVALID DESIRE:[skill_desire_three XXX] NOT linked to any skill! -> Can not be activated!",
+                "Function": "activateGoalBRF",
+                "Time": 132.0
+            },
+            {
+                "Cause": "[WARNING] Stop agent reasoning cycle, there are no goals to check!",
+                "Function": "ag_reasoning_cycle",
+                "Time": 132.0
+            }
+        ],
+        "Num_of_generated_warnings": 18
+    }
+]

@@ -1,0 +1,22 @@
+{
+  "0": [
+    {
+      "belief_name": "debug_belief",
+      "mode": "INCREASE",
+      "time": 120.001,
+      "value": 1
+    },
+    {
+      "belief_name": "posX_p1",
+      "mode": "SET",
+      "time": 535,
+      "value": 6
+    },
+    {
+      "belief_name": "posY_p1",
+      "mode": "SET",
+      "time": 535,
+      "value": 9
+    }
+  ]
+}

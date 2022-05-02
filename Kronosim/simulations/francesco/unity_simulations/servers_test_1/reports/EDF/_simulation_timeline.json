@@ -1,0 +1,15 @@
+[
+    "t: 4 COMPLETED tskId:[0], plan:[13], original_id:[13], deadline:[12.000000], lateness:[-8.000000], ddl_miss:[NO]",
+    "t: 16 COMPLETED tskId:[0], plan:[13], original_id:[13], deadline:[24.000000], lateness:[-8.000000], ddl_miss:[NO]",
+    "t: 28 COMPLETED tskId:[0], plan:[13], original_id:[13], deadline:[36.000000], lateness:[-8.000000], ddl_miss:[NO]",
+    "t: 40 COMPLETED tskId:[0], plan:[13], original_id:[13], deadline:[48.000000], lateness:[-8.000000], ddl_miss:[NO]",
+    "t: 52 COMPLETED tskId:[0], plan:[13], original_id:[13], deadline:[60.000000], lateness:[-8.000000], ddl_miss:[NO]",
+    "t: 64 COMPLETED tskId:[0], plan:[13], original_id:[13], deadline:[72.000000], lateness:[-8.000000], ddl_miss:[NO]",
+    "t: 76 COMPLETED tskId:[0], plan:[13], original_id:[13], deadline:[84.000000], lateness:[-8.000000], ddl_miss:[NO]",
+    "t: 88 COMPLETED tskId:[0], plan:[13], original_id:[13], deadline:[96.000000], lateness:[-8.000000], ddl_miss:[NO]",
+    "t: 100 COMPLETED tskId:[0], plan:[13], original_id:[13], deadline:[108.000000], lateness:[-8.000000], ddl_miss:[NO]",
+    "t: 101 Belief:[battery-amount_c1] value has been updated from:[65] to:[63]",
+    "t: 101 Belief:[posX_c1] value has been updated from:[0] to:[0]",
+    "t: 112 COMPLETED tskId:[0], plan:[13], original_id:[13], deadline:[120.000000], lateness:[-8.000000], ddl_miss:[NO]",
+    "Deadline miss: 0"
+]

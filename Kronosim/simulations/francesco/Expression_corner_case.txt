@@ -1,0 +1,598 @@
+// ----------------------------------------------------------------
+// DEFINE CONSTANTS and VARIABLES
+// ----------------------------------------------------------------
+[], // error: Expression.size must be:[3]! It is:[0]
+[null], // error: Expression.size must be:[3]! It is:[1]
+["", "batteryCapacity", 100], // error: Keyword:[] not valid!
+["DEFINE", "batteryCapacity", 100], // error: Keyword:[DEFINE] not valid!
+["DEFINE_CONSTANT", "", 100], // error: Expression DECLARE_CONSTANT: specified name is empty!
+["DEFINE_CONSTANT", "batteryCapacity"], // error: Expression.size must be:[3]! It is:[2]
+["DEFINE_CONSTANT", "batteryCapacity", null], // error: Expression has an invalid number of parameters:[0], must either be = 1 or >= 2!
+
+["DEFINE_CONSTANT", "batteryCapacity", []], // error: Expression has an invalid number of parameters:[0], must either be = 1 or >= 2!
+["DEFINE_CONSTANT", "batteryCapacity", [ null ] ], // error: Expression EVALUATE_EXPRESSION: does not contain valid elements.
+["DEFINE_CONSTANT", "batteryCapacity", [ "READ", "batteryLevel" ] ], // error: Expression EVALUATE_EXPRESSION: first element is an array. First element:[READ] is not a valid keyword!
+["DEFINE_CONSTANT", "batteryCapacity", [ "READ_BELIEF", null ] ], // error: Expression EVALUATE_EXPRESSION: first element is an array. Keyword:[READ_BELIEF] must be followed by a string!
+  
+["DEFINE_CONSTANT", "batteryCapacity", [ "READ_BELIEF", "xxxxx" ] ], // error: Expression EVALUATE_EXPRESSION: specified READ_BELIEF:[xxxxx] not found! 
+["DEFINE_CONSTANT", "batteryCapacity", [ "READ_BELIEF", "batteryLevel" ] ], // ok = 100
+["DEFINE_CONSTANT", "batteryCapacity100", 100 ], // ok = 100
+["DEFINE_CONSTANT", "boolean", false ], // ok = false
+["DEFINE_CONSTANT", "boolean1", true ], // ok = true
+["DEFINE_CONSTANT", "boolean2", ["NOT", ["OR", false, true, true, false]] ], // ok = false
+["DEFINE_CONSTANT", "boolean3", ["NOT", ["NOT", ["OR", false, true, true, false]]] ], // ok = true
+["DEFINE_CONSTANT", "boolean", 5 ], // error: boolean already exists
+
+// -------------------------- VARIABLES --------------------------
+
+["DEFINE_VARIABLE", "batteryCapacity200", 200 ], // ok = 200
+["DEFINE_VARIABLE", "old_batteryLevel", [ "READ_BELIEF", "batteryLevel" ] ], // ok = 100
+["DEFINE_VARIABLE", "batteryCapacity100", 
+    [ "-",
+        [ "READ_BELIEF", "batteryLevel"],
+        [ "READ_VARIABLE", "old_batteryLevel"],
+        [ "*",
+            [ "READ_VARIABLE", "old_batteryLevel"],
+            0.05,
+            2,  
+            0.5
+        ]
+    ]
+    // ok = -5
+],
+["DEFINE_VARIABLE", "bool_var", false ], // ok = false
+["DEFINE_VARIABLE", "old_bool_var", [ "READ_VARIABLE", "bool_var" ] ], // ok = false
+["DEFINE_VARIABLE", "old_isLightOn", [ "READ_BELIEF", "isLightOn" ] ], // ok = true
+["DEFINE_VARIABLE", "bool_var", false ], // ok = false
+["DEFINE_VARIABLE", "bool_var0", 
+    [
+        "AND",
+        true,
+        false,
+        false,
+        true
+    ]
+    // ok = false
+],
+["DEFINE_VARIABLE", "bool_var1", [ "NOT", [ "READ_VARIABLE", "bool_var"] ]], // ok = true
+["DEFINE_VARIABLE", "bool_var2", [ "NOT", true ]], // ok = false
+["DEFINE_VARIABLE", "bool_var3", [ "NOT", false ]], // ok = true
+["DEFINE_VARIABLE", "bool_var4", [ "NOT", ["NOT", true ]]], // ok = true
+["DEFINE_VARIABLE", "bool_var5", 
+    ["NOT",
+        [
+            "AND",
+                true,
+                false,
+                false,
+                true
+        ]
+    ]
+    // ok = true
+],
+["DEFINE_VARIABLE", "combo_var",
+    [ "AND",
+        [ ">", 5, 3 ],
+        [ ">=",
+            [ "*", 
+                [ "+", 7, 3 ],
+                2
+            ], 
+            20
+        ]
+    ]
+    // out: 5 > 3 AND ((7+3) * 2) >= 20 --> true AND (20 >= 20) --> true AND true = true
+],
+["DEFINE_VARIABLE", "combo_var0",
+    [ "AND",
+        [ ">", 5, 3 ],
+        [ "!=",
+            [ "*", 
+                [ "+", 7, 3 ],
+                2
+            ], 
+            20
+        ]
+    ]
+    // out: 5 > 3 AND ((7+3) * 2) != 20 --> true AND (20 != 20) --> true AND false = false
+],
+["DEFINE_VARIABLE", "combo_var1",
+    [ "AND",
+        [ ">", 5, 3 ],
+        [ "NOT", 
+            [ "!=",
+                [ "*", 
+                    [ "+", 7, 3 ],
+                    2
+                ], 
+                20
+            ]
+        ]
+    ]
+    // out: 5 > 3 AND NOT(((7+3) * 2) != 20) --> true AND NOT((20 != 20)) --> true AND NOT(false) = true <<<
+],
+["DEFINE_VARIABLE", "combo_var2",
+    [ "!=", 5, 3 ]
+    // out: true
+],
+["DEFINE_VARIABLE", "combo_var3",
+    [ "!=", false, true ]
+    // out: true
+],
+["DEFINE_VARIABLE", "combo_var4",
+    [ "!=", false, 4 ]
+    // out: Left side has not the same type of right side! Left is bool:[true]. Right is bool:[false]!
+],
+["DEFINE_VARIABLE", "combo_var5",
+    [ "!=", 5, 3 ]
+    // out: true
+],
+["DEFINE_VARIABLE", "combo_var6",
+    [ "!=", false, true ]
+    // out: true
+],
+["DEFINE_VARIABLE", "combo_var7",
+    [ "!=", false, 1 ]
+    // out: Left side has not the same type of right side! Left is bool:[true]. Right is bool:[false]! 
+],
+["DEFINE_VARIABLE", "combo_var8",
+    [ "==", false, true ]
+    // out: false
+]
+
+// ----------------------------------------------------------------
+// ASSIGN, INCREASE, DECREASE
+// ----------------------------------------------------------------
+
+["ASSIGN", "batteryLevel", [ "==", false, true ] ], // error: rror when trying to apply effect! Types do not match! Unexpected error!
+["ASSIGN", "batteryLevel", [ "+", 5, 8 ] ], // ok = 13
+["ASSIGN", "batteryLevel", [ "*", 3, ["READ_BELIEF", "batteryLevel"]]], // ok = 13 * 3 = 39
+["ASSIGN", "batteryLevel", 
+    [ "-", 
+        ["READ_BELIEF", "batteryLevel"], 
+        [ "*", 
+            ["READ_BELIEF", "batteryLevel"],
+            0.05
+        ]
+        // out: batteryLevel = batteryLevel - 5% = 39 - 1.95 = 37 // perché è INT
+    ]
+],
+["DECREASE", "batteryLevel", 
+    [ "*", 
+        ["READ_BELIEF", "batteryLevel"],
+        0.05
+    ]
+    // out: 5% di batteryLevel = 37 - 1.75 = 35 // perché è INT
+],
+[
+    "ASSIGN", "batteryLevel",
+    [   "*", 
+        ["READ_BELIEF", "batteryLevel"],
+        0.05
+    ]
+],
+[
+    "ASSIGN", "isLightOn",
+    [ "==", false, true ]
+],
+[
+    "INCREASE", "isLightOn", // INCREASE/DECREASE BOOL is replaced with ASSIGN BOOL
+    [ "==", 5, 3 ]
+],
+[
+    "ASSIGN", "isLightOn",
+    [ ">=", 5, 3 ]
+],
+[
+    "DECREASE", "isLightOn",
+    [ "!=", 5, 3 ]
+],
+[
+    "ASSIGN", "isLightOn",
+    [ "!=", 3, 3 ]
+],
+[
+    "ASSIGN", "isLightOn",
+    [ "!=", false, true ]
+],
+[
+    "ASSIGN", "isLightOn",
+    [ "!=", false, false ]
+],
+[
+    "ASSIGN", "isLightOn",
+    [ "!=",
+        [ "*", 
+            [ "+", 7, 3 ],
+            2,
+            3.5
+        ], 
+        20
+    ]
+],
+    [   "ASSIGN", "isLightOn",
+    [ "!=",
+        [ "*", 
+            [ "+", 7, 3 ],
+            2,
+            3.5
+        ], 
+        70
+    ]
+],
+[
+    "ASSIGN", "isLightOn",
+        [ "==",
+            [ "*", 
+                [ "+", 7, 3 ],
+                2,
+                3.5
+            ], 
+            70
+        ]
+],
+[
+    "ASSIGN", "isLightOn",
+    [ "AND",
+        [ ">", 5, 3 ],
+        [ "NOT", 
+            [ "!=",
+                [ "*", 
+                    [ "+", 7, 3 ],
+                    2
+                ], 
+                20
+            ]
+        ]
+    ]
+],
+[ "ASSIGN", "isLightOn",
+    [ "-",
+        [ "READ_BELIEF", "batteryLevel"],
+        [ "READ_VARIABLE", "old_batteryLevel"],
+        [ "*",
+            [ "READ_VARIABLE", "old_batteryLevel"],
+            0.05,
+            2,  
+            0.5
+        ]
+        // error: Expression Logical: Operator:[-] is not valid!
+    ] 
+],
+[ "ASSIGN", "isLightOn",
+    [ "AND",
+        [ "+", 5, 3 ],
+        [ "NOT", 
+            [ "!=",
+                [ "*", 
+                    [ "+", 7, 3 ],
+                    2
+                ], 
+                20
+            ]
+        ]
+        // error: Expression Logical: keyword:[+] is not valid!
+    ]
+],
+[   "ASSIGN", "isLightOn",
+    [ "AND",
+        [ ">", 5, 3 ],
+        [ "+", 
+            [ "!=",
+                [ "*", 
+                    [ "+", 7, 3 ],
+                    2
+                ], 
+                20
+            ]
+        ]
+        // error: Expression Logical: keyword:[+] is not valid!
+    ]
+],
+[   "ASSIGN", "isLightOn",
+    [ "AND",
+        [ ">", 5, false ],
+        true
+        // error: Expression Logical: Error when evaluating right side of operator:[>]!
+    ]
+],
+[   "ASSIGN", "isLightOn",
+    [ "AND",
+        [ ">", false, 3 ],
+        true
+        // error: Expression Logical: Error when evaluating left side of operator:[>]!
+    ]
+],
+[   "ASSIGN", "isLightOn",
+    [ "AND",
+        [ ">", 5, 3 ],
+        5
+        // error: Expression Logical: element in pos:[2] has invalid type:[number]!
+    ]
+],
+[   "ASSIGN", "isLightOn",
+    [ "AND",
+        [ ">", 5, 3 ],
+        5,
+        6,
+        7
+        // error: Expression Logical: element in pos:[2] has invalid type:[number]!
+    ]
+],
+[   "ASSIGN", "isLightOn",
+    [ "AND",
+        [ ">", false, true ],
+        5
+        // error: Expression Logical: Error when evaluating left side of operator:[>]!
+    ]
+],
+[   "ASSIGN", "isLightOn",
+    [ "AND",
+        [ ">", 5, 3 ],
+        ["!=", [ "+", 5, false ], 5 ]
+        // error: Expression Numerical: element in pos:[2] has invalid type:[boolean]!
+    ]
+]
+
+
+// ----------------------------------------------------------------
+// PRECONDITIONS AND CONT-CONDITIONS
+// ----------------------------------------------------------------
+[ ], // ok: No conditions means true
+[ true ], // ok
+[ false ], // ok
+[ 5 ], // error: Expression has an invalid number of parameters:[1], must be = 2!
+[ [ 5 ] ], // error: Expression has an invalid number of parameters:[1], must be = 2!
+[ "false" ], // error: Expression has an invalid number of parameters:[1], must be = 2!
+[ null ], // error: Expression has an invalid number of parameters:[0], must be = 2!
+[ ["READ_BELIEF", "batteryLevel"] ], // error: READ_BELIEF:[batteryLevel] has invalid type! Must be boolean!
+[ ["READ_BELIEF", "isLightOn"] ], // ok
+[ 
+    [ "==",
+        ["READ_BELIEF", "isLightOn"],
+        true
+    ]
+     // ok
+],
+[ "NOT", [ "READ_BELIEF", "isLightOn" ], true ], // NOT(true) = false (the , true is ignored!)
+[ "NOT",
+    [ "NOT", 
+        [ "NOT", [ "NOT", 
+            [ "NOT", [ "NOT", 
+                [ "READ_BELIEF", "batteryLevel" ]
+            ]]
+        ]]
+    ]
+    // error: READ_BELIEF:[batteryLevel] has invalid type! Must be boolean!
+],
+[[
+    "DECREASE", "batteryLevel", 
+    [ "*", 
+        ["READ_BELIEF", "batteryLevel"],
+        0.05
+    ]
+    // error: Unexpected error 
+]],
+[[ "*", 
+    ["READ_BELIEF", "batteryLevel"],
+    0.05
+    // error: Unexpected error 
+]],
+[[ "==", false, true ]], // ok
+[[ "==", 5, 3 ]], // ok
+[[ ">=", 5, 3 ]], // ok
+[[ "AND",
+    [ ">", 5, 3 ],
+    [ "NOT", 
+        [ "!=",
+            [ "*", 
+                [ "+", 7, 3 ],
+                2
+            ], 
+            20
+        ]
+    ]
+    // ok: true AND NOT(20 != 20) --> true
+]],
+[[
+    "DECREASE", "batteryLevel", 
+    [ "*", 
+        ["READ_BELIEF", "batteryLevel"],
+        0.05
+    ]
+    // error: Expression Logical: Operator:[DECREASE] is not valid!
+]],
+[[   "*", 
+    ["READ_BELIEF", "batteryLevel"],
+    0.05
+    // error: Expression Logical: Operator:[*] is not valid!
+]],
+[[ "==", false, true ]], // ok
+[[ "==", 5, 3 ]], // ok
+[[ ">=", 5, 3 ]], // ok
+[[ "!=", 5, 3 ]], // ok
+[[ "!=", 3, 3 ]], // ok
+[[ "!=", false, true ]], // ok
+[[ "!=", false, false ]], // ok
+[[ "!=",
+    [ "*", 
+        [ "+", 7, 3 ],
+        2,
+        3.5
+    ], 
+    20
+    // out: 70 != 20 --> true
+]],
+[[ "!=",
+    [ "*", 
+        [ "+", 7, 3 ],
+        2,
+        3.5
+    ], 
+    70
+    // out: 70 != 70 --> false
+]],
+[[ "==",
+    [ "*", 
+        [ "+", 7, 3 ],
+        2,
+        3.5
+    ], 
+    70
+    // out: 70 == 70 --> true
+]],
+[[ "AND",
+    [ ">", 5, 3 ],
+    [ "NOT", 
+        [ "!=",
+            [ "*", 
+                [ "+", 7, 3 ],
+                2
+            ], 
+            20
+        ]
+    ]
+    // out: 5 > 3 AND NOT(20 != 20) --> true
+]],
+["DEFINE_CONSTANT", "boolean", false ], // error: Condition must have size equal 0 or 1! It's:[3]!
+["DEFINE_CONSTANT", "number", 5 ], // error: Condition must have size equal 0 or 1! It's:[3]!
+["DEFINE_VARIABLE", "boolean", false ], // error: Condition must have size equal 0 or 1! It's:[3]!
+["DEFINE_VARIABLE", "number", 5 ], // error: Condition must have size equal 0 or 1! It's:[3]!
+["DEFINE_CONSTANT", "boolean", [ "READ_BELIEF", "isLightOn"] ], // error: Condition must have size equal 0 or 1! It's:[3]!
+["DEFINE_VARIABLE", "number", [ "READ_BELIEF", "batteryLevel" ], // error: Condition must have size equal 0 or 1! It's:[3]!
+["==", ["DEFINE_CONSTANT", "boolean", false ], false], // error: Condition must have size equal 0 or 1! It's:[3]!
+["==", ["DEFINE_CONSTANT", "number", 5 ], false], // error: Condition must have size equal 0 or 1! It's:[3]!
+["==", ["DEFINE_VARIABLE", "boolean", false ], false], // error: Condition must have size equal 0 or 1! It's:[3]!
+[["==", ["DEFINE_VARIABLE", "number", 5 ], false]], // error: Left side is an array. First element is not a valid keyword:[DEFINE_VARIABLE]!
+[["==", ["DEFINE_CONSTANT", "boolean", [ "READ_BELIEF", "isLightOn"] ], false]], // error: Left side is an array. First element is not a valid keyword:[DEFINE_CONSTANT]!
+[["==", ["DEFINE_VARIABLE", "number", [ "READ_BELIEF", "batteryLevel" ]], false]],  // error: Left side is an array. First element is not a valid keyword:[DEFINE_VARIABLE]!
+[ [ "-",
+    [ "READ_BELIEF", "batteryLevel"],
+    [ "READ_VARIABLE", "old_batteryLevel"],
+    [ "*",
+        [ "READ_VARIABLE", "old_batteryLevel"],
+        0.05,
+        2,  
+        0.5
+    ]
+    // error: Expression Logical: Operator:[-] is not valid!
+] ],
+[[ "AND",
+    [ "+", 5, 3 ],
+    [ "NOT", 
+        [ "!=",
+            [ "*", 
+                [ "+", 7, 3 ],
+                2
+            ], 
+            20
+        ]
+    ]
+    // error: Expression Logical: keyword:[+] is not valid!
+]],
+[[ "AND",
+    [ ">", 5, 3 ],
+    [ "+", 
+        [ "!=",
+            [ "*", 
+                [ "+", 7, 3 ],
+                2
+            ], 
+            20
+        ]
+    ]
+    // error: Expression Logical: keyword:[+] is not valid!
+]],
+[[ "AND",
+    [ ">", 5, false ],
+    true
+    // error: Expression Logical: Error when evaluating right side of operator:[>]!
+]],
+[[ "AND",
+    [ ">", false, 3 ],
+    true
+    // error: Expression Logical: Error when evaluating left side of operator:[>]!
+]],
+[[ "AND",
+    [ ">", 5, 3 ],
+    5
+    // error: Expression Logical: element in pos:[2] has invalid type:[number]!
+]],
+[[ "AND",
+    [ ">", 5, 3 ],
+    5,
+    6,
+    7
+    // error: Expression Logical: element in pos:[2] has invalid type:[number]!
+]],
+[[ "AND",
+    [ ">", false, true ],
+    5
+    // error: Expression Logical: Error when evaluating left side of operator:[>]!
+]],
+[[ "AND",
+    [ ">", 5, 3 ],
+    ["!=", [ "+", 5, false ], 5 ]
+    // error: Expression Numerical: element in pos:[2] has invalid type:[boolean]!
+]]
+
+// ------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------
+------------------ Expression errate: ------------------
+[],
+[ null ],
+[ , null ],
+[[[[ 5 ]]]],
+[[[[ true ]]]],
+[[ 5 ]]]],
+[[[[ true ]],
+[ "test" ],
+[ "READ_BELIEF" ],
+[ "READ_BELIEF", null ],
+[ "READ_BELIEF", [ ] ],
+[ "READ_BELIEF", "" ],
+[ "READ" ],
+[ "READ", null ],
+[ "READ", [ ] ],
+[ "READ", "" ],
+[ "READ_BELIEF", "xxx" ],
+[ "READ_BELIEF", "xxx" ],
+[ "AND", ],
+[ "AND", 5, 6],
+[ "AND", false ],
+[ "OR", ],
+[ "OR", 5, 6],
+[ "OR", false ],
+[ "NOT", ],
+[ "NOT", 5, 6],
+
+------------------ Expression corrette: ------------------
+[ 5 ],
+[ false ],
+[ "READ_BELIEF", "batteryLevel" ],
+[ "NOT", false ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+/home/panino/Desktop/optic-master/optic/release/CMakeFiles/rebuild_cache.dir
+/home/panino/Desktop/optic-master/optic/release/CMakeFiles/edit_cache.dir
+/home/panino/Desktop/optic-master/optic/release/VALfiles/CMakeFiles/rebuild_cache.dir
+/home/panino/Desktop/optic-master/optic/release/VALfiles/CMakeFiles/parser.dir
+/home/panino/Desktop/optic-master/optic/release/VALfiles/CMakeFiles/edit_cache.dir
+/home/panino/Desktop/optic-master/optic/release/VALfiles/CMakeFiles/validate.dir
+/home/panino/Desktop/optic-master/optic/release/VALfiles/CMakeFiles/Inst.dir
+/home/panino/Desktop/optic-master/optic/release/VALfiles/parsing/CMakeFiles/rebuild_cache.dir
+/home/panino/Desktop/optic-master/optic/release/VALfiles/parsing/CMakeFiles/edit_cache.dir
+/home/panino/Desktop/optic-master/optic/release/VALfiles/parsing/CMakeFiles/ParsePDDL.dir
+/home/panino/Desktop/optic-master/optic/release/optic/CMakeFiles/rebuild_cache.dir
+/home/panino/Desktop/optic-master/optic/release/optic/CMakeFiles/edit_cache.dir
+/home/panino/Desktop/optic-master/optic/release/optic/CMakeFiles/optic-clp.dir
+/home/panino/Desktop/optic-master/optic/release/optic/CMakeFiles/OpticCommon.dir
+/home/panino/Desktop/optic-master/optic/release/optic/CMakeFiles/doc.dir
+/home/panino/Desktop/optic-master/optic/release/optic/CMakeFiles/doxygenoptic.dir

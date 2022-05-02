@@ -1,0 +1,129 @@
+[
+    {
+        "Simulation_crash": false
+    },
+    {
+        "Forced_simulation_end": false
+    },
+    {
+        "Average_lateness": 0,
+        "Deadlinemiss_generated": null,
+        "Scheduling_type": "EDF",
+        "Tot_completed_tasks": 1.0,
+        "Tot_miss_generated": 0
+    },
+    {
+        "AVG_response_time": 7.0,
+        "Num_of_executed_tasks": 1,
+        "Response_time": [
+            {
+                "absolute_deadline": 50.0,
+                "arrivalTime": 0.0,
+                "arrivalTimeInitial": 0.0,
+                "compTime": 7.0,
+                "execution": "SEQUENTIAL",
+                "finishTime": 7.0,
+                "firstActivation": 0.0,
+                "lastActivation": 5.0,
+                "n_exec": 0,
+                "n_execInitial": 1,
+                "relative_deadline": 50.0,
+                "responseTime": 7.0,
+                "server": 1,
+                "taskId": 0,
+                "taskOriginalPlanId": 0,
+                "taskPlanId": 0
+            }
+        ]
+    },
+    {
+        "Avg_active_goals_rc": 0.5,
+        "Avg_active_intentions_rc": 0.5,
+        "Reasoningcycle_stats": "Reasoning cycles stats",
+        "Stats_rc": [
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 1,
+                "Time": "0.000000"
+            },
+            {
+                "Active_goals": 0,
+                "Active_intentions": 0,
+                "Iteration": 2,
+                "Time": "100.000000"
+            }
+        ]
+    },
+    {
+        "Avg_active_goals_phiI": 1.0,
+        "Avg_active_intentions_phiI": 1.0,
+        "PhiI_stats": "PhiI stats",
+        "Stats_phiI": [
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 1,
+                "Time": "0.000000"
+            },
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 2,
+                "Time": "7.000000"
+            }
+        ]
+    },
+    {
+        "Goals_activation": [
+            {
+                "Activation_time": 0.0,
+                "Annidation_level": "0",
+                "Belief_name": "skill_belief_constant",
+                "Completion_time": 100.0,
+                "Deadline": 500.0,
+                "Due_to": "Intention completed!",
+                "Goal_id": 0,
+                "Origina_plan_id": 0,
+                "Plan_id": 0,
+                "Plan_pref_index": 0
+            }
+        ],
+        "Intentions_activation": [
+            {
+                "Activation_time": 0.0,
+                "Completion_time": 100.0,
+                "Due_to": "intention_has_been_completed",
+                "Goal_id": 0,
+                "Goal_name": "skill_belief_constant",
+                "Intention_id": 0,
+                "Original_plan_id": 0
+            }
+        ],
+        "Ready_vector": 0,
+        "Release_vector": 0,
+        "Simulation_limit_reached": false,
+        "Still_active_events": "Still active",
+        "Still_active_intentions": 0
+    },
+    {
+        "Achieved_goals": [
+            {
+                "Goal_name": "skill_belief_constant",
+                "Intention": 0,
+                "Reason": "intention_has_been_completed",
+                "Time": "100.000000"
+            }
+        ],
+        "Tot_achievedGoals": 1
+    },
+    {
+        "Tasks": [],
+        "Tot_exec": 0,
+        "Unexpected_executions": "Unexpected executions"
+    },
+    {
+        "Generated_errors": null,
+        "Num_of_generated_errors": 0
+    }
+]

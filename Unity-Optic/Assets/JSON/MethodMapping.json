@@ -1,0 +1,56 @@
+{
+    "mapping":[
+        {
+            "pddl_name" : "move-up",
+            "unity_name" : "MoveUp"
+        },
+        {
+            "pddl_name" : "move-down",
+            "unity_name" : "MoveDown"
+        },
+        {
+            "pddl_name" : "move-right",
+            "unity_name" : "MoveRight"
+        },
+        {
+            "pddl_name" : "move-left",
+            "unity_name" : "MoveLeft"
+        },
+        {
+            "pddl_name" : "collect-wood",
+            "unity_name" : "CollectWood"
+        },
+        {
+            "pddl_name" : "collect-stone",
+            "unity_name" : "CollectStone"
+        },
+        {
+            "pddl_name" : "recharge",
+            "unity_name" : "Recharge"
+        },
+        {
+            "pddl_name" : "store-wood",
+            "unity_name" : "StoreWood"
+        },
+        {
+            "pddl_name" : "store-stone",
+            "unity_name" : "StoreStone"
+        },
+        {
+            "pddl_name" : "store-chest",
+            "unity_name" : "StoreChest"
+        },
+        {
+            "pddl_name" : "retrieve-wood",
+            "unity_name" : "ExchangeWood"
+        },
+        {
+            "pddl_name" : "retrieve-stone",
+            "unity_name" : "ExchangeStone"
+        },
+        {
+            "pddl_name" : "produce-chest",
+            "unity_name" : "ProduceChest"
+        }
+    ]
+}

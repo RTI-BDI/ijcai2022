@@ -1,0 +1,178 @@
+[
+    {
+        "Simulation_crash": false
+    },
+    {
+        "Forced_simulation_end": false
+    },
+    {
+        "Average_lateness": 0,
+        "Deadlinemiss_generated": null,
+        "Scheduling_type": "FCFS",
+        "Tot_completed_tasks": 0.0,
+        "Tot_miss_generated": 0
+    },
+    {
+        "AVG_response_time": 0.0,
+        "Num_of_executed_tasks": 0,
+        "Response_time": []
+    },
+    {
+        "Avg_active_goals_rc": 1.25,
+        "Avg_active_intentions_rc": 1.25,
+        "Reasoningcycle_stats": "Reasoning cycles stats",
+        "Stats_rc": [
+            {
+                "Active_goals": 0,
+                "Active_intentions": 0,
+                "Iteration": 1,
+                "Time": "0.000000"
+            },
+            {
+                "Active_goals": 0,
+                "Active_intentions": 0,
+                "Iteration": 2,
+                "Time": "0.000000"
+            },
+            {
+                "Active_goals": 1,
+                "Active_intentions": 1,
+                "Iteration": 3,
+                "Time": "5.000000"
+            },
+            {
+                "Active_goals": 4,
+                "Active_intentions": 4,
+                "Iteration": 4,
+                "Time": "5.000000"
+            }
+        ]
+    },
+    {
+        "Avg_active_goals_phiI": 4.0,
+        "Avg_active_intentions_phiI": 4.0,
+        "PhiI_stats": "PhiI stats",
+        "Stats_phiI": [
+            {
+                "Active_goals": 4,
+                "Active_intentions": 4,
+                "Iteration": 1,
+                "Time": "5.000000"
+            },
+            {
+                "Active_goals": 4,
+                "Active_intentions": 4,
+                "Iteration": 2,
+                "Time": "5.000000"
+            }
+        ]
+    },
+    {
+        "Goals_activation": [
+            {
+                "Activation_time": 5.0,
+                "Annidation_level": "0",
+                "Belief_name": "store_one_wood_one_stone",
+                "Completion_time": -1.0,
+                "Deadline": -1.0,
+                "Due_to": "undefined",
+                "Goal_id": 0,
+                "Origina_plan_id": 0,
+                "Plan_id": 0,
+                "Plan_pref_index": 0
+            },
+            {
+                "Activation_time": 5.0,
+                "Annidation_level": "internal goal",
+                "Belief_name": "move_right_c1_lv0",
+                "Completion_time": -1.0,
+                "Deadline": 250.0,
+                "Due_to": "undefined",
+                "Goal_id": 1,
+                "Origina_plan_id": 21,
+                "Plan_id": 21,
+                "Plan_pref_index": 0
+            },
+            {
+                "Activation_time": 5.0,
+                "Annidation_level": "internal goal",
+                "Belief_name": "move_right_c1_lv1",
+                "Completion_time": -1.0,
+                "Deadline": 250.0,
+                "Due_to": "undefined",
+                "Goal_id": 8,
+                "Origina_plan_id": 22,
+                "Plan_id": 22,
+                "Plan_pref_index": 0
+            },
+            {
+                "Activation_time": 5.0,
+                "Annidation_level": "internal goal",
+                "Belief_name": "move_right_c1",
+                "Completion_time": -1.0,
+                "Deadline": 250.0,
+                "Due_to": "undefined",
+                "Goal_id": 9,
+                "Origina_plan_id": 5,
+                "Plan_id": 5,
+                "Plan_pref_index": 0
+            }
+        ],
+        "Intentions_activation": [
+            {
+                "Activation_time": 5.0,
+                "Completion_time": -1.0,
+                "Due_to": "undefined",
+                "Goal_id": 0,
+                "Goal_name": "store_one_wood_one_stone",
+                "Intention_id": 0,
+                "Original_plan_id": 0
+            },
+            {
+                "Activation_time": 5.0,
+                "Completion_time": -1.0,
+                "Due_to": "undefined",
+                "Goal_id": 1,
+                "Goal_name": "move_right_c1_lv0",
+                "Intention_id": 1,
+                "Original_plan_id": 21
+            },
+            {
+                "Activation_time": 5.0,
+                "Completion_time": -1.0,
+                "Due_to": "undefined",
+                "Goal_id": 8,
+                "Goal_name": "move_right_c1_lv1",
+                "Intention_id": 1,
+                "Original_plan_id": 22
+            },
+            {
+                "Activation_time": 5.0,
+                "Completion_time": -1.0,
+                "Due_to": "undefined",
+                "Goal_id": 9,
+                "Goal_name": "move_right_c1",
+                "Intention_id": 1,
+                "Original_plan_id": 5
+            }
+        ],
+        "Ready_vector": 0,
+        "Release_vector": 0,
+        "Simulation_limit_reached": false,
+        "Still_active_events": "Still active",
+        "Still_active_intentions": 4
+    },
+    {
+        "Achieved_goals": [],
+        "Tot_achievedGoals": 0
+    },
+    {
+        "Tasks": [],
+        "Tot_exec": 0,
+        "Unexpected_executions": "Unexpected executions"
+    },
+    {
+        "Generated_errors": null,
+        "Num_of_generated_errors": 0
+    }
+]

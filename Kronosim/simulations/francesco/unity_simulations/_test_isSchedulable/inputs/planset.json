@@ -1,0 +1,2462 @@
+{
+    "0": [       
+        {
+            "body": [
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 250.0,
+                        "goal_name": "move_right_c1_lv0",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 3.001,
+                        "deadline": 250.0,
+                        "goal_name": "move_up_c1",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 6.002,
+                        "deadline": 250.0,
+                        "goal_name": "collect_stone",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 11.003,
+                        "deadline": 250.0,
+                        "goal_name": "recharge_c1",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 105.004,
+                        "deadline": 250.0,
+                        "goal_name": "store_stone_c1",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 106.005,
+                        "deadline": 250.0,
+                        "goal_name": "collect_wood",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 111.006,
+                        "deadline": 250.0,
+                        "goal_name": "store_wood_c1",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "store_one_wood_one_stone",
+            "post_conditions": [],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_c1"
+                        ],
+                        10
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_c1"
+                        ],
+                        true
+                    ],
+                    [
+                        "NOT",
+                        [
+                            "AND",
+                            [
+                                "==",
+                                [
+                                    "READ_BELIEF",
+                                    "wood_stored_s1"
+                                ],
+                                1
+                            ],
+                            [
+                                "==",
+                                [
+                                    "READ_BELIEF",
+                                    "stone_stored_s1"
+                                ],
+                                1
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 3.0,
+                        "relativeDeadline": 3.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    false
+                ],
+                [
+                    "DEFINE_VARIABLE",
+                    "initial_posY_c1",
+                    [
+                        "READ_BELIEF",
+                        "posY_c1"
+                    ]
+                ],
+                [
+                    "DEFINE_VARIABLE",
+                    "initial_battery_amount_c1",
+                    [
+                        "READ_BELIEF",
+                        "battery_amount_c1"
+                    ]
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    true
+                ],
+                [
+                    "DECREASE",
+                    "battery_amount_c1",
+                    2
+                ],
+                [
+                    "INCREASE",
+                    "posY_c1",
+                    1
+                ]
+            ],
+            "goal_name": "move_up_c1",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "-",
+                            [
+                                "READ_VARIABLE",
+                                "initial_battery_amount_c1"
+                            ],
+                            2
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_c1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "+",
+                            [
+                                "READ_VARIABLE",
+                                "initial_posY_c1"
+                            ],
+                            1
+
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posY_c1"
+                        ]
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_c1"
+                        ],
+                        10
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_c1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 3.0,
+                        "n_exec": 1,
+                        "period": 3.0,
+                        "relativeDeadline": 3.0,
+                        "server": 1
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    false
+                ],
+                [
+                    "DEFINE_VARIABLE",
+                    "initial_posY_p1",
+                    [
+                        "READ_BELIEF",
+                        "posY_p1"
+                    ]
+                ],
+                [
+                    "DEFINE_VARIABLE",
+                    "initial_battery_amount_p1",
+                    [
+                        "READ_BELIEF",
+                        "battery_amount_p1"
+                    ]
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    true
+                ],
+                [
+                    "DECREASE",
+                    "battery_amount_p1",
+                    2
+                ],
+                [
+                    "INCREASE",
+                    "posY_p1",
+                    1
+                ]
+            ],
+            "goal_name": "move_up_p1",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "-",
+                            [
+                                "READ_VARIABLE",
+                                "initial_battery_amount_p1"
+                            ],
+                            2
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_p1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "+",
+                            [
+                                "READ_VARIABLE",
+                                "initial_posY_p1"
+                            ],
+                            1
+
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posY_p1"
+                        ]
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_p1"
+                        ],
+                        10
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_p1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 3.0,
+                        "n_exec": 1,
+                        "period": 3.0,
+                        "relativeDeadline": 3.0,
+                        "server": 2
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    false
+                ],
+                [
+                    "DEFINE_VARIABLE",
+                    "initial_posY_c1",
+                    [
+                        "READ_BELIEF",
+                        "posY_c1"
+                    ]
+                ],
+                [
+                    "DEFINE_VARIABLE",
+                    "initial_battery_amount_c1",
+                    [
+                        "READ_BELIEF",
+                        "battery_amount_c1"
+                    ]
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    true
+                ],
+                [
+                    "DECREASE",
+                    "battery_amount_c1",
+                    2
+                ],
+                [
+                    "DECREASE",
+                    "posY_c1",
+                    1
+                ]
+            ],
+            "goal_name": "move_down_c1",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "-",
+                            [
+                                "READ_VARIABLE",
+                                "initial_battery_amount_c1"
+                            ],
+                            2
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_c1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "-",
+                            [
+                                "READ_VARIABLE",
+                                "initial_posY_c1"
+                            ],
+                            1
+
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posY_c1"
+                        ]
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_c1"
+                        ],
+                        10
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_c1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 3.0,
+                        "n_exec": 1,
+                        "period": 3.0,
+                        "relativeDeadline": 3.0,
+                        "server": 3
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    false
+                ],
+                [
+                    "DEFINE_VARIABLE",
+                    "initial_posY_p1",
+                    [
+                        "READ_BELIEF",
+                        "posY_p1"
+                    ]
+                ],
+                [
+                    "DEFINE_VARIABLE",
+                    "initial_battery_amount_p1",
+                    [
+                        "READ_BELIEF",
+                        "battery_amount_p1"
+                    ]
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    true
+                ],
+                [
+                    "DECREASE",
+                    "battery_amount_p1",
+                    2
+                ],
+                [
+                    "DECREASE",
+                    "posY_p1",
+                    1
+                ]
+            ],
+            "goal_name": "move_down_p1",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "-",
+                            [
+                                "READ_VARIABLE",
+                                "initial_battery_amount_p1"
+                            ],
+                            2
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_p1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "-",
+                            [
+                                "READ_VARIABLE",
+                                "initial_posY_p1"
+                            ],
+                            1
+
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posY_p1"
+                        ]
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_p1"
+                        ],
+                        10
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_p1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 3.0,
+                        "n_exec": 1,
+                        "period": 3.0,
+                        "relativeDeadline": 3.0,
+                        "server": 4
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    false
+                ],
+                [
+                    "DEFINE_VARIABLE",
+                    "initial_posX_c1",
+                    [
+                        "READ_BELIEF",
+                        "posX_c1"
+                    ]
+                ],
+                [
+                    "DEFINE_VARIABLE",
+                    "initial_battery_amount_c1",
+                    [
+                        "READ_BELIEF",
+                        "battery_amount_c1"
+                    ]
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    true
+                ],
+                [
+                    "DECREASE",
+                    "battery_amount_c1",
+                    2
+                ],
+                [
+                    "INCREASE",
+                    "posX_c1",
+                    1
+                ]
+            ],
+            "goal_name": "move_right_c1",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "-",
+                            [
+                                "READ_VARIABLE",
+                                "initial_battery_amount_c1"
+                            ],
+                            2
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_c1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "+",
+                            [
+                                "READ_VARIABLE",
+                                "initial_posX_c1"
+                            ],
+                            1
+
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posX_c1"
+                        ]
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_c1"
+                        ],
+                        10
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_c1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 3.0,
+                        "n_exec": 1,
+                        "period": 3.0,
+                        "relativeDeadline": 3.0,
+                        "server": 5
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    false
+                ],
+                [
+                    "DEFINE_VARIABLE",
+                    "initial_posX_p1",
+                    [
+                        "READ_BELIEF",
+                        "posX_p1"
+                    ]
+                ],
+                [
+                    "DEFINE_VARIABLE",
+                    "initial_battery_amount_p1",
+                    [
+                        "READ_BELIEF",
+                        "battery_amount_p1"
+                    ]
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    true
+                ],
+                [
+                    "DECREASE",
+                    "battery_amount_p1",
+                    2
+                ],
+                [
+                    "INCREASE",
+                    "posX_p1",
+                    1
+                ]
+            ],
+            "goal_name": "move_right_p1",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "-",
+                            [
+                                "READ_VARIABLE",
+                                "initial_battery_amount_p1"
+                            ],
+                            2
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_p1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "+",
+                            [
+                                "READ_VARIABLE",
+                                "initial_posX_p1"
+                            ],
+                            1
+
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posX_p1"
+                        ]
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_p1"
+                        ],
+                        10
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_p1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 3.0,
+                        "n_exec": 1,
+                        "period": 3.0,
+                        "relativeDeadline": 3.0,
+                        "server": 6
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    false
+                ],
+                [
+                    "DEFINE_VARIABLE",
+                    "initial_posX_c1",
+                    [
+                        "READ_BELIEF",
+                        "posX_c1"
+                    ]
+                ],
+                [
+                    "DEFINE_VARIABLE",
+                    "initial_battery_amount_c1",
+                    [
+                        "READ_BELIEF",
+                        "battery_amount_c1"
+                    ]
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    true
+                ],
+                [
+                    "DECREASE",
+                    "battery_amount_c1",
+                    2
+                ],
+                [
+                    "DECREASE",
+                    "posX_c1",
+                    1
+                ]
+            ],
+            "goal_name": "move_left_c1",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "-",
+                            [
+                                "READ_VARIABLE",
+                                "initial_battery_amount_c1"
+                            ],
+                            2
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_c1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "-",
+                            [
+                                "READ_VARIABLE",
+                                "initial_posX_c1"
+                            ],
+                            1
+
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posX_c1"
+                        ]
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_c1"
+                        ],
+                        10
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_c1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 3.0,
+                        "n_exec": 1,
+                        "period": 3.0,
+                        "relativeDeadline": 3.0,
+                        "server": 7
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    false
+                ],
+                [
+                    "DEFINE_VARIABLE",
+                    "initial_posX_p1",
+                    [
+                        "READ_BELIEF",
+                        "posX_p1"
+                    ]
+                ],
+                [
+                    "DEFINE_VARIABLE",
+                    "initial_battery_amount_p1",
+                    [
+                        "READ_BELIEF",
+                        "battery_amount_p1"
+                    ]
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    true
+                ],
+                [
+                    "DECREASE",
+                    "battery_amount_p1",
+                    2
+                ],
+                [
+                    "DECREASE",
+                    "posX_p1",
+                    1
+                ]
+            ],
+            "goal_name": "move_left_p1",
+            "post_conditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "-",
+                            [
+                                "READ_VARIABLE",
+                                "initial_battery_amount_p1"
+                            ],
+                            2
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_p1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "-",
+                            [
+                                "READ_VARIABLE",
+                                "initial_posX_p1"
+                            ],
+                            1
+
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posX_p1"
+                        ]
+                    ]
+                ]
+            ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_p1"
+                        ],
+                        10
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_p1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 5.0,
+                        "n_exec": 1,
+                        "period": 5.0,
+                        "relativeDeadline": 5.0,
+                        "server": 8
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    false
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    true
+                ],
+                [
+                    "DECREASE",
+                    "battery_amount_c1",
+                    5
+                ],
+                [
+                    "INCREASE",
+                    "wood_amount_c1",
+                    1
+                ]
+            ],
+            "goal_name": "collect_wood",
+            "post_conditions": [],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_c1"
+                        ],
+                        10
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posX_c1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posX_w1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posY_c1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posY_w1"
+                        ]
+                    ],
+                    [
+                        "<",
+                        [
+                            "READ_BELIEF",
+                            "wood_amount_c1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "sample_capacity"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_c1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 5.0,
+                        "n_exec": 1,
+                        "period": 5.0,
+                        "relativeDeadline": 5.0,
+                        "server": 9
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    false
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    true
+                ],
+                [
+                    "DECREASE",
+                    "battery_amount_c1",
+                    5
+                ],
+                [
+                    "INCREASE",
+                    "stone_amount_c1",
+                    1
+                ]
+            ],
+            "goal_name": "collect_stone",
+            "post_conditions": [],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_c1"
+                        ],
+                        10
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posX_c1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posX_s1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posY_c1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posY_s1"
+                        ]
+                    ],
+                    [
+                        "<",
+                        [
+                            "READ_BELIEF",
+                            "stone_amount_c1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "sample_capacity"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_c1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 94.0,
+                        "n_exec": 1,
+                        "period": 94.0,
+                        "relativeDeadline": 94.0,
+                        "server": 10
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    false
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    true
+                ],
+                [
+                    "INCREASE",
+                    "battery_amount_c1",
+                    [
+                        "-",
+                        [
+                            "READ_BELIEF",
+                            "battery_capacity"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_c1"
+                        ]
+                    ]
+                ]
+            ],
+            "goal_name": "recharge_c1",
+            "post_conditions": [],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_c1"
+                        ],
+                        0
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posX_c1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posX_rs1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posY_c1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posY_rs1"
+                        ]
+                    ],
+                    [
+                        "<",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_c1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "battery_capacity"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_c1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 10.0,
+                        "n_exec": 1,
+                        "period": 10.0,
+                        "relativeDeadline": 10.0,
+                        "server": 10
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    false
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    true
+                ],
+                [
+                    "INCREASE",
+                    "battery_amount_p1",
+                    [
+                        "-",
+                        [
+                            "READ_BELIEF",
+                            "battery_capacity"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_p1"
+                        ]
+                    ]
+                ]
+            ],
+            "goal_name": "recharge_p1",
+            "post_conditions": [],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_p1"
+                        ],
+                        0
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posX_p1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posX_rs1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posY_p1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posY_rs1"
+                        ]
+                    ],
+                    [
+                        "<",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_p1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "battery_capacity"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_p1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 1.0,
+                        "relativeDeadline": 1.0,
+                        "server": 11
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    false
+                ],
+                [
+                    "DECREASE",
+                    "wood_amount_p1",
+                    1
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    true
+                ],
+                [
+                    "DECREASE",
+                    "battery_amount_p1",
+                    1
+                ],
+                [
+                    "INCREASE",
+                    "wood_stored_p1",
+                    1
+                ]
+            ],
+            "goal_name": "store_wood_p1",
+            "post_conditions": [],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_p1"
+                        ],
+                        10
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "wood_amount_p1"
+                        ],
+                        0
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posX_p1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posX_s1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posY_p1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posY_s1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_p1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 1.0,
+                        "relativeDeadline": 1.0,
+                        "server": 12
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    false
+                ],
+                [
+                    "DECREASE",
+                    "wood_amount_c1",
+                    1
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    true
+                ],
+                [
+                    "DECREASE",
+                    "battery_amount_c1",
+                    1
+                ],
+                [
+                    "INCREASE",
+                    "wood_stored_s1",
+                    1
+                ]
+            ],
+            "goal_name": "store_wood_c1",
+            "post_conditions": [],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_c1"
+                        ],
+                        10
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "wood_amount_c1"
+                        ],
+                        0
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posX_c1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posX_s1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posY_c1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posY_s1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_c1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 1.0,
+                        "relativeDeadline": 1.0,
+                        "server": 13
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    false
+                ],
+                [
+                    "DECREASE",
+                    "stone_amount_p1",
+                    1
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    true
+                ],
+                [
+                    "DECREASE",
+                    "battery_amount_p1",
+                    1
+                ],
+                [
+                    "INCREASE",
+                    "stone_stored_p1",
+                    1
+                ]
+            ],
+            "goal_name": "store_stone_p1",
+            "post_conditions": [],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_p1"
+                        ],
+                        10
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "stone_amount_p1"
+                        ],
+                        0
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posX_p1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posX_s1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posY_p1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posY_s1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_p1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 1.0,
+                        "n_exec": 1,
+                        "period": 1.0,
+                        "relativeDeadline": 1.0,
+                        "server": 14
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    false
+                ],
+                [
+                    "DECREASE",
+                    "stone_amount_c1",
+                    1
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    true
+                ],
+                [
+                    "DECREASE",
+                    "battery_amount_c1",
+                    1
+                ],
+                [
+                    "INCREASE",
+                    "stone_stored_s1",
+                    1
+                ]
+            ],
+            "goal_name": "store_stone_c1",
+            "post_conditions": [],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_c1"
+                        ],
+                        10
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "stone_amount_c1"
+                        ],
+                        0
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posX_c1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posX_s1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posY_c1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posY_s1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_c1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 2.0,
+                        "n_exec": 1,
+                        "period": 2.0,
+                        "relativeDeadline": 2.0,
+                        "server": 15
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    false
+                ],
+                [
+                    "DECREASE",
+                    "chest_amount_p1",
+                    1
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    true
+                ],
+                [
+                    "DECREASE",
+                    "battery_amount_p1",
+                    1
+                ],
+                [
+                    "INCREASE",
+                    "chest_stored_p1",
+                    1
+                ]
+            ],
+            "goal_name": "store_chest_p1",
+            "post_conditions": [],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_p1"
+                        ],
+                        10
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "chest_amount_p1"
+                        ],
+                        0
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posX_p1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posX_s1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posY_p1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posY_s1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_p1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 2.0,
+                        "n_exec": 1,
+                        "period": 2.0,
+                        "relativeDeadline": 2.0,
+                        "server": 16
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    false
+                ],
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    false
+                ],
+                [
+                    "DECREASE",
+                    "wood_amount_c1",
+                    1
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    true
+                ],
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    true
+                ],
+                [
+                    "INCREASE",
+                    "wood_amount_p1",
+                    1
+                ]
+            ],
+            "goal_name": "retrieve_wood_c1",
+            "post_conditions": [],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posX_c1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posX_p1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posY_c1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posY_p1"
+                        ]
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "wood_amount_c1"
+                        ],
+                        0
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_c1"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_p1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 2.0,
+                        "n_exec": 1,
+                        "period": 2.0,
+                        "relativeDeadline": 2.0,
+                        "server": 17
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    false
+                ],
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    false
+                ],
+                [
+                    "DECREASE",
+                    "stone_amount_p1",
+                    1
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_c1",
+                    true
+                ],
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    true
+                ],
+                [
+                    "INCREASE",
+                    "stone_amount_c1",
+                    1
+                ]
+            ],
+            "goal_name": "retrieve_stone_c1",
+            "post_conditions": [],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posX_c1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posX_p1"
+                        ]
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "posY_c1"
+                        ],
+                        [
+                            "READ_BELIEF",
+                            "posY_p1"
+                        ]
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "stone_amount_c1"
+                        ],
+                        0
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_c1"
+                        ],
+                        true
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_p1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 5.0,
+                        "n_exec": 1,
+                        "period": 5.0,
+                        "relativeDeadline": 5.0,
+                        "server": 18
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    false
+                ],
+                [
+                    "DECREASE",
+                    "wood_amount_p1",
+                    1
+                ],
+                [
+                    "DECREASE",
+                    "stone_amount_p1",
+                    1
+                ]
+            ],
+            "effects_at_end": [
+                [
+                    "ASSIGN",
+                    "free_p1",
+                    true
+                ],
+                [
+                    "DECREASE",
+                    "battery_amount_p1",
+                    5
+                ],
+                [
+                    "INCREASE",
+                    "chest_amount_p1",
+                    1
+                ]
+            ],
+            "goal_name": "produce_chest_p1",
+            "post_conditions": [],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_p1"
+                        ],
+                        10
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "wood_amount_p1"
+                        ],
+                        0
+                    ],
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "stone_amount_p1"
+                        ],
+                        0
+                    ],
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "free_p1"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+
+
+        {
+            "body": [
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 250.0,
+                        "goal_name": "move_right_c1_lv1",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "move_right_c1_lv0",
+            "post_conditions": [],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_c1"
+                        ],
+                        10
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+        {
+            "body": [
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 250.0,
+                        "goal_name": "move_right_c1",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "move_right_c1_lv1",
+            "post_conditions": [ ],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        ">",
+                        [
+                            "READ_BELIEF",
+                            "battery_amount_c1"
+                        ],
+                        10
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}

@@ -1,0 +1,316 @@
+[
+    {
+        "0": {
+            "0": [
+                {
+                    "arrivalTime": 5.0,
+                    "deadline": 20.0,
+                    "finishTime": 8.0,
+                    "firstActivation": 5.0,
+                    "n_exec": 2,
+                    "n_execInitial": 3,
+                    "responseTime": 3.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 25.0,
+                    "deadline": 20.0,
+                    "finishTime": 57.0,
+                    "firstActivation": 54.0,
+                    "n_exec": 1,
+                    "n_execInitial": 3,
+                    "responseTime": 32.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 45.0,
+                    "deadline": 20.0,
+                    "finishTime": 72.0,
+                    "firstActivation": 69.0,
+                    "n_exec": 0,
+                    "n_execInitial": 3,
+                    "responseTime": 27.0,
+                    "server": -1
+                }
+            ],
+            "1": [
+                {
+                    "arrivalTime": 5.0,
+                    "deadline": 10.0,
+                    "finishTime": 14.0,
+                    "firstActivation": 11.0,
+                    "n_exec": 0,
+                    "n_execInitial": 1,
+                    "responseTime": 9.0,
+                    "server": 0
+                }
+            ],
+            "2": [
+                {
+                    "arrivalTime": 5.0,
+                    "deadline": 15.0,
+                    "finishTime": 20.0,
+                    "firstActivation": 17.0,
+                    "n_exec": 2,
+                    "n_execInitial": 3,
+                    "responseTime": 15.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 20.0,
+                    "deadline": 15.0,
+                    "finishTime": 46.0,
+                    "firstActivation": 43.0,
+                    "n_exec": 1,
+                    "n_execInitial": 3,
+                    "responseTime": 26.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 35.0,
+                    "deadline": 15.0,
+                    "finishTime": 63.0,
+                    "firstActivation": 60.0,
+                    "n_exec": 0,
+                    "n_execInitial": 3,
+                    "responseTime": 28.0,
+                    "server": -1
+                }
+            ],
+            "3": [
+                {
+                    "arrivalTime": 5.0,
+                    "deadline": 12.0,
+                    "finishTime": 31.0,
+                    "firstActivation": 28.0,
+                    "n_exec": 1,
+                    "n_execInitial": 2,
+                    "responseTime": 26.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 17.0,
+                    "deadline": 12.0,
+                    "finishTime": 40.0,
+                    "firstActivation": 37.0,
+                    "n_exec": 0,
+                    "n_execInitial": 2,
+                    "responseTime": 23.0,
+                    "server": -1
+                }
+            ],
+            "4": [
+                {
+                    "arrivalTime": 72.0,
+                    "deadline": 10.0,
+                    "finishTime": 78.0,
+                    "firstActivation": 75.0,
+                    "n_exec": 0,
+                    "n_execInitial": 1,
+                    "responseTime": 6.0,
+                    "server": 0
+                }
+            ],
+            "5": [
+                {
+                    "arrivalTime": 72.0,
+                    "deadline": 20.0,
+                    "finishTime": 81.0,
+                    "firstActivation": 78.0,
+                    "n_exec": 2,
+                    "n_execInitial": 3,
+                    "responseTime": 9.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 92.0,
+                    "deadline": 20.0,
+                    "finishTime": 95.0,
+                    "firstActivation": 92.0,
+                    "n_exec": 1,
+                    "n_execInitial": 3,
+                    "responseTime": 3.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 112.0,
+                    "deadline": 20.0,
+                    "finishTime": 115.0,
+                    "firstActivation": 112.0,
+                    "n_exec": 0,
+                    "n_execInitial": 3,
+                    "responseTime": 3.0,
+                    "server": -1
+                }
+            ]
+        },
+        "1": {
+            "0": [
+                {
+                    "arrivalTime": 5.0,
+                    "deadline": 17.0,
+                    "finishTime": 11.0,
+                    "firstActivation": 8.0,
+                    "n_exec": 2,
+                    "n_execInitial": 3,
+                    "responseTime": 6.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 22.0,
+                    "deadline": 17.0,
+                    "finishTime": 54.0,
+                    "firstActivation": 51.0,
+                    "n_exec": 1,
+                    "n_execInitial": 3,
+                    "responseTime": 32.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 39.0,
+                    "deadline": 17.0,
+                    "finishTime": 69.0,
+                    "firstActivation": 66.0,
+                    "n_exec": 0,
+                    "n_execInitial": 3,
+                    "responseTime": 30.0,
+                    "server": -1
+                }
+            ],
+            "1": [
+                {
+                    "arrivalTime": 5.0,
+                    "deadline": 9.0,
+                    "finishTime": 17.0,
+                    "firstActivation": 14.0,
+                    "n_exec": 0,
+                    "n_execInitial": 1,
+                    "responseTime": 12.0,
+                    "server": 0
+                }
+            ],
+            "2": [
+                {
+                    "arrivalTime": 5.0,
+                    "deadline": 13.0,
+                    "finishTime": 23.0,
+                    "firstActivation": 20.0,
+                    "n_exec": 2,
+                    "n_execInitial": 3,
+                    "responseTime": 18.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 18.0,
+                    "deadline": 13.0,
+                    "finishTime": 43.0,
+                    "firstActivation": 40.0,
+                    "n_exec": 1,
+                    "n_execInitial": 3,
+                    "responseTime": 25.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 31.0,
+                    "deadline": 13.0,
+                    "finishTime": 60.0,
+                    "firstActivation": 57.0,
+                    "n_exec": 0,
+                    "n_execInitial": 3,
+                    "responseTime": 29.0,
+                    "server": -1
+                }
+            ],
+            "3": [
+                {
+                    "arrivalTime": 5.0,
+                    "deadline": 16.0,
+                    "finishTime": 26.0,
+                    "firstActivation": 23.0,
+                    "n_exec": 1,
+                    "n_execInitial": 2,
+                    "responseTime": 21.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 21.0,
+                    "deadline": 16.0,
+                    "finishTime": 51.0,
+                    "firstActivation": 48.0,
+                    "n_exec": 0,
+                    "n_execInitial": 2,
+                    "responseTime": 30.0,
+                    "server": -1
+                }
+            ],
+            "4": [
+                {
+                    "arrivalTime": 5.0,
+                    "deadline": 8.0,
+                    "finishTime": 34.0,
+                    "firstActivation": 31.0,
+                    "n_exec": 0,
+                    "n_execInitial": 1,
+                    "responseTime": 29.0,
+                    "server": 0
+                }
+            ],
+            "5": [
+                {
+                    "arrivalTime": 5.0,
+                    "deadline": 33.0,
+                    "finishTime": 37.0,
+                    "firstActivation": 34.0,
+                    "n_exec": 2,
+                    "n_execInitial": 3,
+                    "responseTime": 32.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 38.0,
+                    "deadline": 33.0,
+                    "finishTime": 66.0,
+                    "firstActivation": 63.0,
+                    "n_exec": 1,
+                    "n_execInitial": 3,
+                    "responseTime": 28.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 71.0,
+                    "deadline": 33.0,
+                    "finishTime": 75.0,
+                    "firstActivation": 72.0,
+                    "n_exec": 0,
+                    "n_execInitial": 3,
+                    "responseTime": 4.0,
+                    "server": -1
+                }
+            ]
+        },
+        "8": {
+            "0": [
+                {
+                    "arrivalTime": 5.0,
+                    "deadline": 15.0,
+                    "finishTime": 28.0,
+                    "firstActivation": 26.0,
+                    "n_exec": 1,
+                    "n_execInitial": 2,
+                    "responseTime": 23.0,
+                    "server": -1
+                },
+                {
+                    "arrivalTime": 20.0,
+                    "deadline": 15.0,
+                    "finishTime": 48.0,
+                    "firstActivation": 46.0,
+                    "n_exec": 0,
+                    "n_execInitial": 2,
+                    "responseTime": 28.0,
+                    "server": -1
+                }
+            ]
+        }
+    }
+]

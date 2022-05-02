@@ -1,0 +1,96 @@
+{
+    "0": [  
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 5.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "computationTime": 5.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                },
+                {
+                    "action": {
+                        "arrivalTime": 0.0,
+                        "deadline": 250.0,
+                        "goal_name": "skill_igA",
+                        "priority": [
+                            0.5
+                        ]
+                    },
+                    "action_type": "GOAL",
+                    "execution": "PARALLEL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [],
+            "effects_at_end": [],
+            "goal_name": "skill_one",
+            "post_conditions": [],
+            "preconditions": [
+                [
+                    "AND",
+                    [
+                        "==",
+                        [
+                            "READ_BELIEF",
+                            "one"
+                        ],
+                        true
+                    ]
+                ]
+            ],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        },
+
+        {
+            "body": [
+                {
+                    "action": {
+                        "computationTime": 5.0,
+                        "n_exec": 1,
+                        "period": 0.0,
+                        "relativeDeadline": 0.0,
+                        "server": 0
+                    },
+                    "action_type": "TASK",
+                    "execution": "SEQUENTIAL"
+                }
+            ],
+            "cont_conditions": [],
+            "effects_at_begin": [ ],
+            "effects_at_end": [ ],
+            "goal_name": "skill_igA",
+            "post_conditions": [ ],
+            "preconditions": [],
+            "preference": {
+                "computedDynamically": true,
+                "formula": [
+                    0.5
+                ],
+                "reference_table": []
+            }
+        }
+    ]
+}
