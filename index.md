@@ -4,6 +4,10 @@
 
 
 
+### Real-Time BDI Agents: a model and its implementation
+
+#### Andrea Traldi, Francesco Bruschetti, Marco Robol, Marco Roveri, Paolo Giorgini
+
 The BDI model proved to be effective for developing applications requiring high-levels of autonomy and to
 deal with the complexity and unpredictability of real-world scenarios. The model, however, has significant
 limitations in reacting and handling contingencies within the given real-time constraints. Without an explicit
