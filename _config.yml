@@ -1,4 +1,4 @@
 theme: jekyll-theme-cayman
 markdown: GFM
-title: Real-Time BDI Agents: a model and its implementation
-description: Andrea Traldi, Francesco Bruschetti, Marco Robol, Marco Roveri, Paolo Giorgini - IJCAI 2022
+title: "Real-Time BDI Agents: a model and its implementation"
+description: "Andrea Traldi, Francesco Bruschetti, Marco Robol, Marco Roveri, Paolo Giorgini - IJCAI 2022"
