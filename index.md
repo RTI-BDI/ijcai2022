@@ -1,9 +1,7 @@
-# Real-Time BDI Agents: a model and its implementation
+![ijcai-22.org](https://ijcai-22.org/wp-content/uploads/2021/08/logo.png)
 
-### Andrea Traldi, Francesco Bruschetti, Marco Robol, Marco Roveri, Paolo Giorgini
+[IJCAI-ECAI 2022](https://ijcai-22.org/) - 31ST INTERNATIONAL JOINT CONFERENCE ON ARTIFICIAL INTELLIGENCE - July 23-29, 2022 - Messe Wien, Vienna, Austria
 
-| ![ijcai-22.org](https://ijcai-22.org/wp-content/uploads/2021/08/logo.png) | [IJCAI-ECAI 2022](https://ijcai-22.org/) - 31ST INTERNATIONAL JOINT CONFERENCE ON ARTIFICIAL INTELLIGENCE - July 23-29, 2022 - Messe Wien, Vienna, Austria |
-|---                                                                        |---                                                        |
 
 
 The BDI model proved to be effective for developing applications requiring high-levels of autonomy and to
